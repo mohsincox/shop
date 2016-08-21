@@ -11,14 +11,14 @@ use Illuminate\Support\Facades\Input;
 
 class SassoBijController extends Controller
 {
-//    public function __construct()
-//    {
-//        $this->middleware('auth');
-//    }
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
 
     public function index()
     {
-
+        return "test";
     }
 
     public function create()
@@ -36,13 +36,17 @@ class SassoBijController extends Controller
         }
 
         //$sossoBij = SassoBij::create($request->all());
-        SassoBij::create(['image' => $fileName,
+        $sossoBij = SassoBij::create(['image' => $fileName,
                           'name' => $request->name,
                           'code' => $request->code,
                           'quantity' => $request->quantity,
                           'price' => $request->price,
                           'description' => $request->description
                          ]);
+
+        flash()->message($sossoBij->name . ' Successfully Created');
+
+        return redirect()->back();
     }
 
 }
