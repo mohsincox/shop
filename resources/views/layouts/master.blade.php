@@ -31,6 +31,9 @@
 </head>
 
 <body>
+<span class="hidden" id="url">
+ {{ url('/') }}
+</span>
 
 <header class="main-header">
 

@@ -11,10 +11,7 @@ use Illuminate\Support\Facades\Input;
 
 class SassoBijController extends Controller
 {
-    public function __construct()
-    {
-        $this->middleware('auth');
-    }
+
 
     public function index()
     {
@@ -47,6 +44,13 @@ class SassoBijController extends Controller
         flash()->message($sossoBij->name . ' Successfully Created');
 
         return redirect()->back();
+    }
+
+    public function showToModel(Request $request)
+    {
+        $sassoBij = SassoBij::find($request->id);
+
+        return view('show_to_model', compact('sassoBij'));
     }
 
 }

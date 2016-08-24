@@ -16,9 +16,12 @@
 //});
 
 Route::get('/', 'WelcomeController@index');
+Route::post('store-customer', 'WelcomeController@storeCustomer');
 
 Route::auth();
 
 Route::get('/home', 'HomeController@index');
 
 Route::resource('sasso-bij', 'Bij\SassoBijController');
+
+Route::get('show-to-model', 'Bij\SassoBijController@showToModel');
