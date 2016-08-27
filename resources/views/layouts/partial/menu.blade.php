@@ -30,7 +30,7 @@
         </li>
         <li role="presentation" class="dropdown">
             <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                Dropdown <span class="caret"></span>
+                ???? ??? <span class="caret"></span>
             </a>
             <ul class="dropdown-menu">
                 <li role="presentation"><a href="#">Home</a></li>
@@ -39,4 +39,5 @@
             </ul>
         </li>
     </ul>
+    <h1>RR ???? ???</h1>
 </div>

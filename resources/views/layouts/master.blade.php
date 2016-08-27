@@ -95,8 +95,18 @@
 
                     <ul class="nav navbar-nav">
 
-                        <li><a class="is-active" href="index.html">HOME</a></li>
-                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a class="is-active" href="index.html">???? ???</a></li>
+                        <li>{!! Html::link('indec', '???? ???') !!}</li>
+                        <li class="has-child"><a href="#">???</a>
+
+                            <ul class="submenu">
+                                <li class="submenu-item"><a href="causes.html">???? ???</a></li>
+                                <li class="submenu-item"><a href="causes-single.html">???? ??? </a></li>
+                                <li class="submenu-item"><a href="causes-single.html">???? ??? </a></li>
+                                <li class="submenu-item"><a href="causes-single.html">???? ??? </a></li>
+                            </ul>
+
+                        </li>
                         <li class="has-child"><a href="#">CAUSES</a>
 
                             <ul class="submenu">
@@ -122,8 +132,9 @@
     </nav>
 
 </header> <!-- /. main-header -->
-
-
+<div class="container">
+  <h1>??????</h1>
+</div>
 @if (Session::has('flash_notification.message'))
     <div class="alert alert-{{ Session::get('flash_notification.level') }}">
         <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
