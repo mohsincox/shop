@@ -20,7 +20,7 @@
             </a>
             <ul class="dropdown-menu">
 
-                <li>{!! Html::link('category', 'Category List') !!}</li>
+                <li>{!! Html::link('category', 'রেজিস্ট্রেশ List') !!}</li>
                 <li>{!! Html::link('unit', 'Unit List') !!}</li>
                 <li>{!! Html::link('product', 'Product List') !!}</li>
                 <li>{!! Html::link('customer', 'Customer List') !!}</li>
@@ -30,7 +30,7 @@
         </li>
         <li role="presentation" class="dropdown">
             <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                ???? ??? <span class="caret"></span>
+                আমাদের বাংলাদেশ <span class="caret"></span>
             </a>
             <ul class="dropdown-menu">
                 <li role="presentation"><a href="#">Home</a></li>
@@ -39,5 +39,5 @@
             </ul>
         </li>
     </ul>
-    <h1>RR ???? ???</h1>
+
 </div>

@@ -2,28 +2,23 @@
 
 namespace App\Http\Controllers\Bij;
 
-use App\Models\SassoBij;
+use App\Models\ShakSobjiBij;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Input;
 
-class SassoBijController extends Controller
+class ShakSobjiBijController extends Controller
 {
-    public function __construct()
-    {
-        $this->middleware('auth');
-    }
-
     public function index()
     {
-        return "test";
+        return 'test';
     }
 
     public function create()
     {
-        return view('bij.sasso_bij.create');
+        return view('bij.shak_sobji_bij.create');
     }
 
     public function store(Request $request)
@@ -36,19 +31,16 @@ class SassoBijController extends Controller
         }
 
         //$sossoBij = SassoBij::create($request->all());
-        $sassoBij = SassoBij::create(['image' => $fileName,
-                          'name' => $request->name,
-                          'code' => $request->code,
-                          'quantity' => $request->quantity,
-                          'price' => $request->price,
-                          'description' => $request->description
-                         ]);
+        $shakSobjiBij = ShakSobjiBij::create(['image' => $fileName,
+                                      'name' => $request->name,
+                                      'code' => $request->code,
+                                      'quantity' => $request->quantity,
+                                      'price' => $request->price,
+                                      'description' => $request->description
+                                     ]);
 
-        flash()->message($sassoBij->name . ' Successfully Created');
+        flash()->message($shakSobjiBij->name . ' Successfully Created');
 
         return redirect()->back();
     }
-
-
-
 }

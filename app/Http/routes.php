@@ -17,6 +17,7 @@
 
 Route::get('/', 'WelcomeController@index');
 Route::post('store-customer', 'WelcomeController@storeCustomer');
+Route::get('show-to-model', 'WelcomeController@showToModel');
 
 Route::auth();
 
@@ -24,4 +25,4 @@ Route::get('/home', 'HomeController@index');
 
 Route::resource('sasso-bij', 'Bij\SassoBijController');
 
-Route::get('show-to-model', 'Bij\SassoBijController@showToModel');
+Route::resource('shak-sobji-bij', 'Bij\ShakSobjiBijController');

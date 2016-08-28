@@ -2,7 +2,7 @@
 <html class="no-js">
 <head>
     <meta charset="utf-8">
-    <title>SADAKA | Charity / Non-profit responsive Bootstrap HTML5 template</title>
+    <title>Shop</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Fonts -->
@@ -221,21 +221,20 @@
     </a>
 
 </div><!-- /.carousel -->
-<div class="container"><h1>our Bangladesh</h1></div>
-<div class="section-home our-causes animate-onscroll fadeIn">
+
+<div class="section-home our-causes fadeIn">
 
     <div class="container">
-        <li>শস্য বীজ</li>
+
 
         <h2 class="title-style-1">শস্য বীজ <span class="title-under"></span></h2>
 
         <div class="row">
-            @foreach($sossoBijs as $key=>$bij)
+            @foreach($sassoBijs as $key=>$bij)
                 <div class="col-md-3 col-sm-6">
 
                     <div class="cause">
 
-                        {{--<img src="assets/images/causes/cause-hunger.jpg" alt="" class="cause-img">--}}
                         {{ Html::image('uploads/'.$bij->image) }}
                         <h4 class="cause-title">{{ $bij->name }}</h4>
 
@@ -256,6 +255,39 @@
 
 </div> <!-- /.our-causes -->
 
+
+<div class="section-home our-causes fadeIn">
+
+    <div class="container">
+
+
+        <h2 class="title-style-1">Shak Sobji বীজ <span class="title-under"></span></h2>
+
+        <div class="row">
+            @foreach($shakSobjiBijs as $key=>$bij)
+                <div class="col-md-3 col-sm-6">
+
+                    <div class="cause">
+
+                        {{ Html::image('uploads/'.$bij->image) }}
+                        <h4 class="cause-title">{{ $bij->name }}</h4>
+
+                        <div class="btn-holder text-center">
+
+                            <button class="btn btn-primary" data-toggle="modal" data-target="#donateModal" id="btn" value="{{ $bij->id }}"> DONATE NOW</button>
+
+                        </div>
+
+                    </div> <!-- /.cause -->
+
+                </div>
+            @endforeach
+
+        </div>
+
+    </div>
+
+</div> <!-- /.our-causes -->
 
 
 
@@ -425,7 +457,7 @@
     <div class="footer-bottom">
 
         <div class="container text-right">
-            Sadaka @ copyrights 2015 - by <a href="http://www.ouarmedia.com" target="_blank">Ouarmedia</a>
+            Mohsin @ copyrights 2016 - by Mohsin Iqbal
         </div>
     </div>
 
