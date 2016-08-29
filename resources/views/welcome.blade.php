@@ -259,7 +259,7 @@
 
                     <div class="cause">
 
-                        {{ Html::image('uploads/'.$bij->image) }}
+                        <div><center>{{ Html::image('uploads/'.$bij->image) }}</center></div>
                         <h4 class="cause-title">{{ $bij->name }}</h4>
 
                         <div class="btn-holder text-center">
@@ -334,7 +334,7 @@
         <div class="container">
 
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-3">
 
                     <div class="footer-col">
 
@@ -343,7 +343,7 @@
                         <div class="footer-content">
 
                             <p>
-                                <strong>Sadaka</strong> ipsum dolor sit amet, consectetur adipiscing elit. Ut at eros rutrum turpis viverra elementum semper quis ex. Donec lorem nulla, aliquam quis neque vel, maximus lacinia urna.
+                                ILorem ipsum dolor sit amet, consectetur adipiscing elit. Ut at eros rutrum turpis viverra elementum semper quis ex. Donec lorem nulla, aliquam quis neque vel, maximus lacinia urna.
                             </p>
 
                             <p>
@@ -356,7 +356,7 @@
 
                 </div>
 
-                <div class="col-md-4">
+                <div class="col-md-3">
 
                     <div class="footer-col">
 
@@ -390,7 +390,7 @@
                 </div>
 
 
-                <div class="col-md-4">
+                <div class="col-md-3">
 
                     <div class="footer-col">
 
@@ -437,6 +437,28 @@
                                 </div>
 
                             </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-3">
+
+                    <div class="footer-col">
+
+                        <h4 class="footer-title">About us <span class="title-under"></span></h4>
+
+                        <div class="footer-content">
+
+                            <p>
+                                ILorem ipsum dolor sit amet, consectetur adipiscing elit. Ut at eros rutrum turpis viverra elementum semper quis ex. Donec lorem nulla, aliquam quis neque vel, maximus lacinia urna.
+                            </p>
+
+                            <p>
+                                ILorem ipsum dolor sit amet, consectetur adipiscing elit. Ut at eros rutrum turpis viverra elementum semper quis ex. Donec lorem nulla, aliquam quis neque vel, maximus lacinia urna.
+                            </p>
+
                         </div>
 
                     </div>
