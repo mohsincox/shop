@@ -18,6 +18,7 @@
 Route::get('/', 'WelcomeController@index');
 Route::post('store-customer', 'WelcomeController@storeCustomer');
 Route::get('show-to-model', 'WelcomeController@showToModel');
+Route::get('test', 'WelcomeController@test');
 
 Route::auth();
 

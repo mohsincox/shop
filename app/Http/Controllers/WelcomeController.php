@@ -32,4 +32,9 @@ class WelcomeController extends Controller
         //return $request->all();
         Customer::create($request->all());
     }
+
+    public function test()
+    {
+        return view('test');
+    }
 }

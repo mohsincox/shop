@@ -27,6 +27,8 @@
     {{--<script src="assets/js/modernizr-2.6.2.min.js"></script>--}}
     {!! Html::script('assets/js/modernizr-2.6.2.min.js') !!}
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
 
 </head>
 
@@ -112,6 +114,7 @@
                         <li>{!! Html::link('#', 'যন্ত্রপাতি') !!}</li>
                         <li>{!! Html::link('#', 'উপকরণ') !!}</li>
                         <li>{!! Html::link('#', 'ঠিকানা/যোগাযোগ  ') !!}</li>
+
 
                     </ul>
 
@@ -245,7 +248,9 @@
     </a>
 
 </div><!-- /.carousel -->
-
+<div>
+    <input type="text" id="search-criteria"/>
+</div>
 <div class="section-home our-causes fadeIn">
 
     <div class="container">
@@ -257,10 +262,10 @@
             @foreach($sassoBijs as $key=>$bij)
                 <div class="col-md-3 col-sm-6">
 
-                    <div class="cause">
+                    <div class="cause fbbox">
 
-                        <div><center>{{ Html::image('uploads/'.$bij->image) }}</center></div>
-                        <h4 class="cause-title">{{ $bij->name }}</h4>
+                        <div class="zoom_01"><center>{{ Html::image('uploads/'.$bij->image, null, ['width' => 100, 'height' => 100]) }}</center></div>
+                        <h4 class="cause-title fix"><label>{{ $bij->name }}</label></h4>
 
                         <div class="btn-holder text-center">
 
@@ -291,10 +296,10 @@
             @foreach($shakSobjiBijs as $key=>$bij)
                 <div class="col-md-3 col-sm-6">
 
-                    <div class="cause">
+                    <div class="cause fbbox">
 
                         {{ Html::image('uploads/'.$bij->image) }}
-                        <h4 class="cause-title">{{ $bij->name }}</h4>
+                        <h4 class="cause-title fix"><label>{{ $bij->name }}</label></h4>
 
                         <div class="btn-holder text-center">
 
@@ -499,13 +504,16 @@
             </div>
             <div class="modal-body">
 
-                <div class="footer-form">
 
-                    <span id="hamba"></span>
-                    <hr>
+                <div class="modal-footer">
+
+                    <div>
+                        <span id="hamba"></span>
+                        <hr>
+                    </div>
                     <h3 class="title-style-1 text-center">Thank you for your donation <span class="title-under"></span>  </h3>
 
-                    <div class="form-horizontal footer-form" >
+                    <div class="form-horizontal" >
 
                         <form action="store-customer" class="ajax-for" method="post">
                             <input type="hidden" name="_token" value="<?php echo csrf_token(); ?>">
@@ -609,6 +617,15 @@
 
             <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
+        $("#search-criteria").on("keyup", function() {
+            var g = $(this).val().toLowerCase();
+            $(".fbbox .fix label").each(function() {
+                var s = $(this).text().toLowerCase();
+                $(this).closest('.fbbox')[ s.indexOf(g) !== -1 ? 'show' : 'hide' ]();
+            });
+        });
+
+
         (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
                 function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
             e=o.createElement(i);r=o.getElementsByTagName(i)[0];
@@ -616,6 +633,7 @@
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
         ga('create','UA-XXXXX-X');ga('send','pageview');
     </script>
+
 
 </body>
 </html>

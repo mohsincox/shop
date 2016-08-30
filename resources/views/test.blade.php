@@ -1,12 +1,9 @@
-{{--<div class="magnify">--}}
-
-    {{--<!-- This is the magnifying glass which will contain the original/large version -->--}}
-    {{--<div class="large"></div>--}}
-
-    {{--<!-- This is the small image -->--}}
-    {{--<img class="small" src="uploads/76104.jpg" width="200"/>--}}
-
-{{--</div>--}}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</head>
 <style>
     /*Some CSS*/
     * {margin: 0; padding: 0;}
@@ -24,7 +21,7 @@
         inset 0 0 40px 2px rgba(0, 0, 0, 0.25);
 
         /*Lets load up the large image first*/
-        background: url('http://localhost:5555/uploads/{{ $sassoBij->image }}') no-repeat;
+        background: url('http://localhost:5555/uploads/76104.jpg') no-repeat;
 
         /*hide the glass by default*/
         display: none;
@@ -33,51 +30,26 @@
     /*To solve overlap bug at the edges during magnification*/
     .small { display: block; }
 </style>
+<body>
 
-@if(isset($sassoBij))
-    <div style="text-align: left">
-        <div class="col-sm-12">
-            <div class="col-sm-8">
-                <div class="magnify">
-                    <div class="large"></div>
-                    {{--<img class="small" src="uploads/{{ $sassoBij->image }}" />--}}
-                    {{ Html::image('uploads/'.$sassoBij->image, null, ['class' => 'small', 'width' => 200]) }}
-                </div>
-            </div>
-            <div class="col-sm-4" style="margin-top: 50px">
-                <p>{!!  '<strong>Name: </strong>'. $sassoBij->name  !!}</p>
-                <p>{!!  '<strong>Code: </strong>'. $sassoBij->code  !!}</p>
-                <p>{!!  '<strong>Price: </strong>'. $sassoBij->price  !!}</p>
-            </div>
+<!-- Lets make a simple image magnifier -->
+<div class="magnify">
 
-        </div>
-        <div class="col-sm-12">
-            {!!  '<strong>Description: </strong>'. $sassoBij->description  !!}
-        </div>
-    </div>
-@endif
+    <!-- This is the magnifying glass which will contain the original/large version -->
+    <div class="large"></div>
 
-@if(isset($shakSobjiBij))
-    <div style="text-align: left">
-        <div class="col-sm-12">
-            <div class="col-sm-6">
-                {{ Html::image('uploads/'.$shakSobjiBij->image) }}
-            </div>
-            <div class="col-sm-6">
-                <p>{!!  '<strong>Name: </strong>'. $shakSobjiBij->name  !!}</p>
-                <p>{!!  '<strong>Code: </strong>'. $shakSobjiBij->code  !!}</p>
-                <p>{!!  '<strong>Price: </strong>'. $shakSobjiBij->price  !!}</p>
-            </div>
+    <!-- This is the small image -->
+    <img class="small" src="uploads/76104.jpg" width="200"/>
 
-        </div>
-        <div class="col-sm-12">
-            {!!  '<strong>Description: </strong>'. $shakSobjiBij->description  !!}
-        </div>
-    </div>
-@endif
+</div>
 
+<!-- Lets load up prefixfree to handle CSS3 vendor prefixes -->
+<script src="http://thecodeplayer.com/uploads/js/prefixfree.js" type="text/javascript"></script>
+<!-- You can download it from http://leaverou.github.com/prefixfree/ -->
 
-
+<!-- Time for jquery action -->
+<script src="http://thecodeplayer.com/uploads/js/jquery-1.7.1.min.js" type="text/javascript"></script>
+</body>
 <script>
     $(document).ready(function(){
 
@@ -148,9 +120,4 @@
         })
     })
 </script>
-<!-- Lets load up prefixfree to handle CSS3 vendor prefixes -->
-<script src="http://thecodeplayer.com/uploads/js/prefixfree.js" type="text/javascript"></script>
-<!-- You can download it from http://leaverou.github.com/prefixfree/ -->
-
-<!-- Time for jquery action -->
-<script src="http://thecodeplayer.com/uploads/js/jquery-1.7.1.min.js" type="text/javascript"></script>
+</html>
