@@ -24,9 +24,18 @@
         inset 0 0 40px 2px rgba(0, 0, 0, 0.25);
 
         /*Lets load up the large image first*/
-        background: url('http://localhost:5555/uploads/{{ $sassoBij->image }}') no-repeat;
+        {{--background: url('http://localhost:5555/uploads/{{ $sassoBij->image }}') no-repeat;--}}
+        @if(isset($sassoBij))
+            background: url('http://localhost:5555/uploads/{{ $sassoBij->image }}') no-repeat;
+            {{--background: {{ Html::image('uploads/'.$sassoBij->image) }} no-repeat;--}}/*kaj lore na*/
+        @endif
 
-        /*hide the glass by default*/
+        @if(isset($shakSobjiBij))
+            background: url('http://localhost:5555/uploads/{{ $shakSobjiBij->image }}') no-repeat;
+            {{--background: {{ Html::image('uploads/'.$sassoBij->image) }} no-repeat;--}}/*kaj lore na*/
+        @endif
+
+/*hide the glass by default*/
         display: none;
     }
 
@@ -60,10 +69,13 @@
 @if(isset($shakSobjiBij))
     <div style="text-align: left">
         <div class="col-sm-12">
-            <div class="col-sm-6">
-                {{ Html::image('uploads/'.$shakSobjiBij->image) }}
+            <div class="col-sm-8">
+                <div class="magnify">
+                    <div class="large"></div>
+                    {{ Html::image('uploads/'.$shakSobjiBij->image, null, ['class' => 'small', 'width' => 200]) }}
+                </div>
             </div>
-            <div class="col-sm-6">
+            <div class="col-sm-4">
                 <p>{!!  '<strong>Name: </strong>'. $shakSobjiBij->name  !!}</p>
                 <p>{!!  '<strong>Code: </strong>'. $shakSobjiBij->code  !!}</p>
                 <p>{!!  '<strong>Price: </strong>'. $shakSobjiBij->price  !!}</p>

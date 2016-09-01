@@ -24,6 +24,9 @@ Route::auth();
 
 Route::get('/home', 'HomeController@index');
 
-Route::resource('sasso-bij', 'Bij\SassoBijController');
+Route::resource('sasso-bij-auth', 'Bij\SassoBijController');
 
-Route::resource('shak-sobji-bij', 'Bij\ShakSobjiBijController');
+Route::resource('shak-sobji-bij-auth', 'Bij\ShakSobjiBijController');
+
+Route::get('sasso-bij', 'WithoutAuth\AllItemsController@sassoBij');
+Route::get('shak-sobji-bij', 'WithoutAuth\AllItemsController@shakSobjiBij');

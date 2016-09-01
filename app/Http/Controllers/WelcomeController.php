@@ -13,8 +13,8 @@ class WelcomeController extends Controller
 {
     public function index()
     {
-        $sassoBijs = SassoBij::get();
-        $shakSobjiBijs = ShakSobjiBij::get();
+        $sassoBijs = SassoBij::take(1)->get();
+        $shakSobjiBijs = ShakSobjiBij::take(1)->get();
         return view('welcome', compact('sassoBijs', 'shakSobjiBijs'));
     }
 

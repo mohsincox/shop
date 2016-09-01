@@ -1,0 +1,95 @@
+<div class="modal fade" id="donateModal" tabindex="-1" role="dialog" aria-labelledby="donateModalLabel" aria-hidden="true">
+
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="donateModalLabel">DONATE NOW</h4>
+            </div>
+            <div class="modal-body">
+
+
+                <div class="modal-footer">
+
+                    <div>
+                        <span id="hamba"></span>
+                        <hr>
+                    </div>
+                    <h3 class="title-style-1 text-center">Thank you for your donation <span class="title-under"></span>  </h3>
+
+                    <div class="form-horizontal" >
+
+                        <form action="store-customer" class="ajax-for" method="post">
+                            <input type="hidden" name="_token" value="<?php echo csrf_token(); ?>">
+                            <div class="form-group" {{ $errors->has('customer_name') ? 'has error' : '' }}>
+                                {!! Form::label('customer_name', 'নাম:', ['class' => 'col-sm-2 control-label']) !!}
+                                <div class="col-sm-10">
+                                    {!! Form::text('customer_name', null,['class' => 'form-control', 'placeholder' => 'নাম', 'autocomplete' => 'off']) !!}
+                                    <span class="help-block text-danger">
+                                            {{ $errors->first('customer_name') }}
+                                        </span>
+                                </div>
+                            </div>
+
+                            <div class="form-group" {{ $errors->has('product_name') ? 'has error' : '' }}>
+                                {!! Form::label('product_name', 'product ar নাম:', ['class' => 'col-sm-2 control-label']) !!}
+                                <div class="col-sm-10">
+                                    {!! Form::text('product_name', null,['class' => 'form-control', 'placeholder' => 'নাম', 'autocomplete' => 'off']) !!}
+                                    <span class="help-block text-danger">
+                                            {{ $errors->first('product_name') }}
+                                        </span>
+                                </div>
+                            </div>
+
+                            <div class="form-group" {{ $errors->has('quantity') ? 'has error' : '' }}>
+                                {!! Form::label('quantity', 'Poriman:', ['class' => 'col-sm-2 control-label']) !!}
+                                <div class="col-sm-10">
+                                    {!! Form::text('quantity', null,['class' => 'form-control', 'placeholder' => 'নাম', 'autocomplete' => 'off']) !!}
+                                    <span class="help-block text-danger">
+                                            {{ $errors->first('quantity') }}
+                                        </span>
+                                </div>
+                            </div>
+
+                            <div class="form-group" {{ $errors->has('mobile') ? 'has error' : '' }}>
+                                {!! Form::label('mobile', 'Mobile:', ['class' => 'col-sm-2 control-label']) !!}
+                                <div class="col-sm-10">
+                                    {!! Form::text('mobile', null,['class' => 'form-control', 'placeholder' => 'নাম', 'autocomplete' => 'off']) !!}
+                                    <span class="help-block text-danger">
+                                            {{ $errors->first('mobile') }}
+                                        </span>
+                                </div>
+                            </div>
+
+                            <div class="form-group" {{ $errors->has('address') ? 'has error' : '' }}>
+                                {!! Form::label('address', 'address:', ['class' => 'col-sm-2 control-label']) !!}
+                                <div class="col-sm-10">
+                                    {!! Form::textarea('address', null,['class' => 'form-control', 'placeholder' => 'নাম', 'autocomplete' => 'off', 'rows' => 3, 'required']) !!}
+                                    <span class="help-block text-danger">
+                                            {{ $errors->first('address') }}
+                                        </span>
+                                </div>
+                            </div>
+
+                            <div class="row">
+
+                                <div class="form-group col-md-12">
+                                    <button type="submit" class="btn btn-primary pull-right" >DONATE NOW</button>
+                                </div>
+
+                            </div>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+</div>
