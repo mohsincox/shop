@@ -1,4 +1,4 @@
-{!! Form::open(['url' => 'shak-sobji-bij', 'method' => 'post', 'enctype' => 'multipart/form-data']) !!}
+{!! Form::open(['url' => 'shak-sobji-bij-auth', 'method' => 'post', 'enctype' => 'multipart/form-data']) !!}
 
 <div class="form-group" {{ $errors->has('name') ? 'has error' : '' }}>
     {!! Form::label('name', 'নাম', ['class' => 'col-sm-3 control-label']) !!}
@@ -23,7 +23,7 @@
 <div class="form-group" {{ $errors->has('quantity') ? 'has error' : '' }}>
     {!! Form::label('quantity', 'পরিমান', ['class' => 'col-sm-3 control-label']) !!}
     <div class="col-sm-9">
-        {!! Form::number('quantity', null, ['class' => 'form-control', 'placeholder' => 'পরিমান', 'autocomplete' => 'off']) !!}
+        {!! Form::text('quantity', null, ['class' => 'form-control', 'placeholder' => 'পরিমান', 'autocomplete' => 'off']) !!}
         <span class="help-block text-danger">
             {{ $errors->first('quantity') }}
         </span>
@@ -33,7 +33,7 @@
 <div class="form-group" {{ $errors->has('price') ? 'has error' : '' }}>
     {!! Form::label('price', 'মূল্য', ['class' => 'col-sm-3 control-label']) !!}
     <div class="col-sm-9">
-        {!! Form::number('price', null, ['class' => 'form-control', 'placeholder' => 'মূল্য', 'autocomplete' => 'off']) !!}
+        {!! Form::text('price', null, ['class' => 'form-control', 'placeholder' => 'মূল্য', 'autocomplete' => 'off']) !!}
         <span class="help-block text-danger">
             {{ $errors->first('price') }}
         </span>

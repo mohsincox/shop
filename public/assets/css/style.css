@@ -503,7 +503,23 @@ form .alert {
   -webkit-transition: all, 0.3s;
   transition: all, 0.3s;
 }
+.btn-danger {
+  background: #115c9b;
+  border: none;
+  border-radius: 0;
+  padding: 10px 25px;
+  border: 1px solid transparent;
+  -moz-transition: all, 0.3s;
+  -o-transition: all, 0.3s;
+  -webkit-transition: all, 0.3s;
+  transition: all, 0.3s;
+}
 .btn-primary:hover {
+  background: #fff;
+  color: #1f76bd;
+  border: 1px solid #1f76bd;
+}
+.btn-danger:hover {
   background: #fff;
   color: #1f76bd;
   border: 1px solid #1f76bd;

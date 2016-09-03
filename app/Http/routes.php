@@ -17,12 +17,17 @@
 
 Route::get('/', 'WelcomeController@index');
 Route::post('store-customer', 'WelcomeController@storeCustomer');
-Route::get('show-to-model', 'WelcomeController@showToModel');
+Route::get('show-to-model-sasso-bij', 'WelcomeController@showToModelSassoBij');
+Route::get('show-to-model-shak-sobji-bij', 'WelcomeController@showToModelShakSobjiBij');
+Route::get('test', 'WelcomeController@test');
 
 Route::auth();
 
 Route::get('/home', 'HomeController@index');
 
-Route::resource('sasso-bij', 'Bij\SassoBijController');
+Route::resource('sasso-bij-auth', 'Bij\SassoBijController');
 
-Route::resource('shak-sobji-bij', 'Bij\ShakSobjiBijController');
+Route::resource('shak-sobji-bij-auth', 'Bij\ShakSobjiBijController');
+
+Route::get('sasso-bij', 'WithoutAuth\AllItemsController@sassoBij');
+Route::get('shak-sobji-bij', 'WithoutAuth\AllItemsController@shakSobjiBij');

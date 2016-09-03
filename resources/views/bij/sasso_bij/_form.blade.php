@@ -1,4 +1,4 @@
-{!! Form::open(['url' => 'sasso-bij', 'method' => 'post', 'enctype' => 'multipart/form-data']) !!}
+{!! Form::open(['url' => 'sasso-bij-auth', 'method' => 'post', 'enctype' => 'multipart/form-data']) !!}
 <div class="form-horizontal">
 <div class="required form-group" {{ $errors->has('name') ? 'has error' : '' }}>
     {!! Form::label('name', 'নাম', ['class' => 'col-sm-3 control-label']) !!}

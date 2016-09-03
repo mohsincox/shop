@@ -13,23 +13,35 @@ class WelcomeController extends Controller
 {
     public function index()
     {
-        $sassoBijs = SassoBij::get();
-        $shakSobjiBijs = ShakSobjiBij::get();
+        $sassoBijs = SassoBij::take(1)->get();
+        $shakSobjiBijs = ShakSobjiBij::take(1)->get();
         return view('welcome', compact('sassoBijs', 'shakSobjiBijs'));
     }
 
-    public function showToModel(Request $request)
+    public function showToModelSassoBij(Request $request)
     {
         $sassoBij = SassoBij::find($request->id);
 
+//        $shakSobjiBij = ShakSobjiBij::find($request->id);
+
+        return view('show_to_model', compact('sassoBij'));
+    }
+
+    public function showToModelShakSobjiBij(Request $request)
+    {
         $shakSobjiBij = ShakSobjiBij::find($request->id);
 
-        return view('show_to_model', compact('sassoBij', 'shakSobjiBij'));
+        return view('show_to_model', compact('shakSobjiBij'));
     }
 
     public function storeCustomer(Request $request)
     {
         //return $request->all();
         Customer::create($request->all());
+    }
+
+    public function test()
+    {
+        return view('test');
     }
 }
