@@ -26,12 +26,12 @@
         /*Lets load up the large image first*/
         {{--background: url('http://localhost:5555/uploads/{{ $sassoBij->image }}') no-repeat;--}}
         @if(isset($sassoBij))
-            background: url('http://localhost/shop/public/uploads/{{ $sassoBij->image }}') no-repeat;
+            background: url('http://localhost:5555/uploads/{{ $sassoBij->image }}') no-repeat;
             {{--background: {{ Html::image('uploads/'.$sassoBij->image) }} no-repeat;--}}/*kaj lore na*/
         @endif
 
         @if(isset($shakSobjiBij))
-            background: url('http://localhost/shop/public/uploads/{{ $shakSobjiBij->image }}') no-repeat;
+            background: url('http://localhost:5555/uploads/{{ $shakSobjiBij->image }}') no-repeat;
             {{--background: {{ Html::image('uploads/'.$sassoBij->image) }} no-repeat;--}}/*kaj lore na*/
         @endif
 

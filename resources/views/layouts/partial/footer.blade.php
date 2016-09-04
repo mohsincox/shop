@@ -13,16 +13,16 @@
 
                     <div class="footer-col">
 
-                        <h4 class="footer-title">About us <span class="title-under"></span></h4>
+                        <h4 class="footer-title">আমাদের সম্পর্কে বিশেষজ্ঞ মন্তব্য<span class="title-under"></span></h4>
 
                         <div class="footer-content">
 
                             <p>
-                                ILorem ipsum dolor sit amet, consectetur adipiscing elit. Ut at eros rutrum turpis viverra elementum semper quis ex. Donec lorem nulla, aliquam quis neque vel, maximus lacinia urna.
+                                বাংলাদেশ (এই শব্দ সম্পর্কে শুনুন (সাহায্য·তথ্য)) দক্ষিণ এশিয়ার একটি জনবহুল রাষ্ট্র। বাংলাদেশের সাংবিধানিক নাম গণপ্রজাতন্ত্রী বাংলাদেশ।
                             </p>
 
                             <p>
-                                ILorem ipsum dolor sit amet, consectetur adipiscing elit. Ut at eros rutrum turpis viverra elementum semper quis ex. Donec lorem nulla, aliquam quis neque vel, maximus lacinia urna.
+                                ভূ-রাজনৈতিকভাবে বাংলাদেশের পশ্চিম, উত্তর ও পূর্ব সীমান্তে ভারত, দক্ষিণ-পূর্ব সীমান্তে মায়ানমার ও দক্ষিণ উপকূলের দিকে বঙ্গোপসাগর অবস্থিত। বাংলাদেশের ভূখণ্ড ভৌগোলিকভাবে একটি উর্বর ব-দ্বীপের অংশ বিশেষ।
                             </p>
 
                         </div>
@@ -35,27 +35,22 @@
 
                     <div class="footer-col">
 
-                        <h4 class="footer-title">LAST TWEETS <span class="title-under"></span></h4>
+                        <h4 class="footer-title">পরামর্শ/কৃষি টিপস <span class="title-under"></span></h4>
 
                         <div class="footer-content">
                             <ul class="tweets list-unstyled">
                                 <li class="tweet">
 
-                                    20 Surprise Eggs, Kinder Surprise Cars 2 Thomas Spongebob Disney Pixar  http://t.co/fTSazikPd4
+                                    বাংলাদেশ (এই শব্দ সম্পর্কে শুনুন (সাহায্য·তথ্য)) দক্ষিণ এশিয়ার একটি জনবহুল রাষ্ট্র। বাংলাদেশের সাংবিধানিক নাম গণপ্রজাতন্ত্রী বাংলাদেশ।
 
                                 </li>
 
                                 <li class="tweet">
 
-                                    20 Surprise Eggs, Kinder Surprise Cars 2 Thomas Spongebob Disney Pixar  http://t.co/fTSazikPd4
+                                    ভূ-রাজনৈতিকভাবে বাংলাদেশের পশ্চিম, উত্তর ও পূর্ব সীমান্তে ভারত, দক্ষিণ-পূর্ব সীমান্তে মায়ানমার ও দক্ষিণ উপকূলের দিকে বঙ্গোপসাগর অবস্থিত। বাংলাদেশের ভূখণ্ড ভৌগোলিকভাবে একটি উর্বর ব-দ্বীপের অংশ বিশেষ।
 
                                 </li>
 
-                                <li class="tweet">
-
-                                    20 Surprise Eggs, Kinder Surprise Cars 2 Thomas Spongebob Disney Pixar  http://t.co/fTSazikPd4
-
-                                </li>
 
                             </ul>
                         </div>
@@ -69,49 +64,18 @@
 
                     <div class="footer-col">
 
-                        <h4 class="footer-title">Contact us <span class="title-under"></span></h4>
+                        <h4 class="footer-title">প্রেস<span class="title-under"></span></h4>
 
                         <div class="footer-content">
 
-                            <div class="footer-form">
+                            <p>
+                                বাংলাদেশ (এই শব্দ সম্পর্কে শুনুন (সাহায্য·তথ্য)) দক্ষিণ এশিয়ার একটি জনবহুল রাষ্ট্র। বাংলাদেশের সাংবিধানিক নাম গণপ্রজাতন্ত্রী বাংলাদেশ।
+                            </p>
 
-                                <div class="footer-form" >
+                            <p>
+                                ভূ-রাজনৈতিকভাবে বাংলাদেশের পশ্চিম, উত্তর ও পূর্ব সীমান্তে ভারত, দক্ষিণ-পূর্ব সীমান্তে মায়ানমার ও দক্ষিণ উপকূলের দিকে বঙ্গোপসাগর অবস্থিত। বাংলাদেশের ভূখণ্ড ভৌগোলিকভাবে একটি উর্বর ব-দ্বীপের অংশ বিশেষ।
+                            </p>
 
-                                    <form action="php/mail.php" class="ajax-form">
-
-                                        <div class="form-group">
-                                            <input type="text" name="name" class="form-control" placeholder="Name" required>
-                                        </div>
-
-                                        <div class="form-group">
-                                            <input type="email" name="email" class="form-control" placeholder="E-mail" required>
-                                        </div>
-
-                                        <div class="form-group">
-                                            <textarea name="message" class="form-control" placeholder="Message" required></textarea>
-                                        </div>
-
-                                        <div class="form-group alerts">
-
-                                            <div class="alert alert-success" role="alert">
-
-                                            </div>
-
-                                            <div class="alert alert-danger" role="alert">
-
-                                            </div>
-
-                                        </div>
-
-                                        <div class="form-group">
-                                            <button type="submit" class="btn btn-submit pull-right">Send message</button>
-                                        </div>
-
-                                    </form>
-
-                                </div>
-
-                            </div>
                         </div>
 
                     </div>
@@ -122,18 +86,24 @@
 
                     <div class="footer-col">
 
-                        <h4 class="footer-title">About us <span class="title-under"></span></h4>
+                        <h4 class="footer-title">নোটিশ বোর্ড <span class="title-under"></span></h4>
 
                         <div class="footer-content">
+                            <ul class="tweets list-unstyled">
+                                <li class="tweet">
 
-                            <p>
-                                ILorem ipsum dolor sit amet, consectetur adipiscing elit. Ut at eros rutrum turpis viverra elementum semper quis ex. Donec lorem nulla, aliquam quis neque vel, maximus lacinia urna.
-                            </p>
+                                    বাংলাদেশ (এই শব্দ সম্পর্কে শুনুন (সাহায্য·তথ্য)) দক্ষিণ এশিয়ার একটি জনবহুল রাষ্ট্র। বাংলাদেশের সাংবিধানিক নাম গণপ্রজাতন্ত্রী বাংলাদেশ।
 
-                            <p>
-                                ILorem ipsum dolor sit amet, consectetur adipiscing elit. Ut at eros rutrum turpis viverra elementum semper quis ex. Donec lorem nulla, aliquam quis neque vel, maximus lacinia urna.
-                            </p>
+                                </li>
 
+                                <li class="tweet">
+
+                                    ভূ-রাজনৈতিকভাবে বাংলাদেশের পশ্চিম, উত্তর ও পূর্ব সীমান্তে ভারত, দক্ষিণ-পূর্ব সীমান্তে মায়ানমার ও দক্ষিণ উপকূলের দিকে বঙ্গোপসাগর অবস্থিত। বাংলাদেশের ভূখণ্ড ভৌগোলিকভাবে একটি উর্বর ব-দ্বীপের অংশ বিশেষ।
+
+                                </li>
+
+
+                            </ul>
                         </div>
 
                     </div>

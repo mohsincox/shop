@@ -51,16 +51,18 @@
 
 <!-- Carousel
     ================================================== -->
+{{--@include('layouts.partial.search_mobile')--}}
 @include('layouts.partial.slider')
+
 <!-- /.carousel -->
-<div>
-    <input type="text" id="search-criteria"/>
-</div>
+{{--<div>--}}
+    {{--<input type="text" id="search-criteria"/>--}}
+{{--</div>--}}
 <div class="section-home our-causes fadeIn">
 
     <div class="container">
 
-
+        @include('layouts.partial.search_mobile')
         <h2 class="title-style-1">শস্য বীজ <span class="title-under"></span></h2>
 
         <div class="row">

@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Input;
+//use Illuminate\Pagination\Paginator;
 
 class SassoBijController extends Controller
 {
@@ -18,7 +19,10 @@ class SassoBijController extends Controller
 
     public function index()
     {
-        return "test";
+        //return 'test';
+        $sassoBijs = SassoBij::paginate(2);
+
+        return view('bij.sasso_bij.index', compact('sassoBijs'));
     }
 
     public function create()
