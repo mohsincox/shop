@@ -17,6 +17,7 @@
 
 Route::get('/', 'WelcomeController@index');
 Route::post('store-customer', 'WelcomeController@storeCustomer');
+Route::get('show-customer', 'WelcomeController@showCustomer');
 Route::get('show-to-model-sasso-bij', 'WelcomeController@showToModelSassoBij');
 Route::get('show-to-model-shak-sobji-bij', 'WelcomeController@showToModelShakSobjiBij');
 Route::get('test', 'WelcomeController@test');

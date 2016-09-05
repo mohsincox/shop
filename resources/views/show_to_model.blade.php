@@ -7,6 +7,15 @@
     {{--<img class="small" src="uploads/76104.jpg" width="200"/>--}}
 
 {{--</div>--}}
+<span class="hidden" id="url">
+    {{ url('/') }}
+</span>
+
+<?php
+
+        $base = url('/').'/uploads/';
+?>
+
 <style>
     /*Some CSS*/
     * {margin: 0; padding: 0;}
@@ -26,13 +35,15 @@
         /*Lets load up the large image first*/
         {{--background: url('http://localhost:5555/uploads/{{ $sassoBij->image }}') no-repeat;--}}
         @if(isset($sassoBij))
-            background: url('http://localhost:5555/uploads/{{ $sassoBij->image }}') no-repeat;
+
+            background: url('{{ $base.$sassoBij->image }}') no-repeat;
             {{--background: {{ Html::image('uploads/'.$sassoBij->image) }} no-repeat;--}}/*kaj lore na*/
         @endif
 
         @if(isset($shakSobjiBij))
-            background: url('http://localhost:5555/uploads/{{ $shakSobjiBij->image }}') no-repeat;
+            background: url('{{ $base.$shakSobjiBij->image }}') no-repeat;
             {{--background: {{ Html::image('uploads/'.$sassoBij->image) }} no-repeat;--}}/*kaj lore na*/
+
         @endif
 
 /*hide the glass by default*/
@@ -46,14 +57,14 @@
 @if(isset($sassoBij))
     <div style="text-align: left">
         <div class="col-sm-12">
-            <div class="col-sm-8">
+            <div class="col-sm-6">
                 <div class="magnify">
                     <div class="large"></div>
                     {{--<img class="small" src="uploads/{{ $sassoBij->image }}" />--}}
-                    {{ Html::image('uploads/'.$sassoBij->image, null, ['class' => 'small', 'width' => 200]) }}
+                    {{ Html::image('uploads/'.$sassoBij->image, null, ['class' => 'small', 'width' => 160, 'height' => 160]) }}
                 </div>
             </div>
-            <div class="col-sm-4" style="margin-top: 50px">
+            <div class="col-sm-6" style="margin-top: 0px">
                 <p>{!!  '<strong>Name: </strong>'. $sassoBij->name  !!}</p>
                 <p>{!!  '<strong>Code: </strong>'. $sassoBij->code  !!}</p>
                 <p>{!!  '<strong>Price: </strong>'. $sassoBij->price  !!}</p>
@@ -69,13 +80,13 @@
 @if(isset($shakSobjiBij))
     <div style="text-align: left">
         <div class="col-sm-12">
-            <div class="col-sm-8">
+            <div class="col-sm-6">
                 <div class="magnify">
                     <div class="large"></div>
-                    {{ Html::image('uploads/'.$shakSobjiBij->image, null, ['class' => 'small', 'width' => 200]) }}
+                    {{ Html::image('uploads/'.$shakSobjiBij->image, null, ['class' => 'small', 'width' => 160, 'height' => 160]) }}
                 </div>
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-6">
                 <p>{!!  '<strong>Name: </strong>'. $shakSobjiBij->name  !!}</p>
                 <p>{!!  '<strong>Code: </strong>'. $shakSobjiBij->code  !!}</p>
                 <p>{!!  '<strong>Price: </strong>'. $shakSobjiBij->price  !!}</p>

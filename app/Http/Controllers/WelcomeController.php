@@ -38,6 +38,15 @@ class WelcomeController extends Controller
     {
         //return $request->all();
         Customer::create($request->all());
+
+        return redirect('/');
+    }
+
+    public function showCustomer()
+    {
+        $customers = Customer::orderBy('id', 'desc')->paginate(1);
+
+        return view('customer.index', compact('customers'));
     }
 
     public function test()

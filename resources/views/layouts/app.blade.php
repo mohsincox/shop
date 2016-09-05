@@ -48,6 +48,21 @@
                 <!-- Left Side Of Navbar -->
                 <ul class="nav navbar-nav">
                     <li><a href="{{ url('/home') }}">Home</a></li>
+                    @if (Auth::user())
+                        <li><a href="{{ url('#') }}">Test_1</a></li>
+                        <li><a href="{{ url('#') }}">Test_2</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                                Test_3 <span class="caret"></span>
+                            </a>
+
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="{{ url('#') }}"><i class="fa fa-btn fa-sign-out"></i>SubMenu_1</a></li>
+                                <li><a href="{{ url('#') }}"><i class="fa fa-btn fa-sign-out"></i>SubMenu_2</a></li>
+                                <li><a href="{{ url('#') }}"><i class="fa fa-btn fa-sign-out"></i>SubMenu_3</a></li>
+                            </ul>
+                        </li>
+                    @endif
                 </ul>
 
                 <!-- Right Side Of Navbar -->
