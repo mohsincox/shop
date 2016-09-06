@@ -1,4 +1,8 @@
-{!! Form::open(['url' => 'sasso-bij-auth', 'method' => 'post', 'enctype' => 'multipart/form-data']) !!}
+@if (isset($sassoBij))
+    {!! Form::model($sassoBij, ['url' => 'sasso-bij-auth/'.$sassoBij->id, 'method' => 'put', 'enctype' => 'multipart/form-data']) !!}
+@else
+    {!! Form::open(['url' => 'sasso-bij-auth', 'method' => 'post', 'enctype' => 'multipart/form-data']) !!}
+@endif
 <div class="form-horizontal">
 <div class="required form-group" {{ $errors->has('name') ? 'has error' : '' }}>
     {!! Form::label('name', 'নাম', ['class' => 'col-sm-3 control-label']) !!}

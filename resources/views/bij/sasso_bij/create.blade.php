@@ -2,7 +2,6 @@
 
 @section('content')
    <div class="container">
-      @include('layouts.partial.menu')
       <h2>শস্য বীজ রেজিস্ট্রেশন</h2>
       <hr>
       <div class="col-sm-7">

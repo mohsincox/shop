@@ -40,7 +40,7 @@
 
                 <!-- Branding Image -->
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    Laravel
+                    Test
                 </a>
             </div>
 
@@ -49,19 +49,59 @@
                 <ul class="nav navbar-nav">
                     <li><a href="{{ url('/home') }}">Home</a></li>
                     @if (Auth::user())
-                        <li><a href="{{ url('#') }}">Test_1</a></li>
-                        <li><a href="{{ url('#') }}">Test_2</a></li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                                Test_3 <span class="caret"></span>
+                                বীজ <span class="caret"></span>
                             </a>
 
                             <ul class="dropdown-menu" role="menu">
-                                <li><a href="{{ url('#') }}"><i class="fa fa-btn fa-sign-out"></i>SubMenu_1</a></li>
-                                <li><a href="{{ url('#') }}"><i class="fa fa-btn fa-sign-out"></i>SubMenu_2</a></li>
-                                <li><a href="{{ url('#') }}"><i class="fa fa-btn fa-sign-out"></i>SubMenu_3</a></li>
+                                <li><a href="{{ url('/sasso-bij-auth') }}">শস্য বীজ</a></li>
+                                <li><a href="{{ url('#') }}">শাকসবজি বীজ</a></li>
+                                <li><a href="{{ url('#') }}">ফুল বীজ</a></li>
+                                <li><a href="{{ url('#') }}">ফলজ বীজ</a></li>
+                                <li><a href="{{ url('#') }}">ঔষধি বীজ</a></li>
+                                <li><a href="{{ url('#') }}">বনজ বীজ</a></li>
                             </ul>
                         </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                                ঔষধ <span class="caret"></span>
+                            </a>
+
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="{{ url('#') }}">গবাদি পশুর ঔষধ</a></li>
+                                <li><a href="{{ url('#') }}">হাঁস-মুরগীর ঔষধ</a></li>
+                                <li><a href="{{ url('#') }}">মৎস ঔষধ</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="{{ url('#') }}">কিটনাশক</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                                খাবার/খাদ্য <span class="caret"></span>
+                            </a>
+
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="{{ url('#') }}">গবাদি পশুর খাদ্য</a></li>
+                                <li><a href="{{ url('#') }}">হাঁস-মুরগীর খাদ্য</a></li>
+                                <li><a href="{{ url('#') }}">কৃষি খাদ্য</a></li>
+                                <li><a href="{{ url('#') }}">মৎস খাদ্য</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                                নার্সারী <span class="caret"></span>
+                            </a>
+
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="{{ url('#') }}">ফুল</a></li>
+                                <li><a href="{{ url('#') }}">ফল</a></li>
+                                <li><a href="{{ url('#') }}">ঔষধি</a></li>
+                                <li><a href="{{ url('#') }}">বনজ</a></li>
+                                <li><a href="{{ url('#') }}">ক্যাকটাস</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="{{ url('#') }}">যন্ত্রপাতি</a></li>
+                        <li><a href="{{ url('#') }}">উপকরণ</a></li>
                     @endif
                 </ul>
 

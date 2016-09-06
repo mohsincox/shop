@@ -3,16 +3,19 @@
 @section('content')
     <div class="container">
         <h2>শস্য বীজ</h2>
+        <a href="{{ url("sasso-bij-auth/create") }}" class="btn btn-primary pull-right">
+            <i class="fa fa-plus"></i> Create New
+        </a>
         <div>
             <table class="table table-striped">
                 <thead>
                 <tr>
-                    <th>name</th>
-                    <th>code</th>
-                    <th>quantity</th>
-                    <th>price</th>
-                    <th>description</th>
-                    <th>image</th>
+                    <th>নাম</th>
+                    <th>কোড </th>
+                    <th>পরিমান</th>
+                    <th>মূল্য</th>
+                    <th>বর্ণনা</th>
+                    <th>ছবি</th>
                     <th>edit</th>
                     <th>delete</th>
                 </tr>
@@ -27,12 +30,7 @@
                     <td>{{ $bij->description }}</td>
                     <td>{{ Html::image('uploads/'.$bij->image, null, ['class' => '', 'width' => 50, 'height' => 50]) }}</td>
                     <td>{{ Html::link("sasso-bij-auth/$bij->id/edit", ' Edit', ['class' => 'fa fa-edit btn btn-primary btn-xs']) }}</td>
-                    {{--<td>{!! Html::link("sasso-bij-auth/$bij->id", ' Delete', ['method' => 'delete','class' => 'fa fa-trash btn btn-danger btn-xs']) !!}</td>--}}
-                    {{--<td>--}}
-                        {{--{{ Form::open(['method' => 'DELETE', 'url' => "sasso-bij-auth/$bij->id"]) }}--}}
-                        {{--{{ Form::submit('Delete', ['class' => 'btn btn-danger']) }}--}}
-                        {{--{{ Form::close() }}--}}
-                    {{--</td>--}}
+
                     <td><button type="button" class="btn btn-danger btn-xs fa fa-trash" data-toggle="modal" data-target="#myModal"> Delete</button></td>
                 </tr>
                 @endforeach
@@ -47,10 +45,10 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h4 class="modal-title">Modal Header</h4>
+                        <h4 class="modal-title">DELETE</h4>
                     </div>
                     <div class="modal-body">
-                        <p>Some text in the modal.</p>
+                        <p>Do you want to delete this item?</p>
                     </div>
                     <div class="modal-footer">
                         {{--<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>--}}
