@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Input;
 //use Illuminate\Pagination\Paginator;
 
@@ -50,10 +51,10 @@ class SassoBijController extends Controller
 
         flash()->message($sassoBij->name . ' Successfully Created');
 
-        return redirect()->back();
+        return redirect('sasso-bij-auth');
     }
 
-    public function edit(Request $request, $id)
+    public function edit($id)
     {
         $sassoBij = SassoBij::find($id);
 
@@ -70,6 +71,7 @@ class SassoBijController extends Controller
         }
 
         $sassoBij = SassoBij::find($id);
+        File::delete('uploads/' . $sassoBij->image);
         $sassoBij->update(['image' => $fileName,
                                       'name' => $request->name,
                                       'code' => $request->code,
@@ -83,8 +85,11 @@ class SassoBijController extends Controller
         return redirect('sasso-bij-auth');
     }
 
-    public function destroy(Request $request, $id)
+    public function destroy($id)
     {
+        $sassoBij = SassoBij::find($id);
+        File::delete('uploads/' . $sassoBij->image);
+
         SassoBij::destroy($id);
 
         flash()->error('Successfully Deleted');
