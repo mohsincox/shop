@@ -99,6 +99,27 @@
     </div>
 @endif
 
+@if(isset($kitnashok))
+    <div style="text-align: left">
+        <div class="col-sm-12">
+            <div class="col-sm-6">
+                <div class="magnify">
+                    <div class="large"></div>
+                    {{ Html::image('uploads/'.$kitnashok->image, null, ['class' => 'small', 'width' => 160, 'height' => 160]) }}
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <p>{!!  '<strong>Name: </strong>'. $kitnashok->name  !!}</p>
+                <p>{!!  '<strong>Code: </strong>'. $kitnashok->code  !!}</p>
+                <p>{!!  '<strong>Price: </strong>'. $kitnashok->price  !!}</p>
+            </div>
+
+        </div>
+        <div class="col-sm-12">
+            {!!  '<strong>Description: </strong>'. $kitnashok->description  !!}
+        </div>
+    </div>
+@endif
 
 
 <script>

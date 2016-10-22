@@ -3,6 +3,7 @@ $(function() {
         //$('#hamba').text($(this).val());
         var sasshoBijId = $(this).val();
         var value = 'id='+sasshoBijId;
+        console.log(value);
         var u = $('#url').html();
         //alert(value);
         //console.log(u);
@@ -29,6 +30,29 @@ $(function() {
         //alert(value);
         //console.log(u);
         $url = u+"/show-to-model-shak-sobji-bij";
+        console.log($url);
+        $.ajax({
+            type:"GET",
+            url:$url,
+            data:value
+        }).success(function(data) {
+            $('#hamba').html(data);
+        })
+            .error(function (data) {
+            });
+    });
+});
+
+$(function() {
+    $(document).on('click', '#btnKitnashok', function() {
+        //$('#hamba').text($(this).val());
+        var sasshoBijId = $(this).val();
+        var value = 'id='+sasshoBijId;
+        console.log(value);
+        var u = $('#url').html();
+        //alert(value);
+        //console.log(u);
+        $url = u+"/show-to-model-kitnashok";
         console.log($url);
         $.ajax({
             type:"GET",

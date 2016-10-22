@@ -20,6 +20,7 @@ Route::post('store-customer', 'WelcomeController@storeCustomer');
 Route::get('show-customer', 'WelcomeController@showCustomer');
 Route::get('show-to-model-sasso-bij', 'WelcomeController@showToModelSassoBij');
 Route::get('show-to-model-shak-sobji-bij', 'WelcomeController@showToModelShakSobjiBij');
+Route::get('show-to-model-kitnashok', 'WelcomeController@showToModelKitnashok');
 Route::get('test', 'WelcomeController@test');
 
 Route::auth();
@@ -34,3 +35,4 @@ Route::resource('kitnashok-auth', 'KitnashokController');
 
 Route::get('sasso-bij', 'WithoutAuth\AllItemsController@sassoBij');
 Route::get('shak-sobji-bij', 'WithoutAuth\AllItemsController@shakSobjiBij');
+Route::get('kitnashok', 'WithoutAuth\AllItemsController@kitnashok');

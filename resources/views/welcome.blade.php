@@ -17,6 +17,7 @@
 
     {!! Html::script('assets/js/modernizr-2.6.2.min.js') !!}
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    {{--<script src="js/jquery-1.12.3.min.js"></script>--}}
 
 
 </head>
@@ -130,6 +131,44 @@
         </div>
 
     </div>
+
+</div> <!-- /.our-causes -->
+
+<div class="section-home our-causes fadeIn">
+
+    <div class="container">
+
+
+        <h2 class="title-style-1">কীটনাশক <span class="title-under"></span></h2>
+
+        <div class="row">
+            @foreach($kitnashoks as $key=>$kitnashok)
+                <div class="col-md-2 col-sm-6">
+
+                    <div class="cause fbbox">
+
+                        <div class="zoom_01">{{ Html::image('uploads/'.$kitnashok->image, null, ['class' => 'center-block', 'width' => 160, 'height' => 160]) }}</div>
+                        <h4 class="cause-title fix"><label>{{ $kitnashok->name }}</label></h4>
+
+                        <div class="btn-holder text-center">
+
+                            <button class="btn btn-primary" data-toggle="modal" data-target="#donateModal" id="btnKitnashok" value="{{ $kitnashok->id }}"><strong>বিস্তারিত</strong></button>
+
+                        </div>
+
+                    </div> <!-- /.cause -->
+
+                </div>
+            @endforeach
+
+        </div>
+        <div>
+            <h2 style="text-align: right">{{ Html::link('kitnashok', 'More') }}</h2>
+        </div>
+
+    </div>
+
+
 
 </div> <!-- /.our-causes -->
 
