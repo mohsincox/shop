@@ -2,8 +2,8 @@
 
 @section('content')
     <div class="container">
-        <h2>কীটনাশক</h2>
-        <a href="{{ url("kitnashok-auth/create") }}" class="btn btn-primary pull-right">
+        <h2>bonojo bij</h2>
+        <a href="{{ url("bonojo-bij-auth/create") }}" class="btn btn-primary pull-right">
             <i class="fa fa-plus"></i> Create New
         </a>
         <div>
@@ -21,7 +21,7 @@
                 </tr>
                 </thead>
                 <tbody>
-                @foreach($kitnashoks as $bij)
+                @foreach($bonojoBijs as $bij)
                 <tr>
                     <td>{{ $bij->name }}</td>
                     <td>{{ $bij->code }}</td>
@@ -29,7 +29,7 @@
                     <td>{{ $bij->price }}</td>
                     <td>{{ $bij->description }}</td>
                     <td>{{ Html::image('uploads/'.$bij->image, null, ['class' => '', 'width' => 50, 'height' => 50]) }}</td>
-                    <td>{{ Html::link("kitnashok-auth/$bij->id/edit", ' Edit', ['class' => 'fa fa-edit btn btn-primary btn-xs']) }}</td>
+                    <td>{{ Html::link("bonojo-bij-auth/$bij->id/edit", ' Edit', ['class' => 'fa fa-edit btn btn-primary btn-xs']) }}</td>
 
                     <td><button type="button" class="btn btn-danger btn-xs fa fa-trash" data-toggle="modal" data-target="#myModal-{{ $bij->id }}"> Delete</button></td>
 
@@ -49,7 +49,7 @@
                                 <div class="modal-footer">
                                     {{--<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>--}}
 
-                                    {{ Form::open(['method' => 'DELETE', 'url' => "kitnashok-auth/$bij->id"]) }}
+                                    {{ Form::open(['method' => 'DELETE', 'url' => "bonojo-bij-auth/$bij->id"]) }}
                                     {{ Form::submit('Delete', ['class' => 'btn btn-danger']) }}
                                     {{ Form::close() }}
 
@@ -65,6 +65,6 @@
             </table>
         </div>
 
-        {!! $kitnashoks->render() !!}
+        {!! $bonojoBijs->render() !!}
     </div>
 @endsection

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\WithoutAuth;
 
+use App\Models\Kitnashok;
 use App\Models\SassoBij;
 use App\Models\ShakSobjiBij;
 use Illuminate\Http\Request;
@@ -23,5 +24,12 @@ class AllItemsController extends Controller
         $shakSobjiBijs = ShakSobjiBij::get();
 
         return view('without_auth.shak_sobji_bij', compact('shakSobjiBijs'));
+    }
+
+    public function kitnashok()
+    {
+        $kitnashoks = Kitnashok::get();
+
+        return view('without_auth.kitnashok', compact('kitnashoks'));
     }
 }

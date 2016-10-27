@@ -20,6 +20,7 @@ Route::post('store-customer', 'WelcomeController@storeCustomer');
 Route::get('show-customer', 'WelcomeController@showCustomer');
 Route::get('show-to-model-sasso-bij', 'WelcomeController@showToModelSassoBij');
 Route::get('show-to-model-shak-sobji-bij', 'WelcomeController@showToModelShakSobjiBij');
+Route::get('show-to-model-kitnashok', 'WelcomeController@showToModelKitnashok');
 Route::get('test', 'WelcomeController@test');
 
 Route::auth();
@@ -28,9 +29,18 @@ Route::get('/home', 'HomeController@index');
 
 Route::resource('sasso-bij-auth', 'Bij\SassoBijController');
 Route::resource('shak-sobji-bij-auth', 'Bij\ShakSobjiBijController');
+Route::resource('ful-bij-auth', 'Bij\FulBijController');
+Route::resource('falojo-bij-auth', 'Bij\FalojoBijController');
+Route::resource('osodhi-bij-auth', 'Bij\OsodhiBijController');
+Route::resource('bonojo-bij-auth', 'Bij\BonojoBijController');
+
 Route::resource('kitnashok-auth', 'KitnashokController');
+Route::resource('jontropati-auth', 'JontropatiController');
+Route::resource('opokoron-auth', 'OpokoronController');
+Route::resource('postika-auth', 'PostikaController');
 
 
 
 Route::get('sasso-bij', 'WithoutAuth\AllItemsController@sassoBij');
 Route::get('shak-sobji-bij', 'WithoutAuth\AllItemsController@shakSobjiBij');
+Route::get('kitnashok', 'WithoutAuth\AllItemsController@kitnashok');

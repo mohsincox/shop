@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateSassoBijsTable extends Migration
+class CreateOpokoronsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -12,7 +12,7 @@ class CreateSassoBijsTable extends Migration
      */
     public function up()
     {
-        Schema::create('sasso_bijs', function (Blueprint $table) {
+        Schema::create('opokorons', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
             $table->string('code');
@@ -31,6 +31,6 @@ class CreateSassoBijsTable extends Migration
      */
     public function down()
     {
-        Schema::drop('sasso_bijs');
+        Schema::drop('opokorons');
     }
 }
