@@ -20,7 +20,14 @@ Route::post('store-customer', 'WelcomeController@storeCustomer');
 Route::get('show-customer', 'WelcomeController@showCustomer');
 Route::get('show-to-model-sasso-bij', 'WelcomeController@showToModelSassoBij');
 Route::get('show-to-model-shak-sobji-bij', 'WelcomeController@showToModelShakSobjiBij');
+Route::get('show-to-model-ful-bij', 'WelcomeController@showToModelFulBij');
+Route::get('show-to-model-falojo-bij', 'WelcomeController@showToModelFalojoBij');
+Route::get('show-to-model-osodhi-bij', 'WelcomeController@showToModelOsodhiBij');
+Route::get('show-to-model-bonojo-bij', 'WelcomeController@showToModelBonojoBij');
 Route::get('show-to-model-kitnashok', 'WelcomeController@showToModelKitnashok');
+Route::get('show-to-model-jontropati', 'WelcomeController@showToModelJontropati');
+Route::get('show-to-model-opokoron', 'WelcomeController@showToModelOpokoron');
+Route::get('show-to-model-postika', 'WelcomeController@showToModelPostika');
 Route::get('test', 'WelcomeController@test');
 
 Route::auth();

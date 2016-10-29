@@ -37,13 +37,43 @@
         @if(isset($sassoBij))
 
             background: url('{{ $base.$sassoBij->image }}') no-repeat;
-            {{--background: {{ Html::image('uploads/'.$sassoBij->image) }} no-repeat;--}}/*kaj lore na*/
+            {{--background: {{ Html::image('uploads/'.$sassoBij->image) }} no-repeat;--}}/*kaj kore na*/
         @endif
 
         @if(isset($shakSobjiBij))
             background: url('{{ $base.$shakSobjiBij->image }}') no-repeat;
-            {{--background: {{ Html::image('uploads/'.$sassoBij->image) }} no-repeat;--}}/*kaj lore na*/
+        @endif
 
+        @if(isset($fulBij))
+            background: url('{{ $base.$fulBij->image }}') no-repeat;
+        @endif
+
+        @if(isset($falojoBij))
+            background: url('{{ $base.$falojoBij->image }}') no-repeat;
+        @endif
+
+        @if(isset($osodhiBij))
+            background: url('{{ $base.$osodhiBij->image }}') no-repeat;
+        @endif
+
+        @if(isset($bonojoBij))
+            background: url('{{ $base.$bonojoBij->image }}') no-repeat;
+        @endif
+
+        @if(isset($kitnashok))
+            background: url('{{ $base.$kitnashok->image }}') no-repeat;
+        @endif
+
+        @if(isset($jontropati))
+            background: url('{{ $base.$jontropati->image }}') no-repeat;
+        @endif
+
+        @if(isset($opokoron))
+            background: url('{{ $base.$opokoron->image }}') no-repeat;
+        @endif
+
+        @if(isset($postika))
+            background: url('{{ $base.$postika->image }}') no-repeat;
         @endif
 
 /*hide the glass by default*/
@@ -99,6 +129,94 @@
     </div>
 @endif
 
+@if(isset($fulBij))
+    <div style="text-align: left">
+        <div class="col-sm-12">
+            <div class="col-sm-6">
+                <div class="magnify">
+                    <div class="large"></div>
+                    {{ Html::image('uploads/'.$fulBij->image, null, ['class' => 'small', 'width' => 160, 'height' => 160]) }}
+                </div>
+            </div>
+            <div class="col-sm-6" style="margin-top: 0px">
+                <p>{!!  '<strong>Name: </strong>'. $fulBij->name  !!}</p>
+                <p>{!!  '<strong>Code: </strong>'. $fulBij->code  !!}</p>
+                <p>{!!  '<strong>Price: </strong>'. $fulBij->price  !!}</p>
+            </div>
+
+        </div>
+        <div class="col-sm-12">
+            {!!  '<strong>Description: </strong>'. $fulBij->description  !!}
+        </div>
+    </div>
+@endif
+
+@if(isset($falojoBij))
+    <div style="text-align: left">
+        <div class="col-sm-12">
+            <div class="col-sm-6">
+                <div class="magnify">
+                    <div class="large"></div>
+                    {{ Html::image('uploads/'.$falojoBij->image, null, ['class' => 'small', 'width' => 160, 'height' => 160]) }}
+                </div>
+            </div>
+            <div class="col-sm-6" style="margin-top: 0px">
+                <p>{!!  '<strong>Name: </strong>'. $falojoBij->name  !!}</p>
+                <p>{!!  '<strong>Code: </strong>'. $falojoBij->code  !!}</p>
+                <p>{!!  '<strong>Price: </strong>'. $falojoBij->price  !!}</p>
+            </div>
+
+        </div>
+        <div class="col-sm-12">
+            {!!  '<strong>Description: </strong>'. $falojoBij->description  !!}
+        </div>
+    </div>
+@endif
+
+@if(isset($osodhiBij))
+    <div style="text-align: left">
+        <div class="col-sm-12">
+            <div class="col-sm-6">
+                <div class="magnify">
+                    <div class="large"></div>
+                    {{ Html::image('uploads/'.$osodhiBij->image, null, ['class' => 'small', 'width' => 160, 'height' => 160]) }}
+                </div>
+            </div>
+            <div class="col-sm-6" style="margin-top: 0px">
+                <p>{!!  '<strong>Name: </strong>'. $osodhiBij->name  !!}</p>
+                <p>{!!  '<strong>Code: </strong>'. $osodhiBij->code  !!}</p>
+                <p>{!!  '<strong>Price: </strong>'. $osodhiBij->price  !!}</p>
+            </div>
+
+        </div>
+        <div class="col-sm-12">
+            {!!  '<strong>Description: </strong>'. $osodhiBij->description  !!}
+        </div>
+    </div>
+@endif
+
+@if(isset($bonojoBij))
+    <div style="text-align: left">
+        <div class="col-sm-12">
+            <div class="col-sm-6">
+                <div class="magnify">
+                    <div class="large"></div>
+                    {{ Html::image('uploads/'.$bonojoBij->image, null, ['class' => 'small', 'width' => 160, 'height' => 160]) }}
+                </div>
+            </div>
+            <div class="col-sm-6" style="margin-top: 0px">
+                <p>{!!  '<strong>Name: </strong>'. $bonojoBij->name  !!}</p>
+                <p>{!!  '<strong>Code: </strong>'. $bonojoBij->code  !!}</p>
+                <p>{!!  '<strong>Price: </strong>'. $bonojoBij->price  !!}</p>
+            </div>
+
+        </div>
+        <div class="col-sm-12">
+            {!!  '<strong>Description: </strong>'. $bonojoBij->description  !!}
+        </div>
+    </div>
+@endif
+
 @if(isset($kitnashok))
     <div style="text-align: left">
         <div class="col-sm-12">
@@ -117,6 +235,72 @@
         </div>
         <div class="col-sm-12">
             {!!  '<strong>বর্ণনা: </strong>'. $kitnashok->description  !!}
+        </div>
+    </div>
+@endif
+
+@if(isset($jontropati))
+    <div style="text-align: left">
+        <div class="col-sm-12">
+            <div class="col-sm-6">
+                <div class="magnify">
+                    <div class="large"></div>
+                    {{ Html::image('uploads/'.$jontropati->image, null, ['class' => 'small', 'width' => 160, 'height' => 160]) }}
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <p>{!!  '<strong>পণ্যের নাম: </strong>'. $jontropati->name  !!}</p>
+                <p>{!!  '<strong>পণ্যের কোড : </strong>'. $jontropati->code  !!}</p>
+                <p>{!!  '<strong>পণ্যের মূল্য: </strong>'. $jontropati->price  !!}</p>
+            </div>
+
+        </div>
+        <div class="col-sm-12">
+            {!!  '<strong>বর্ণনা: </strong>'. $jontropati->description  !!}
+        </div>
+    </div>
+@endif
+
+@if(isset($opokoron))
+    <div style="text-align: left">
+        <div class="col-sm-12">
+            <div class="col-sm-6">
+                <div class="magnify">
+                    <div class="large"></div>
+                    {{ Html::image('uploads/'.$opokoron->image, null, ['class' => 'small', 'width' => 160, 'height' => 160]) }}
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <p>{!!  '<strong>পণ্যের নাম: </strong>'. $opokoron->name  !!}</p>
+                <p>{!!  '<strong>পণ্যের কোড : </strong>'. $opokoron->code  !!}</p>
+                <p>{!!  '<strong>পণ্যের মূল্য: </strong>'. $opokoron->price  !!}</p>
+            </div>
+
+        </div>
+        <div class="col-sm-12">
+            {!!  '<strong>বর্ণনা: </strong>'. $opokoron->description  !!}
+        </div>
+    </div>
+@endif
+
+@if(isset($postika))
+    <div style="text-align: left">
+        <div class="col-sm-12">
+            <div class="col-sm-6">
+                <div class="magnify">
+                    <div class="large"></div>
+                    {{ Html::image('uploads/'.$postika->image, null, ['class' => 'small', 'width' => 160, 'height' => 160]) }}
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <p>{!!  '<strong>পণ্যের নাম: </strong>'. $postika->name  !!}</p>
+                <p>{!!  '<strong>পণ্যের কোড : </strong>'. $postika->code  !!}</p>
+                <p>{!!  '<strong>পণ্যের মূল্য: </strong>'. $postika->price  !!}</p>
+            </div>
+
+        </div>
+        <div class="col-sm-12">
+            {!!  '<strong>বর্ণনা: </strong>'. $postika->description  !!}
         </div>
     </div>
 @endif

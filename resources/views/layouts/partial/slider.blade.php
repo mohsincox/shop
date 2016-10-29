@@ -17,8 +17,8 @@
 
                 <div class="carousel-caption">
 
-                    <h2 class="carousel-title bounceInDown animated slow">Because they need your help</h2>
-                    <h4 class="carousel-subtitle bounceInUp animated slow ">Do not let them down</h4>
+                    <h2 class="carousel-title bounceInDown animated slow">আমার সোনার বাংলা আমি তোমায় ভালোবাসি</h2>
+                    <h4 class="carousel-subtitle bounceInUp animated slow ">আমার সোনার বাংলা</h4>
                     <a href="#" class="btn btn-lg btn-secondary hidden-xs bounceInUp animated slow" data-toggle="modal" data-target="#donateModal">Item Kinon</a>
 
                 </div> <!-- /.carousel-caption -->
@@ -36,8 +36,8 @@
 
                 <div class="carousel-caption">
 
-                    <h2 class="carousel-title bounceInDown animated slow">Together we can improve their lives</h2>
-                    <h4 class="carousel-subtitle bounceInUp animated slow"> So let's do it !</h4>
+                    <h2 class="carousel-title bounceInDown animated slow" style="color: blue;">আমার সোনার বাংলা আমার সোনার বাংলা</h2>
+                    <h4 class="carousel-subtitle bounceInUp animated slow" style="color: red;">আমি তোমায় ভালোবাসি</h4>
                     <a href="#" class="btn btn-lg btn-secondary hidden-xs bounceInUp animated" data-toggle="modal" data-target="#donateModal">Item kinon</a>
 
                 </div> <!-- /.carousel-caption -->
@@ -57,8 +57,8 @@
 
                 <div class="carousel-caption">
 
-                    <h2 class="carousel-title bounceInDown animated slow" >A penny is a lot of money, if you have not got a penny.</h2>
-                    <h4 class="carousel-subtitle bounceInUp animated slow">You can make the diffrence !</h4>
+                    <h2 class="carousel-title bounceInDown animated slow" style="color: #D1FF33">আমার সোনার বাংলা আমি তোমায় ভালোবাসি আমার সোনার বাংলা আমি তোমায় ভালোবাসি</h2>
+                    <h4 class="carousel-subtitle bounceInUp animated slow" style="color: #33B2FF  ">You can make the diffrence !</h4>
                     <a href="#" class="btn btn-lg btn-secondary hidden-xs bounceInUp animated slow" data-toggle="modal" data-target="#donateModal">Item kinon</a>
 
                 </div> <!-- /.carousel-caption -->
