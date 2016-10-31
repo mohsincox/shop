@@ -1,4 +1,8 @@
-{!! Form::open(['url' => 'shak-sobji-bij-auth', 'method' => 'post', 'enctype' => 'multipart/form-data']) !!}
+@if (isset($shakSobjiBij))
+    {!! Form::model($shakSobjiBij, ['url' => 'shak-sobji-bij-auth/'.$shakSobjiBij->id, 'method' => 'put', 'enctype' => 'multipart/form-data']) !!}
+@else
+    {!! Form::open(['url' => 'shak-sobji-bij-auth', 'method' => 'post', 'enctype' => 'multipart/form-data']) !!}
+@endif
 
 <div class="form-group" {{ $errors->has('name') ? 'has error' : '' }}>
     {!! Form::label('name', 'নাম', ['class' => 'col-sm-3 control-label']) !!}
@@ -53,7 +57,7 @@
 <div class="form-group" {{ $errors->has('image') ? 'has error' : '' }}>
     {!! Form::label('image', 'ছবি', ['class' => 'col-sm-3 control-label']) !!}
     <div class="col-sm-9">
-        {!! Form::file('image', ['class' => 'form-control', 'onchange' => 'readURL(this)']) !!}
+        {!! Form::file('image', ['class' => 'form-control', 'onchange' => 'readURL(this)', 'required']) !!}
     </div>
     {{ Html::image('#', 'your image',['id' => 'blah']) }}
 </div>

@@ -10,7 +10,7 @@ use App\Models\Postika;
 use App\Models\SassoBij;
 use App\Models\ShakSobjiBij;
 use App\Models\FulBij;
-use App\Models\FalojoBIj;
+use App\Models\FalojoBij;
 use App\Models\OsodhiBij;
 use App\Models\BonojoBij;
 use Illuminate\Http\Request;

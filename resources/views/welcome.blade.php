@@ -78,6 +78,11 @@
                     <div class="cause fbbox">
                         <div class="zoom_01">{{ Html::image('uploads/'.$shakSobjiBij->image, null, ['class' => 'center-block', 'width' => 160, 'height' => 160]) }}</div>
                         <h4 class="cause-title fix"><label>{{ $shakSobjiBij->name }}</label></h4>
+                        <ul style="display: flex; justify-content: space-between; padding: 5px; margin-bottom: -15px; margin-top: -15px;">
+                            <li style="list-style: none;" class="cause-title fix">{{ $shakSobjiBij->quantity }}</li>
+                            <li style="list-style: none;" class="cause-title fix">{{ $shakSobjiBij->price }}</li>
+                        </ul>
+
 
                         <div class="btn-holder text-center">
 

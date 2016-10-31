@@ -1,8 +1,8 @@
 <footer class="main-footer">
 
-    <div class="footer-top">
+    {{--<div class="footer-top">--}}
 
-    </div>
+    {{--</div>--}}
 
 
     <div class="footer-main">
