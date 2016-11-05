@@ -5,7 +5,7 @@
 
 
 
-        <div class="navbar-main">
+        <div class="navbar-main" style="padding: 20px;">
 
             <div class="container">
 
@@ -19,7 +19,7 @@
 
                     </button>
 
-                    <a class="navbar-brand" style="margin-top: -14px" href="">{{ HTML::image('assets/images/logo.jpg') }}</a>
+                    <a class="navbar-brand" style="margin-top: -35px" href="{{ url('/') }}">{{ HTML::image('assets/images/logo.jpg') }}</a>
 
                 </div>
 
@@ -28,11 +28,10 @@
                     <ul class="nav navbar-nav">
 
 
-                        <li>{!! Html::link('/', 'হোম ') !!}</li>
-                        <li class="has-child">{!! Html::link('#', 'বীজ') !!}
+                        <li class="has-child">{!! Html::link('#', 'বীজ', ['style' => 'font-weight: bold;']) !!}
 
                             <ul class="submenu">
-                                <li class="submenu-item">{!! Html::link('sasso-bij', 'শস্য বীজ') !!}</li>
+                                <li class="submenu-item" style="width: 170px;">{!! Html::link('sasso-bij', 'শস্য বীজ') !!}</li>
                                 <li class="submenu-item">{!! Html::link('shak-sobji-bij', 'শাকসবজি বীজ') !!}</li>
                                 <li class="submenu-item">{!! Html::link('#', 'ফুল বীজ') !!}</li>
                                 <li class="submenu-item">{!! Html::link('#', 'ফলজ বীজ') !!}</li>
@@ -41,17 +40,17 @@
                             </ul>
 
                         </li>
-                        <li class="has-child">{!! Html::link('#', 'ঔষধ') !!}
+                        <li class="has-child">{!! Html::link('#', 'ঔষধ', ['style' => 'font-weight: bold;']) !!}
 
-                            <ul class="submenu">
+                            <ul class="submenu" >
                                 <li class="submenu-item">{!! Html::link('#', 'গবাদি পশুর ঔষধ') !!}</li>
-                                <li class="submenu-item">{!! Html::link('#', 'হাঁস-মুরগীর ঔষধ') !!}</li>
+                                <li class="submenu-item">{!! Html::link('#', 'হাঁস-মুরগীর ঔষধ ') !!}</li>
                                 <li class="submenu-item">{!! Html::link('#', 'মৎস ঔষধ') !!}</li>
                             </ul>
 
                         </li>
-                        <li>{!! Html::link('#', 'কিটনাশক') !!}</li>
-                        <li class="has-child">{!! Html::link('#', 'খাবার/খাদ্য') !!}
+                        <li>{!! Html::link('#', 'কিটনাশক', ['style' => 'font-weight: bold;']) !!}</li>
+                        <li class="has-child">{!! Html::link('#', 'খাবার/খাদ্য', ['style' => 'font-weight: bold;']) !!}
 
                             <ul class="submenu">
                                 <li class="submenu-item">{!! Html::link('#', 'গবাদি পশুর খাদ্য') !!}</li>
@@ -61,7 +60,7 @@
                             </ul>
 
                         </li>
-                        <li class="has-child">{!! Html::link('#', 'নার্সারী') !!}
+                        <li class="has-child">{!! Html::link('#', 'নার্সারী', ['style' => 'font-weight: bold;']) !!}
 
                             <ul class="submenu">
                                 <li class="submenu-item">{!! Html::link('#', 'ফুল') !!}</li>
@@ -72,9 +71,9 @@
                             </ul>
 
                         </li>
-                        <li>{!! Html::link('#', 'যন্ত্রপাতি') !!}</li>
-                        <li>{!! Html::link('#', 'উপকরণ') !!}</li>
-                        <li>{!! Html::link('#', 'ঠিকানা/যোগাযোগ  ') !!}</li>
+                        <li>{!! Html::link('#', 'যন্ত্রপাতি', ['style' => 'font-weight: bold;']) !!}</li>
+                        <li>{!! Html::link('#', 'উপকরণ', ['style' => 'font-weight: bold;']) !!}</li>
+                        <li>{!! Html::link('#', 'ঠিকানা/যোগাযোগ  ', ['style' => 'font-weight: bold;']) !!}</li>
 
 
                     </ul>

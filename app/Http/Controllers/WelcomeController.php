@@ -22,7 +22,7 @@ class WelcomeController extends Controller
     public function index()
     {
         $sassoBijs = SassoBij::take(1)->get();
-        $shakSobjiBijs = ShakSobjiBij::take(1)->get();
+        $shakSobjiBijs = ShakSobjiBij::take(3)->get();
         $fulBijs = FulBij::take(1)->get();
         $falojoBijs = FalojoBIj::take(1)->get();
         $osodhiBijs = OsodhiBij::take(1)->get();

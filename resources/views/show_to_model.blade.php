@@ -94,15 +94,12 @@
                     {{ Html::image('uploads/'.$sassoBij->image, null, ['class' => 'small', 'width' => 160, 'height' => 160]) }}
                 </div>
             </div>
-            <div class="col-sm-6" style="margin-top: 0px">
-                <p>{!!  '<strong>Name: </strong>'. $sassoBij->name  !!}</p>
-                <p>{!!  '<strong>Code: </strong>'. $sassoBij->code  !!}</p>
-                <p>{!!  '<strong>Price: </strong>'. $sassoBij->price  !!}</p>
+            <div class="col-sm-6" style="margin-top: 40px">
+                <p>{!!  '<strong>পণ্যের নাম: </strong>'. $sassoBij->name  !!}</p>
+                <p>{!!  '<strong>পণ্যের কোড: </strong>'. $sassoBij->code  !!}</p>
+                <p>{!!  '<strong>পণ্যের মূল্য: </strong>'. $sassoBij->price  !!}</p>
+                <p>{!!  '<strong>পণ্যের বিবরণ: </strong>'. $sassoBij->description  !!}</p>
             </div>
-
-        </div>
-        <div class="col-sm-12">
-            {!!  '<strong>Description: </strong>'. $sassoBij->description  !!}
         </div>
     </div>
 @endif
@@ -116,15 +113,12 @@
                     {{ Html::image('uploads/'.$shakSobjiBij->image, null, ['class' => 'small', 'width' => 160, 'height' => 160]) }}
                 </div>
             </div>
-            <div class="col-sm-6">
-                <p>{!!  '<strong>Name: </strong>'. $shakSobjiBij->name  !!}</p>
-                <p>{!!  '<strong>Code: </strong>'. $shakSobjiBij->code  !!}</p>
-                <p>{!!  '<strong>Price: </strong>'. $shakSobjiBij->price  !!}</p>
+            <div class="col-sm-6" style="margin-top: 40px;">
+                <p>{!!  '<strong>পণ্যের নাম: </strong>'. $shakSobjiBij->name  !!}</p>
+                <p>{!!  '<strong>পণ্যের কোড: </strong>'. $shakSobjiBij->code  !!}</p>
+                <p>{!!  '<strong>পণ্যের মূল্য: </strong>'. $shakSobjiBij->price  !!}</p>
+                <p>{!!  '<strong>পণ্যের বিবরণ: </strong>'. $shakSobjiBij->description  !!}</p>
             </div>
-
-        </div>
-        <div class="col-sm-12">
-            {!!  '<strong>Description: </strong>'. $shakSobjiBij->description  !!}
         </div>
     </div>
 @endif
@@ -138,15 +132,12 @@
                     {{ Html::image('uploads/'.$fulBij->image, null, ['class' => 'small', 'width' => 160, 'height' => 160]) }}
                 </div>
             </div>
-            <div class="col-sm-6" style="margin-top: 0px">
-                <p>{!!  '<strong>Name: </strong>'. $fulBij->name  !!}</p>
-                <p>{!!  '<strong>Code: </strong>'. $fulBij->code  !!}</p>
-                <p>{!!  '<strong>Price: </strong>'. $fulBij->price  !!}</p>
+            <div class="col-sm-6" style="margin-top: 40px">
+                <p>{!!  '<strong>পণ্যের নাম: </strong>'. $fulBij->name  !!}</p>
+                <p>{!!  '<strong>পণ্যের কোড: </strong>'. $fulBij->code  !!}</p>
+                <p>{!!  '<strong>পণ্যের মূল্য: </strong>'. $fulBij->price  !!}</p>
+                <p>{!!  '<strong>পণ্যের বিবরণ: </strong>'. $fulBij->description  !!}</p>
             </div>
-
-        </div>
-        <div class="col-sm-12">
-            {!!  '<strong>Description: </strong>'. $fulBij->description  !!}
         </div>
     </div>
 @endif
@@ -160,15 +151,12 @@
                     {{ Html::image('uploads/'.$falojoBij->image, null, ['class' => 'small', 'width' => 160, 'height' => 160]) }}
                 </div>
             </div>
-            <div class="col-sm-6" style="margin-top: 0px">
-                <p>{!!  '<strong>Name: </strong>'. $falojoBij->name  !!}</p>
-                <p>{!!  '<strong>Code: </strong>'. $falojoBij->code  !!}</p>
-                <p>{!!  '<strong>Price: </strong>'. $falojoBij->price  !!}</p>
+            <div class="col-sm-6" style="margin-top: 40px">
+                <p>{!!  '<strong>পণ্যের নাম: </strong>'. $falojoBij->name  !!}</p>
+                <p>{!!  '<strong>পণ্যের কোড: </strong>'. $falojoBij->code  !!}</p>
+                <p>{!!  '<strong>পণ্যের মূল্য: </strong>'. $falojoBij->price  !!}</p>
+                <p>{!!  '<strong>পণ্যের বিবরণ: </strong>'. $falojoBij->description  !!}</p>
             </div>
-
-        </div>
-        <div class="col-sm-12">
-            {!!  '<strong>Description: </strong>'. $falojoBij->description  !!}
         </div>
     </div>
 @endif
@@ -182,15 +170,12 @@
                     {{ Html::image('uploads/'.$osodhiBij->image, null, ['class' => 'small', 'width' => 160, 'height' => 160]) }}
                 </div>
             </div>
-            <div class="col-sm-6" style="margin-top: 0px">
-                <p>{!!  '<strong>Name: </strong>'. $osodhiBij->name  !!}</p>
-                <p>{!!  '<strong>Code: </strong>'. $osodhiBij->code  !!}</p>
-                <p>{!!  '<strong>Price: </strong>'. $osodhiBij->price  !!}</p>
+            <div class="col-sm-6" style="margin-top: 40px">
+                <p>{!!  '<strong>পণ্যের নাম: </strong>'. $osodhiBij->name  !!}</p>
+                <p>{!!  '<strong>পণ্যের কোড: </strong>'. $osodhiBij->code  !!}</p>
+                <p>{!!  '<strong>পণ্যের মূল্য: </strong>'. $osodhiBij->price  !!}</p>
+                <p>{!!  '<strong>পণ্যের বিবরণ: </strong>'. $osodhiBij->description  !!}</p>
             </div>
-
-        </div>
-        <div class="col-sm-12">
-            {!!  '<strong>Description: </strong>'. $osodhiBij->description  !!}
         </div>
     </div>
 @endif
@@ -204,15 +189,12 @@
                     {{ Html::image('uploads/'.$bonojoBij->image, null, ['class' => 'small', 'width' => 160, 'height' => 160]) }}
                 </div>
             </div>
-            <div class="col-sm-6" style="margin-top: 0px">
-                <p>{!!  '<strong>Name: </strong>'. $bonojoBij->name  !!}</p>
-                <p>{!!  '<strong>Code: </strong>'. $bonojoBij->code  !!}</p>
-                <p>{!!  '<strong>Price: </strong>'. $bonojoBij->price  !!}</p>
+            <div class="col-sm-6" style="margin-top: 40px">
+                <p>{!!  '<strong>পণ্যের নাম: </strong>'. $bonojoBij->name  !!}</p>
+                <p>{!!  '<strong>পণ্যের কোড: </strong>'. $bonojoBij->code  !!}</p>
+                <p>{!!  '<strong>পণ্যের মূল্য: </strong>'. $bonojoBij->price  !!}</p>
+                <p>{!!  '<strong>পণ্যের বিবরণ: </strong>'. $bonojoBij->description  !!}</p>
             </div>
-
-        </div>
-        <div class="col-sm-12">
-            {!!  '<strong>Description: </strong>'. $bonojoBij->description  !!}
         </div>
     </div>
 @endif
@@ -226,15 +208,12 @@
                     {{ Html::image('uploads/'.$kitnashok->image, null, ['class' => 'small', 'width' => 160, 'height' => 160]) }}
                 </div>
             </div>
-            <div class="col-sm-6">
+            <div class="col-sm-6" style="margin-top: 40px;">
                 <p>{!!  '<strong>পণ্যের নাম: </strong>'. $kitnashok->name  !!}</p>
-                <p>{!!  '<strong>পণ্যের কোড : </strong>'. $kitnashok->code  !!}</p>
+                <p>{!!  '<strong>পণ্যের কোড: </strong>'. $kitnashok->code  !!}</p>
                 <p>{!!  '<strong>পণ্যের মূল্য: </strong>'. $kitnashok->price  !!}</p>
+                <p>{!!  '<strong>পণ্যের বিবরণ: </strong>'. $kitnashok->description  !!}</p>
             </div>
-
-        </div>
-        <div class="col-sm-12">
-            {!!  '<strong>বর্ণনা: </strong>'. $kitnashok->description  !!}
         </div>
     </div>
 @endif
@@ -248,15 +227,12 @@
                     {{ Html::image('uploads/'.$jontropati->image, null, ['class' => 'small', 'width' => 160, 'height' => 160]) }}
                 </div>
             </div>
-            <div class="col-sm-6">
+            <div class="col-sm-6" style="margin-top: 40px;">
                 <p>{!!  '<strong>পণ্যের নাম: </strong>'. $jontropati->name  !!}</p>
-                <p>{!!  '<strong>পণ্যের কোড : </strong>'. $jontropati->code  !!}</p>
+                <p>{!!  '<strong>পণ্যের কোড: </strong>'. $jontropati->code  !!}</p>
                 <p>{!!  '<strong>পণ্যের মূল্য: </strong>'. $jontropati->price  !!}</p>
+                <p>{!!  '<strong>পণ্যের বিবরণ: </strong>'. $jontropati->description  !!}</p>
             </div>
-
-        </div>
-        <div class="col-sm-12">
-            {!!  '<strong>বর্ণনা: </strong>'. $jontropati->description  !!}
         </div>
     </div>
 @endif
@@ -270,15 +246,12 @@
                     {{ Html::image('uploads/'.$opokoron->image, null, ['class' => 'small', 'width' => 160, 'height' => 160]) }}
                 </div>
             </div>
-            <div class="col-sm-6">
+            <div class="col-sm-6" style="margin-top: 40px;">
                 <p>{!!  '<strong>পণ্যের নাম: </strong>'. $opokoron->name  !!}</p>
-                <p>{!!  '<strong>পণ্যের কোড : </strong>'. $opokoron->code  !!}</p>
+                <p>{!!  '<strong>পণ্যের কোড: </strong>'. $opokoron->code  !!}</p>
                 <p>{!!  '<strong>পণ্যের মূল্য: </strong>'. $opokoron->price  !!}</p>
+                <p>{!!  '<strong>পণ্যের বিবরণ: </strong>'. $opokoron->description  !!}</p>
             </div>
-
-        </div>
-        <div class="col-sm-12">
-            {!!  '<strong>বর্ণনা: </strong>'. $opokoron->description  !!}
         </div>
     </div>
 @endif
@@ -292,15 +265,12 @@
                     {{ Html::image('uploads/'.$postika->image, null, ['class' => 'small', 'width' => 160, 'height' => 160]) }}
                 </div>
             </div>
-            <div class="col-sm-6">
+            <div class="col-sm-6" style="margin-top: 40px;">
                 <p>{!!  '<strong>পণ্যের নাম: </strong>'. $postika->name  !!}</p>
-                <p>{!!  '<strong>পণ্যের কোড : </strong>'. $postika->code  !!}</p>
+                <p>{!!  '<strong>পণ্যের কোড: </strong>'. $postika->code  !!}</p>
                 <p>{!!  '<strong>পণ্যের মূল্য: </strong>'. $postika->price  !!}</p>
+                <p>{!!  '<strong>পণ্যের বিবরণ: </strong>'. $postika->description  !!}</p>
             </div>
-
-        </div>
-        <div class="col-sm-12">
-            {!!  '<strong>বর্ণনা: </strong>'. $postika->description  !!}
         </div>
     </div>
 @endif

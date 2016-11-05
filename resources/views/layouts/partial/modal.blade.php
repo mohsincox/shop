@@ -22,8 +22,8 @@
                         <form action="store-customer" class="ajax-for" method="post">
                             <input type="hidden" name="_token" value="<?php echo csrf_token(); ?>">
                             <div class="form-group" {{ $errors->has('customer_name') ? 'has error' : '' }}>
-                                {!! Form::label('customer_name', 'কাস্টমারের নাম:', ['class' => 'col-sm-2 control-label']) !!}
-                                <div class="col-sm-10">
+                                {!! Form::label('customer_name', 'কাস্টমারের নাম:', ['class' => 'col-sm-3 control-label']) !!}
+                                <div class="col-sm-9">
                                     {!! Form::text('customer_name', null,['class' => 'form-control', 'placeholder' => 'কাস্টমারের নাম', 'autocomplete' => 'off']) !!}
                                     <span class="help-block text-danger">
                                             {{ $errors->first('customer_name') }}
@@ -32,8 +32,8 @@
                             </div>
 
                             <div class="form-group" {{ $errors->has('product_name') ? 'has error' : '' }}>
-                                {!! Form::label('product_name', 'পণ্যের নাম:', ['class' => 'col-sm-2 control-label']) !!}
-                                <div class="col-sm-10">
+                                {!! Form::label('product_name', 'পণ্যের নাম:', ['class' => 'col-sm-3 control-label']) !!}
+                                <div class="col-sm-9">
                                     {!! Form::text('product_name', null,['class' => 'form-control', 'placeholder' => 'পণ্যের নাম', 'autocomplete' => 'off']) !!}
                                     <span class="help-block text-danger">
                                             {{ $errors->first('product_name') }}
@@ -42,8 +42,8 @@
                             </div>
 
                             <div class="form-group" {{ $errors->has('quantity') ? 'has error' : '' }}>
-                                {!! Form::label('quantity', 'পরিমান:', ['class' => 'col-sm-2 control-label']) !!}
-                                <div class="col-sm-10">
+                                {!! Form::label('quantity', 'পরিমান:', ['class' => 'col-sm-3 control-label']) !!}
+                                <div class="col-sm-9">
                                     {!! Form::text('quantity', null,['class' => 'form-control', 'placeholder' => 'পরিমান', 'autocomplete' => 'off']) !!}
                                     <span class="help-block text-danger">
                                             {{ $errors->first('quantity') }}
@@ -52,8 +52,8 @@
                             </div>
 
                             <div class="form-group" {{ $errors->has('mobile') ? 'has error' : '' }}>
-                                {!! Form::label('mobile', 'মোবাইল নম্বর:', ['class' => 'col-sm-2 control-label']) !!}
-                                <div class="col-sm-10">
+                                {!! Form::label('mobile', 'মোবাইল নম্বর:', ['class' => 'col-sm-3 control-label']) !!}
+                                <div class="col-sm-9">
                                     {!! Form::text('mobile', null,['class' => 'form-control', 'placeholder' => 'মোবাইল নম্বর', 'autocomplete' => 'off']) !!}
                                     <span class="help-block text-danger">
                                             {{ $errors->first('mobile') }}
@@ -62,8 +62,8 @@
                             </div>
 
                             <div class="form-group" {{ $errors->has('address') ? 'has error' : '' }}>
-                                {!! Form::label('address', 'ঠিকানা:', ['class' => 'col-sm-2 control-label']) !!}
-                                <div class="col-sm-10">
+                                {!! Form::label('address', 'ঠিকানা:', ['class' => 'col-sm-3 control-label']) !!}
+                                <div class="col-sm-9">
                                     {!! Form::textarea('address', null,['class' => 'form-control', 'placeholder' => 'ঠিকানা', 'autocomplete' => 'off', 'rows' => 3, 'required']) !!}
                                     <span class="help-block text-danger">
                                             {{ $errors->first('address') }}

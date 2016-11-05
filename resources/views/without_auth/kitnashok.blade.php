@@ -2,13 +2,13 @@
 <html class="no-js">
 <head>
     <meta charset="utf-8">
-    <title>Shop</title>
+    <title>কৃষি হাট</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Dosis:400,700' rel='stylesheet' type='text/css'>
-
+    <link rel='shortcut icon' type='image/x-icon' href='assets/images/favicon.ico'/>
     <!-- Bootsrap -->
     {{--<link rel="stylesheet" href="assets/css/bootstrap.min.css">--}}
     {!! Html::style('assets/css/bootstrap.min.css') !!}

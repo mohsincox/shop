@@ -2,14 +2,14 @@
 <html class="no-js">
 <head>
     <meta charset="utf-8">
-    <title>Shop</title>
+    <title>কৃষি হাট</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Dosis:400,700' rel='stylesheet' type='text/css'>
 
-
+    <link rel='shortcut icon' type='image/x-icon' href='assets/images/favicon.ico'/>
     {!! Html::style('assets/css/bootstrap.min.css') !!}
     {!! Html::style('assets/css/font-awesome.min.css') !!}
     {!! Html::style('assets/css/owl.carousel.css') !!}
@@ -54,7 +54,7 @@
 
         @include('layouts.partial.search_mobile')
         <h2 class="title-style-1"> বীজ <span class="title-under"></span></h2>
-        {{ Html::link('kitnashok', 'bij আরও dekhon', ['class' => 'btn btn-primary pull-right', 'style' => 'margin-top: -50px;']) }}
+        {{ Html::link('kitnashok', 'আরও বীজ দেখুন', ['class' => 'btn btn-primary pull-right', 'style' => 'margin-top: -50px; font-weight: bold;']) }}
         <div class="row">
 
             <div class="col-md-2 col-sm-6">
@@ -64,9 +64,9 @@
                     <h4 class="cause-title fix"><label>{{ $sassoBij->name }}</label></h4>
 
                     <ul style="display: flex; justify-content: space-between; padding: 5px; margin-bottom: -15px; margin-top: -15px;">
-                            <li style="list-style: none;" class="cause-title fix">{{ $sassoBij->quantity }}</li>
-                            <li style="list-style: none;" class="cause-title fix">{{ $sassoBij->price }}</li>
-                        </ul>
+                        <li style="list-style: none;" class="cause-title fix">{{ $sassoBij->quantity }}</li>
+                        <li style="list-style: none;" class="cause-title fix">{{ $sassoBij->price }}</li>
+                    </ul>
 
                     <div class="btn-holder text-center">
 
@@ -178,19 +178,11 @@
                         <button class="btn btn-primary" data-toggle="modal" data-target="#donateModal" id="bonojo" value="{{ $bonojoBij->id }}"><strong>বিস্তারিত</strong></button>
 
                     </div>
-
                 </div> <!-- /.cause -->
                 @endforeach
             </div>
-
-
         </div>
-         <div>
-            <p style="text-align: right">{{ Html::link('kitnashok', 'আরও') }}</p>
-        </div>
-
     </div>
-
 </div> <!-- /.our-causes -->
 
 
@@ -199,8 +191,8 @@
     <div class="container">
 
 
-        <h2 class="title-style-1">কীটনাশক <span class="title-under"></span></h2>
-
+        <h2 class="title-style-1" style="margin-top: -40px;">কীটনাশক <span class="title-under"></span></h2>
+        {{ Html::link('kitnashok', 'আরও কীটনাশক দেখুন', ['class' => 'btn btn-primary pull-right', 'style' => 'margin-top: -50px; font-weight: bold;']) }}
         <div class="row">
             @foreach($kitnashoks as $key=>$kitnashok)
                 <div class="col-md-2 col-sm-6">
@@ -209,6 +201,11 @@
 
                         <div class="zoom_01">{{ Html::image('uploads/'.$kitnashok->image, null, ['class' => 'center-block', 'width' => 160, 'height' => 160]) }}</div>
                         <h4 class="cause-title fix"><label>{{ $kitnashok->name }}</label></h4>
+
+                        <ul style="display: flex; justify-content: space-between; padding: 5px; margin-bottom: -15px; margin-top: -15px;">
+                            <li style="list-style: none;" class="cause-title fix">{{ $kitnashok->quantity }}</li>
+                            <li style="list-style: none;" class="cause-title fix">{{ $kitnashok->price }}</li>
+                        </ul>
 
                         <div class="btn-holder text-center">
 
@@ -222,10 +219,7 @@
             @endforeach
 
         </div>
-        <div>
-            <h2 style="text-align: right">{{ Html::link('kitnashok', 'আরও') }}</h2>
-        </div>
-
+        
     </div>
 
 
@@ -237,8 +231,8 @@
     <div class="container">
 
 
-        <h2 class="title-style-1">Jontropati <span class="title-under"></span></h2>
-
+        <h2 class="title-style-1"  style="margin-top: -40px;">যন্ত্রপাতি  <span class="title-under"></span></h2>
+        {{ Html::link('kitnashok', 'আরও যন্ত্রপাতি দেখুন', ['class' => 'btn btn-primary pull-right', 'style' => 'margin-top: -50px; font-weight: bold;']) }}
         <div class="row">
             @foreach($jontropatis as $key=>$jontropati)
                 <div class="col-md-2 col-sm-6">
@@ -247,7 +241,10 @@
 
                         <div class="zoom_01">{{ Html::image('uploads/'.$jontropati->image, null, ['class' => 'center-block', 'width' => 160, 'height' => 160]) }}</div>
                         <h4 class="cause-title fix"><label>{{ $jontropati->name }}</label></h4>
-
+                        <ul style="display: flex; justify-content: space-between; padding: 5px; margin-bottom: -15px; margin-top: -15px;">
+                            <li style="list-style: none;" class="cause-title fix">{{ $jontropati->quantity }}</li>
+                            <li style="list-style: none;" class="cause-title fix">{{ $jontropati->price }}</li>
+                        </ul>
                         <div class="btn-holder text-center">
 
                             <button class="btn btn-primary" data-toggle="modal" data-target="#donateModal" id="ttt" value="{{ $jontropati->id }}"><strong>বিস্তারিত</strong></button>
@@ -260,10 +257,6 @@
             @endforeach
 
         </div>
-        <div>
-            <h2 style="text-align: right">{{ Html::link('jontropati', 'আরও') }}</h2>
-        </div>
-
     </div>
 </div> <!-- /.our-causes -->
 
@@ -272,8 +265,8 @@
     <div class="container">
 
 
-        <h2 class="title-style-1">Opokoron <span class="title-under"></span></h2>
-
+        <h2 class="title-style-1" style="margin-top: -40px;">উপকরণ <span class="title-under"></span></h2>
+        {{ Html::link('kitnashok', 'আরও উপকরণ দেখুন', ['class' => 'btn btn-primary pull-right', 'style' => 'margin-top: -50px; font-weight: bold;']) }}
         <div class="row">
             @foreach($opokorons as $key=>$opokoron)
                 <div class="col-md-2 col-sm-6">
@@ -282,7 +275,10 @@
 
                         <div class="zoom_01">{{ Html::image('uploads/'.$opokoron->image, null, ['class' => 'center-block', 'width' => 160, 'height' => 160]) }}</div>
                         <h4 class="cause-title fix"><label>{{ $opokoron->name }}</label></h4>
-
+                        <ul style="display: flex; justify-content: space-between; padding: 5px; margin-bottom: -15px; margin-top: -15px;">
+                            <li style="list-style: none;" class="cause-title fix">{{ $opokoron->quantity }}</li>
+                            <li style="list-style: none;" class="cause-title fix">{{ $opokoron->price }}</li>
+                        </ul>
                         <div class="btn-holder text-center">
 
                             <button class="btn btn-primary" data-toggle="modal" data-target="#donateModal" id="uuu" value="{{ $opokoron->id }}"><strong>বিস্তারিত</strong></button>
@@ -295,10 +291,6 @@
             @endforeach
 
         </div>
-        <div>
-            <h2 style="text-align: right">{{ Html::link('opokoron', 'আরও') }}</h2>
-        </div>
-
     </div>
 </div> <!-- /.our-causes -->
 
@@ -307,8 +299,8 @@
     <div class="container">
 
 
-        <h2 class="title-style-1">Postika <span class="title-under"></span></h2>
-
+        <h2 class="title-style-1" style="margin-top: -40px;">পুস্তিকা <span class="title-under"></span></h2>
+        {{ Html::link('kitnashok', 'আরও পুস্তিকা দেখুন', ['class' => 'btn btn-primary pull-right', 'style' => 'margin-top: -50px; font-weight: bold;']) }}
         <div class="row">
             @foreach($postikas as $key=>$postika)
                 <div class="col-md-2 col-sm-6">
@@ -317,7 +309,10 @@
 
                         <div class="zoom_01">{{ Html::image('uploads/'.$postika->image, null, ['class' => 'center-block', 'width' => 160, 'height' => 160]) }}</div>
                         <h4 class="cause-title fix"><label>{{ $postika->name }}</label></h4>
-
+                        <ul style="display: flex; justify-content: space-between; padding: 5px; margin-bottom: -15px; margin-top: -15px;">
+                            <li style="list-style: none;" class="cause-title fix">{{ $postika->quantity }}</li>
+                            <li style="list-style: none;" class="cause-title fix">{{ $postika->price }}</li>
+                        </ul>
                         <div class="btn-holder text-center">
 
                             <button class="btn btn-primary" data-toggle="modal" data-target="#donateModal" id="vvv" value="{{ $postika->id }}"><strong>বিস্তারিত</strong></button>
@@ -330,10 +325,6 @@
             @endforeach
 
         </div>
-        <div>
-            <h2 style="text-align: right">{{ Html::link('postika', 'আরও') }}</h2>
-        </div>
-
     </div>
 </div> <!-- /.our-causes -->
 
