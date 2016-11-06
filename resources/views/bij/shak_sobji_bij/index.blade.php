@@ -30,9 +30,9 @@
                     <td>{{ $bij->description }}</td>
                     <td>{{ Html::image('uploads/'.$bij->image, null, ['class' => '', 'width' => 50, 'height' => 50]) }}</td>
                     <td>{{ Html::link("shak-sobji-bij-auth/$bij->id/edit", ' Edit', ['class' => 'fa fa-edit btn btn-primary btn-xs']) }}</td>
-
+                    @if($bij->id > 1)
                     <td><button type="button" class="btn btn-danger btn-xs fa fa-trash" data-toggle="modal" data-target="#myModal-{{ $bij->id }}"> Delete</button></td>
-
+                    @endif
                     <!-- Modal -->
                     <div class="modal fade" id="myModal-{{ $bij->id }}" role="dialog">
                         <div class="modal-dialog">
