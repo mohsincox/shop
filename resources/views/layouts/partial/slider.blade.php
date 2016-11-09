@@ -18,8 +18,10 @@
                 <div class="carousel-caption">
 
                     <h2 class="carousel-title bounceInDown animated slow">আমার সোনার বাংলা আমি তোমায় ভালোবাসি</h2>
-                    <h4 class="carousel-subtitle bounceInUp animated slow ">আমার সোনার বাংলা</h4>
-                    <a href="#" class="btn btn-lg btn-secondary hidden-xs bounceInUp animated slow" data-toggle="modal" data-target="#donateModal">Item Kinon</a>
+                    <h4 class="carousel-subtitle bounceInUp animated slow ">আমার সোনার বাংলা আমার সোনার বাংলা আমার সোনার বাংলা আমার সোনার বাংলা</h4>
+                    <!-- <h2 class="carousel-subtitle bounceInDown animated slow ">আমার সোনার বাংলা</h2> -->
+                    <h2 class="carousel-title bounceInUp animated slow">আমার সোনার বাংলা আমি তোমায় ভালোবাসি</h2>
+                    <!-- <a href="#" class="btn btn-lg btn-secondary hidden-xs bounceInUp animated slow" data-toggle="modal" data-target="#donateModal">Item Kinon</a> -->
 
                 </div> <!-- /.carousel-caption -->
 
