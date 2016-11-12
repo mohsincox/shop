@@ -7,12 +7,44 @@ use App\Models\Kitnashok;
 use App\Models\Jontropati;
 use App\Models\Opokoron;
 use App\Models\Postika;
+
 use App\Models\SassoBij;
 use App\Models\ShakSobjiBij;
+use App\Models\MoslaBij;
 use App\Models\FulBij;
 use App\Models\FalojoBij;
+use App\Models\TontoBij;
+use App\Models\ToilBij;
+use App\Models\DanaBij;
 use App\Models\OsodhiBij;
 use App\Models\BonojoBij;
+
+use App\Models\GobadiPoshorKhaddo;
+use App\Models\HasMorgirKhaddo;
+use App\Models\MacherKhaddo;
+use App\Models\PoshoPakhirKhaddo;
+use App\Models\KrishiKhaddo;
+
+use App\Models\GobadiPoshorOsodh;
+use App\Models\HasMorgirOsodh;
+use App\Models\MotsoOsodh;
+use App\Models\PoshoPakhirOsodh;
+
+use App\Models\Ful;
+use App\Models\Fal;
+use App\Models\Osodhi;
+use App\Models\Bonoj;
+use App\Models\Kaktas;
+
+use App\Models\OrganicVegetables;
+use App\Models\OrganicFruits;
+use App\Models\OrganicFarming;
+use App\Models\BioPesticidesAndTraps;
+
+use App\Models\SliderOne;
+use App\Models\SliderTwo;
+use App\Models\SliderThree;
+
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
@@ -21,17 +53,49 @@ class WelcomeController extends Controller
 {
     public function index()
     {
-        $sassoBijs = SassoBij::take(1)->get();
         $shakSobjiBijs = ShakSobjiBij::take(4)->get();
+        $moslaBijs = MoslaBij::take(3)->get();
         $fulBijs = FulBij::take(3)->get();
         $falojoBijs = FalojoBIj::take(1)->get();
+        $tontoBijs = TontoBij::take(1)->get();
+        $toilBijs = ToilBij::take(2)->get();
+        $danaBijs = DanaBij::take(1)->get();
+        $sassoBijs = SassoBij::take(1)->get();
         $osodhiBijs = OsodhiBij::take(1)->get();
         $bonojoBijs = BonojoBij::take(1)->get();
+
+        $gobadiPoshorKhaddos = GobadiPoshorKhaddo::take(2)->get();
+        $hasMorgirKhaddos = HasMorgirKhaddo::take(3)->get();
+        $macherKhaddos = MacherKhaddo::take(2)->get();
+        $poshoPakhirKhaddos = PoshoPakhirKhaddo::take(3)->get();
+        $krishiKhaddos = KrishiKhaddo::take(2)->get();
+
+        $gobadiPoshorOsodhs = GobadiPoshorOsodh::take(1)->get();
+        $hasMorgirOsodhs = HasMorgirOsodh::take(2)->get();
+        $motsoOsodhs = MotsoOsodh::take(1)->get();
+        $poshoPakhirOsodhs = PoshoPakhirOsodh::take(2)->get();
+
+        $fuls = Ful::take(3)->get();
+        $fals = Fal::take(3)->get();
+        $osodhis = Osodhi::take(2)->get();
+        $bonojs = Bonoj::take(1)->get();
+        $kaktas = Kaktas::take(3)->get();
+
         $kitnashoks = Kitnashok::take(6)->get();
         $jontropatis = Jontropati::take(6)->get();
         $opokorons = Opokoron::take(6)->get();
         $postikas = Postika::take(6)->get();
-        return view('welcome', compact('sassoBijs', 'shakSobjiBijs', 'fulBijs', 'falojoBijs', 'osodhiBijs', 'bonojoBijs', 'kitnashoks', 'jontropatis', 'opokorons', 'postikas'));
+
+        $organicVegetables = OrganicVegetables::take(4)->get();
+        $organicFruits = OrganicFruits::take(4)->get();
+        $traps = BioPesticidesAndTraps::take(2)->get();
+        $organicFarmings = OrganicFarming::take(2)->get();
+
+        $sliderOne = SliderOne::first();
+        $sliderTwo = SliderTwo::first();
+        $sliderThree = SliderThree::first();
+
+        return view('welcome', compact('sassoBijs', 'shakSobjiBijs', 'fulBijs', 'falojoBijs', 'osodhiBijs', 'bonojoBijs', 'moslaBijs', 'tontoBijs', 'toilBijs', 'danaBijs', 'kitnashoks', 'jontropatis', 'opokorons', 'postikas', 'gobadiPoshorKhaddos', 'hasMorgirKhaddos', 'macherKhaddos', 'poshoPakhirKhaddos', 'krishiKhaddos', 'gobadiPoshorOsodhs', 'hasMorgirOsodhs', 'motsoOsodhs', 'poshoPakhirOsodhs', 'fuls', 'fals', 'osodhis', 'bonojs', 'kaktas', 'organicVegetables', 'organicFruits', 'traps', 'organicFarmings', 'sliderOne', 'sliderTwo', 'sliderThree'));
     }
 
     public function showToModelSassoBij(Request $request)
@@ -114,7 +178,7 @@ class WelcomeController extends Controller
 
     public function showCustomer()
     {
-        $customers = Customer::orderBy('id', 'desc')->paginate(1);
+        $customers = Customer::orderBy('id', 'desc')->paginate(10);
 
         return view('customer.index', compact('customers'));
     }

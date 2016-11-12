@@ -1,8 +1,8 @@
 <footer class="main-footer">
 
-    {{--<div class="footer-top">--}}
+    <!-- <div class="footer-top">
 
-    {{--</div>--}}
+    </div> -->
 
 
     <div class="footer-main">
@@ -13,7 +13,7 @@
 
                     <div class="footer-col">
 
-                        <h4 class="footer-title">আমাদের সম্পর্কে বিশেষজ্ঞ মন্তব্য<span class="title-under"></span></h4>
+                        <h3 class="footer-title">আমাদের সম্পর্কে<span class="title-under"></span></h3>
 
                         <div class="footer-content">
 
@@ -35,7 +35,7 @@
 
                     <div class="footer-col">
 
-                        <h4 class="footer-title">পরামর্শ/কৃষি টিপস <span class="title-under"></span></h4>
+                        <h3 class="footer-title">পরামর্শ/কৃষি টিপস <span class="title-under"></span></h3>
 
                         <div class="footer-content">
                             <ul class="tweets list-unstyled">
@@ -55,7 +55,6 @@
                                     <a><h4>বাংলাদেশ (এই শব্দ সম্পর্কে শুনুন (সাহায্য·তথ্য))</h4></a> 
 
                                 </li>
-
 
                             </ul>
                         </div>
@@ -69,7 +68,7 @@
 
                     <div class="footer-col">
 
-                        <h4 class="footer-title">প্রেস<span class="title-under"></span></h4>
+                        <h3 class="footer-title">প্রেস<span class="title-under"></span></h3>
 
                         <div class="footer-content">
 
@@ -87,26 +86,52 @@
 
                 </div>
 
+                <style type="text/css">
+                    /* social icons */
+.social-icon {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    margin: 5px;
+    background: center center no-repeat;
+}
+
+.social-icon.facebook { background-image: url(assets/images/social-icons/facebook.png); }
+.social-icon.twitter { background-image: url(assets/images/social-icons/twitter.png); }
+.social-icon.dribbble { background-image: url(assets/images/social-icons/dribbble.png); }
+.social-icon.google-plus { background-image: url(assets/images/social-icons/google-plus.png); }
+                </style>
+                
                 <div class="col-md-3">
 
                     <div class="footer-col">
 
-                        <h4 class="footer-title">নোটিশ বোর্ড <span class="title-under"></span></h4>
+                        <h3 class="footer-title">নোটিশ বোর্ড <span class="title-under"></span></h3>
 
                         <div class="footer-content">
+                            <!-- <div class="footer-social">
+                                <a class="social-icon twitter" href="#" target="_blank"></a>
+                                <a class="social-icon dribbble" href="#" target="_blank"></a>
+                                <a class="social-icon facebook" href="#" target="_blank"></a>
+                                <a class="social-icon google-plus" href="#" target="_blank"></a>
+                            </div> -->
                             <ul class="tweets list-unstyled">
                                 <li class="tweet">
 
-                                    বাংলাদেশ (এই শব্দ সম্পর্কে শুনুন (সাহায্য·তথ্য)) দক্ষিণ এশিয়ার একটি জনবহুল রাষ্ট্র। বাংলাদেশের সাংবিধানিক নাম গণপ্রজাতন্ত্রী বাংলাদেশ।
+                                    <a><h4>বাংলাদেশ (এই শব্দ সম্পর্কে শুনুন (সাহায্য·তথ্য))</h4></a> 
 
                                 </li>
 
                                 <li class="tweet">
 
-                                    ভূ-রাজনৈতিকভাবে বাংলাদেশের পশ্চিম, উত্তর ও পূর্ব সীমান্তে ভারত, দক্ষিণ-পূর্ব সীমান্তে মায়ানমার ও দক্ষিণ উপকূলের দিকে বঙ্গোপসাগর অবস্থিত। বাংলাদেশের ভূখণ্ড ভৌগোলিকভাবে একটি উর্বর ব-দ্বীপের অংশ বিশেষ।
+                                    <a><h4>বাংলাদেশ (এই শব্দ সম্পর্কে শুনুন (সাহায্য·তথ্য))</h4></a> 
 
                                 </li>
+                                <li class="tweet">
 
+                                    <a><h4>বাংলাদেশ (এই শব্দ সম্পর্কে শুনুন (সাহায্য·তথ্য))</h4></a> 
+
+                                </li>
 
                             </ul>
                         </div>

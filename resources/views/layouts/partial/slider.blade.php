@@ -10,63 +10,64 @@
     <div class="carousel-inner" role="listbox">
 
         <div class="item active">
+            @if(isset($sliderOne))
+                {{ Html::image('uploads/'.$sliderOne->image, null, ['width' => 700, 'height' => 225]) }}
 
-            <img src="assets/images/slider/home-slider-1.jpg" alt="">
+                <div class="container">
 
-            <div class="container">
+                    <div class="carousel-caption">
 
-                <div class="carousel-caption">
+                        <h2 class="carousel-title bounceInDown animated slow">{{ $sliderOne->title_one }}</h2>
+                        <h4 class="carousel-subtitle bounceInUp animated slow ">{{ $sliderOne->title_two }}</h4>
+                        <!-- <h2 class="carousel-subtitle bounceInDown animated slow ">আমার সোনার বাংলা</h2> -->
+                        <h2 class="carousel-title bounceInUp animated slow">{{ $sliderOne->title_three }}</h2>
+                        <!-- <a href="#" class="btn btn-lg btn-secondary hidden-xs bounceInUp animated slow" data-toggle="modal" data-target="#donateModal">Item Kinon</a> -->
 
-                    <h2 class="carousel-title bounceInDown animated slow">আমার সোনার বাংলা আমি তোমায় ভালোবাসি</h2>
-                    <h4 class="carousel-subtitle bounceInUp animated slow ">আমার সোনার বাংলা আমার সোনার বাংলা আমার সোনার বাংলা আমার সোনার বাংলা</h4>
-                    <!-- <h2 class="carousel-subtitle bounceInDown animated slow ">আমার সোনার বাংলা</h2> -->
-                    <h2 class="carousel-title bounceInUp animated slow">আমার সোনার বাংলা আমি তোমায় ভালোবাসি</h2>
-                    <!-- <a href="#" class="btn btn-lg btn-secondary hidden-xs bounceInUp animated slow" data-toggle="modal" data-target="#donateModal">Item Kinon</a> -->
+                    </div> <!-- /.carousel-caption -->
 
-                </div> <!-- /.carousel-caption -->
-
-            </div>
-
+                </div>
+            @endif
         </div> <!-- /.item -->
 
 
         <div class="item ">
+            @if(isset($sliderTwo))
+                <!-- <img src="assets/images/slider/home-slider-2.jpg" alt=""> -->
+                {{ Html::image('uploads/'.$sliderTwo->image, null, ['width' => 700, 'height' => 225]) }}
 
-            <img src="assets/images/slider/home-slider-2.jpg" alt="">
+                <div class="container">
 
-            <div class="container">
+                    <div class="carousel-caption">
+                    
+                        <h2 class="carousel-title bounceInDown animated slow" style="color: blue;">{{ $sliderTwo->title_one }}</h2>
+                        <h4 class="carousel-subtitle bounceInUp animated slow" style="color: red;">{{ $sliderTwo->title_two }}</h4>
+                        <h2 class="carousel-title bounceInDown animated slow" style="color: blue;">{{ $sliderTwo->title_three }}</h2>
 
-                <div class="carousel-caption">
+                    </div> <!-- /.carousel-caption -->
 
-                    <h2 class="carousel-title bounceInDown animated slow" style="color: blue;">আমার সোনার বাংলা আমার সোনার বাংলা</h2>
-                    <h4 class="carousel-subtitle bounceInUp animated slow" style="color: red;">আমি তোমায় ভালোবাসি</h4>
-                    <a href="#" class="btn btn-lg btn-secondary hidden-xs bounceInUp animated" data-toggle="modal" data-target="#donateModal">Item kinon</a>
-
-                </div> <!-- /.carousel-caption -->
-
-            </div>
-
+                </div>
+            @endif
         </div> <!-- /.item -->
 
 
 
 
         <div class="item ">
+            @if(isset($sliderThree))
+                {{ Html::image('uploads/'.$sliderThree->image, null, ['width' => 700, 'height' => 225]) }}
 
-            <img src="assets/images/slider/home-slider-3.jpg" alt="">
+                <div class="container">
 
-            <div class="container">
+                    <div class="carousel-caption">
 
-                <div class="carousel-caption">
+                        <h2 class="carousel-title bounceInUp animated slow" style="color: #D1FF33">{{ $sliderThree->title_one }}</h2>
+                        <h4 class="carousel-subtitle bounceInUp animated slow" style="color: #33B2FF  ">{{ $sliderThree->title_two }}</h4>
+                        <h2 class="carousel-title bounceInDown animated slow" style="color: #D1FF33">{{ $sliderThree->title_three }}</h2>
 
-                    <h2 class="carousel-title bounceInDown animated slow" style="color: #D1FF33">আমার সোনার বাংলা আমি তোমায় ভালোবাসি আমার সোনার বাংলা আমি তোমায় ভালোবাসি</h2>
-                    <h4 class="carousel-subtitle bounceInUp animated slow" style="color: #33B2FF  ">You can make the diffrence !</h4>
-                    <a href="#" class="btn btn-lg btn-secondary hidden-xs bounceInUp animated slow" data-toggle="modal" data-target="#donateModal">Item kinon</a>
+                    </div> <!-- /.carousel-caption -->
 
-                </div> <!-- /.carousel-caption -->
-
-            </div>
-
+                </div>
+            @endif
         </div> <!-- /.item -->
 
     </div>

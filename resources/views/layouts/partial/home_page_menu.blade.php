@@ -82,7 +82,7 @@
                             </ul>
 
                         </li>
-                        <li class="has-child">{!! Html::link('#', 'অর্গানিক ফুড ', ['style' => 'font-weight: bold;']) !!}
+                        <li class="has-child">{!! Html::link('#', 'অর্গানিক ফুড', ['style' => 'font-weight: bold;']) !!}
 
                             <ul class="submenu" >
                                 <li class="submenu-item">{!! Html::link('#', 'Organic Vegetables') !!}</li>
@@ -92,7 +92,8 @@
                             </ul>
 
                         </li>
-                        <li>{!! Html::link('#', 'ঠিকানা/যোগাযোগ  ', ['style' => 'font-weight: bold;']) !!}</li>
+                        <!-- <li>{!! Html::link('#', 'পুস্তিকা', ['style' => 'font-weight: bold;']) !!}</li> -->
+                        <li>{!! Html::link('#', 'ঠিকানা/যোগাযোগ', ['style' => 'font-weight: bold;']) !!}</li>
 
 
                     </ul>

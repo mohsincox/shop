@@ -54,7 +54,7 @@
                             <div class="form-group" {{ $errors->has('mobile') ? 'has error' : '' }}>
                                 {!! Form::label('mobile', 'মোবাইল নম্বর:', ['class' => 'col-sm-3 control-label']) !!}
                                 <div class="col-sm-9">
-                                    {!! Form::text('mobile', null,['class' => 'form-control', 'placeholder' => 'মোবাইল নম্বর', 'autocomplete' => 'off']) !!}
+                                    {!! Form::text('mobile', null,['class' => 'form-control', 'placeholder' => 'মোবাইল নম্বর', 'autocomplete' => 'off', 'required']) !!}
                                     <span class="help-block text-danger">
                                             {{ $errors->first('mobile') }}
                                         </span>
@@ -64,7 +64,7 @@
                             <div class="form-group" {{ $errors->has('address') ? 'has error' : '' }}>
                                 {!! Form::label('address', 'ঠিকানা:', ['class' => 'col-sm-3 control-label']) !!}
                                 <div class="col-sm-9">
-                                    {!! Form::textarea('address', null,['class' => 'form-control', 'placeholder' => 'ঠিকানা', 'autocomplete' => 'off', 'rows' => 3, 'required']) !!}
+                                    {!! Form::textarea('address', null,['class' => 'form-control', 'placeholder' => 'ঠিকানা', 'autocomplete' => 'off', 'rows' => 3]) !!}
                                     <span class="help-block text-danger">
                                             {{ $errors->first('address') }}
                                         </span>

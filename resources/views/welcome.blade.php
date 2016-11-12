@@ -17,7 +17,7 @@
 
     {!! Html::script('assets/js/modernizr-2.6.2.min.js') !!}
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    {{--<script src="js/jquery-1.12.3.min.js"></script>--}}
+    <script src="js/jquery-1.12.3.min.js"></script>
 
 
 </head>
@@ -53,7 +53,7 @@
     <div class="container">
 
         @include('layouts.partial.search_mobile')
-        <h2 class="title-style-1"> বীজ <span class="title-under"></span></h2>
+        <h1 class="title-style-1"><b></b> <span style="color: #000000" >বীজ (SEEDS)</span> </b><span class="title-under"></span></h1>
         {{ Html::link('kitnashok', 'আরও বীজ দেখুন', ['class' => 'btn btn-primary pull-right', 'style' => 'margin-top: -50px; font-weight: bold;']) }}
         <div class="row">
 
@@ -77,6 +77,27 @@
 
                         </div> <!-- /.cause -->
                     
+                </div>
+            @endforeach
+
+            @foreach($moslaBijs as $key=>$bij)
+                <div class="col-md-2 col-sm-6"> 
+                    <div class="cause fbbox">
+                        <div class="zoom_01">{{ Html::image('uploads/'.$bij->image, null, ['class' => 'center-block', 'width' => 160, 'height' => 160]) }}</div>
+                        <h4 class="cause-title fix"><label>{{ $bij->name }}</label></h4>
+
+                        <ul style="display: flex; justify-content: space-between; padding: 5px; margin-bottom: -15px; margin-top: -15px;">
+                            <li style="list-style: none;" class="cause-title fix">{{ $bij->quantity }}</li>
+                            <li style="list-style: none;" class="cause-title fix">{{ $bij->price }}</li>
+                        </ul>
+
+                        <div class="btn-holder text-center">
+
+                            <button class="btn btn-primary" data-toggle="modal" data-target="#donateModal" id="mosla1" value="{{ $bij->id }}"><strong>বিস্তারিত</strong></button>
+
+                        </div>
+
+                    </div> <!-- /.cause --> 
                 </div>
             @endforeach
 
@@ -119,6 +140,69 @@
                         </div>
 
                     </div> <!-- /.cause -->  
+                </div>
+            @endforeach
+
+            @foreach($tontoBijs as $key=>$bij)
+                <div class="col-md-2 col-sm-6"> 
+                    <div class="cause fbbox">
+                        <div class="zoom_01">{{ Html::image('uploads/'.$bij->image, null, ['class' => 'center-block', 'width' => 160, 'height' => 160]) }}</div>
+                        <h4 class="cause-title fix"><label>{{ $bij->name }}</label></h4>
+
+                        <ul style="display: flex; justify-content: space-between; padding: 5px; margin-bottom: -15px; margin-top: -15px;">
+                            <li style="list-style: none;" class="cause-title fix">{{ $bij->quantity }}</li>
+                            <li style="list-style: none;" class="cause-title fix">{{ $bij->price }}</li>
+                        </ul>
+
+                        <div class="btn-holder text-center">
+
+                            <button class="btn btn-primary" data-toggle="modal" data-target="#donateModal" id="tonto1" value="{{ $bij->id }}"><strong>বিস্তারিত</strong></button>
+
+                        </div>
+
+                    </div> <!-- /.cause --> 
+                </div>
+            @endforeach
+
+            @foreach($toilBijs as $key=>$bij)
+                <div class="col-md-2 col-sm-6"> 
+                    <div class="cause fbbox">
+                        <div class="zoom_01">{{ Html::image('uploads/'.$bij->image, null, ['class' => 'center-block', 'width' => 160, 'height' => 160]) }}</div>
+                        <h4 class="cause-title fix"><label>{{ $bij->name }}</label></h4>
+
+                        <ul style="display: flex; justify-content: space-between; padding: 5px; margin-bottom: -15px; margin-top: -15px;">
+                            <li style="list-style: none;" class="cause-title fix">{{ $bij->quantity }}</li>
+                            <li style="list-style: none;" class="cause-title fix">{{ $bij->price }}</li>
+                        </ul>
+
+                        <div class="btn-holder text-center">
+
+                            <button class="btn btn-primary" data-toggle="modal" data-target="#donateModal" id="toil1" value="{{ $bij->id }}"><strong>বিস্তারিত</strong></button>
+
+                        </div>
+
+                    </div> <!-- /.cause --> 
+                </div>
+            @endforeach
+
+            @foreach($danaBijs as $key=>$bij)
+                <div class="col-md-2 col-sm-6"> 
+                    <div class="cause fbbox">
+                        <div class="zoom_01">{{ Html::image('uploads/'.$bij->image, null, ['class' => 'center-block', 'width' => 160, 'height' => 160]) }}</div>
+                        <h4 class="cause-title fix"><label>{{ $bij->name }}</label></h4>
+
+                        <ul style="display: flex; justify-content: space-between; padding: 5px; margin-bottom: -15px; margin-top: -15px;">
+                            <li style="list-style: none;" class="cause-title fix">{{ $bij->quantity }}</li>
+                            <li style="list-style: none;" class="cause-title fix">{{ $bij->price }}</li>
+                        </ul>
+
+                        <div class="btn-holder text-center">
+
+                            <button class="btn btn-primary" data-toggle="modal" data-target="#donateModal" id="dana1" value="{{ $bij->id }}"><strong>বিস্তারিত</strong></button>
+
+                        </div>
+
+                    </div> <!-- /.cause --> 
                 </div>
             @endforeach
 
@@ -193,7 +277,251 @@
     <div class="container">
 
 
-        <h2 class="title-style-1" style="margin-top: -40px;">কীটনাশক <span class="title-under"></span></h2>
+        <h2 class="title-style-1" style="margin-top: -30px;">খাদ্য <span class="title-under"></span></h2>
+        {{ Html::link('khaddo', 'আরও খাদ্য দেখুন', ['class' => 'btn btn-primary pull-right', 'style' => 'margin-top: -50px; font-weight: bold;']) }}
+        <div class="row">
+            @foreach($gobadiPoshorKhaddos as $key=>$khaddo)
+                <div class="col-md-2 col-sm-6">
+
+                    <div class="cause fbbox">
+
+                        <div class="zoom_01">{{ Html::image('uploads/'.$khaddo->image, null, ['class' => 'center-block', 'width' => 160, 'height' => 160]) }}</div>
+                        <h4 class="cause-title fix"><label>{{ $khaddo->name }}</label></h4>
+
+                        <ul style="display: flex; justify-content: space-between; padding: 5px; margin-bottom: -15px; margin-top: -15px;">
+                            <li style="list-style: none;" class="cause-title fix">{{ $khaddo->quantity }}</li>
+                            <li style="list-style: none;" class="cause-title fix">{{ $khaddo->price }}</li>
+                        </ul>
+
+                        <div class="btn-holder text-center">
+
+                            <button class="btn btn-primary" data-toggle="modal" data-target="#donateModal" id="gobadi-poshor-khaddo" value="{{ $khaddo->id }}"><strong>বিস্তারিত</strong></button>
+
+                        </div>
+
+                    </div> <!-- /.cause -->
+
+                </div>
+            @endforeach
+
+            @foreach($hasMorgirKhaddos as $key=>$khaddo)
+                <div class="col-md-2 col-sm-6">
+
+                    <div class="cause fbbox">
+
+                        <div class="zoom_01">{{ Html::image('uploads/'.$khaddo->image, null, ['class' => 'center-block', 'width' => 160, 'height' => 160]) }}</div>
+                        <h4 class="cause-title fix"><label>{{ $khaddo->name }}</label></h4>
+
+                        <ul style="display: flex; justify-content: space-between; padding: 5px; margin-bottom: -15px; margin-top: -15px;">
+                            <li style="list-style: none;" class="cause-title fix">{{ $khaddo->quantity }}</li>
+                            <li style="list-style: none;" class="cause-title fix">{{ $khaddo->price }}</li>
+                        </ul>
+
+                        <div class="btn-holder text-center">
+
+                            <button class="btn btn-primary" data-toggle="modal" data-target="#donateModal" id="has-morgir-khaddo" value="{{ $khaddo->id }}"><strong>বিস্তারিত</strong></button>
+
+                        </div>
+
+                    </div> <!-- /.cause -->
+
+                </div>
+            @endforeach
+
+            @foreach($macherKhaddos as $key=>$khaddo)
+                <div class="col-md-2 col-sm-6">
+
+                    <div class="cause fbbox">
+
+                        <div class="zoom_01">{{ Html::image('uploads/'.$khaddo->image, null, ['class' => 'center-block', 'width' => 160, 'height' => 160]) }}</div>
+                        <h4 class="cause-title fix"><label>{{ $khaddo->name }}</label></h4>
+
+                        <ul style="display: flex; justify-content: space-between; padding: 5px; margin-bottom: -15px; margin-top: -15px;">
+                            <li style="list-style: none;" class="cause-title fix">{{ $khaddo->quantity }}</li>
+                            <li style="list-style: none;" class="cause-title fix">{{ $khaddo->price }}</li>
+                        </ul>
+
+                        <div class="btn-holder text-center">
+
+                            <button class="btn btn-primary" data-toggle="modal" data-target="#donateModal" id="macher-khaddo" value="{{ $khaddo->id }}"><strong>বিস্তারিত</strong></button>
+
+                        </div>
+
+                    </div> <!-- /.cause -->
+
+                </div>
+            @endforeach
+
+            @foreach($poshoPakhirKhaddos as $key=>$khaddo)
+                <div class="col-md-2 col-sm-6">
+
+                    <div class="cause fbbox">
+
+                        <div class="zoom_01">{{ Html::image('uploads/'.$khaddo->image, null, ['class' => 'center-block', 'width' => 160, 'height' => 160]) }}</div>
+                        <h4 class="cause-title fix"><label>{{ $khaddo->name }}</label></h4>
+
+                        <ul style="display: flex; justify-content: space-between; padding: 5px; margin-bottom: -15px; margin-top: -15px;">
+                            <li style="list-style: none;" class="cause-title fix">{{ $khaddo->quantity }}</li>
+                            <li style="list-style: none;" class="cause-title fix">{{ $khaddo->price }}</li>
+                        </ul>
+
+                        <div class="btn-holder text-center">
+
+                            <button class="btn btn-primary" data-toggle="modal" data-target="#donateModal" id="posho-pakhir-khaddo" value="{{ $khaddo->id }}"><strong>বিস্তারিত</strong></button>
+
+                        </div>
+
+                    </div> <!-- /.cause -->
+
+                </div>
+            @endforeach
+
+            @foreach($krishiKhaddos as $key=>$khaddo)
+                <div class="col-md-2 col-sm-6">
+
+                    <div class="cause fbbox">
+
+                        <div class="zoom_01">{{ Html::image('uploads/'.$khaddo->image, null, ['class' => 'center-block', 'width' => 160, 'height' => 160]) }}</div>
+                        <h4 class="cause-title fix"><label>{{ $khaddo->name }}</label></h4>
+
+                        <ul style="display: flex; justify-content: space-between; padding: 5px; margin-bottom: -15px; margin-top: -15px;">
+                            <li style="list-style: none;" class="cause-title fix">{{ $khaddo->quantity }}</li>
+                            <li style="list-style: none;" class="cause-title fix">{{ $khaddo->price }}</li>
+                        </ul>
+
+                        <div class="btn-holder text-center">
+
+                            <button class="btn btn-primary" data-toggle="modal" data-target="#donateModal" id="krishi-khaddo" value="{{ $khaddo->id }}"><strong>বিস্তারিত</strong></button>
+
+                        </div>
+
+                    </div> <!-- /.cause -->
+
+                </div>
+            @endforeach
+
+        </div>
+        
+    </div>
+
+</div> <!-- /.our-causes -->
+
+<div class="section-home our-causes fadeIn">
+
+    <div class="container">
+
+
+        <h2 class="title-style-1" style="margin-top: -30px;">ঔষধ <span class="title-under"></span></h2>
+        {{ Html::link('osodh', 'আরও ঔষধ দেখুন', ['class' => 'btn btn-primary pull-right', 'style' => 'margin-top: -50px; font-weight: bold;']) }}
+        <div class="row">
+            @foreach($gobadiPoshorOsodhs as $key=>$osodh)
+                <div class="col-md-2 col-sm-6">
+
+                    <div class="cause fbbox">
+
+                        <div class="zoom_01">{{ Html::image('uploads/'.$osodh->image, null, ['class' => 'center-block', 'width' => 160, 'height' => 160]) }}</div>
+                        <h4 class="cause-title fix"><label>{{ $osodh->name }}</label></h4>
+
+                        <ul style="display: flex; justify-content: space-between; padding: 5px; margin-bottom: -15px; margin-top: -15px;">
+                            <li style="list-style: none;" class="cause-title fix">{{ $osodh->quantity }}</li>
+                            <li style="list-style: none;" class="cause-title fix">{{ $osodh->price }}</li>
+                        </ul>
+
+                        <div class="btn-holder text-center">
+
+                            <button class="btn btn-primary" data-toggle="modal" data-target="#donateModal" id="gobadi-poshor-osodh" value="{{ $osodh->id }}"><strong>বিস্তারিত</strong></button>
+
+                        </div>
+
+                    </div> <!-- /.cause -->
+
+                </div>
+            @endforeach
+
+            @foreach($hasMorgirOsodhs as $key=>$osodh)
+                <div class="col-md-2 col-sm-6">
+
+                    <div class="cause fbbox">
+
+                        <div class="zoom_01">{{ Html::image('uploads/'.$osodh->image, null, ['class' => 'center-block', 'width' => 160, 'height' => 160]) }}</div>
+                        <h4 class="cause-title fix"><label>{{ $osodh->name }}</label></h4>
+
+                        <ul style="display: flex; justify-content: space-between; padding: 5px; margin-bottom: -15px; margin-top: -15px;">
+                            <li style="list-style: none;" class="cause-title fix">{{ $osodh->quantity }}</li>
+                            <li style="list-style: none;" class="cause-title fix">{{ $osodh->price }}</li>
+                        </ul>
+
+                        <div class="btn-holder text-center">
+
+                            <button class="btn btn-primary" data-toggle="modal" data-target="#donateModal" id="gobadi-poshor-osodh" value="{{ $osodh->id }}"><strong>বিস্তারিত</strong></button>
+
+                        </div>
+
+                    </div> <!-- /.cause -->
+
+                </div>
+            @endforeach
+
+            @foreach($motsoOsodhs as $key=>$osodh)
+                <div class="col-md-2 col-sm-6">
+
+                    <div class="cause fbbox">
+
+                        <div class="zoom_01">{{ Html::image('uploads/'.$osodh->image, null, ['class' => 'center-block', 'width' => 160, 'height' => 160]) }}</div>
+                        <h4 class="cause-title fix"><label>{{ $osodh->name }}</label></h4>
+
+                        <ul style="display: flex; justify-content: space-between; padding: 5px; margin-bottom: -15px; margin-top: -15px;">
+                            <li style="list-style: none;" class="cause-title fix">{{ $osodh->quantity }}</li>
+                            <li style="list-style: none;" class="cause-title fix">{{ $osodh->price }}</li>
+                        </ul>
+
+                        <div class="btn-holder text-center">
+
+                            <button class="btn btn-primary" data-toggle="modal" data-target="#donateModal" id="gobadi-poshor-osodh" value="{{ $osodh->id }}"><strong>বিস্তারিত</strong></button>
+
+                        </div>
+
+                    </div> <!-- /.cause -->
+
+                </div>
+            @endforeach
+
+            @foreach($poshoPakhirOsodhs as $key=>$osodh)
+                <div class="col-md-2 col-sm-6">
+
+                    <div class="cause fbbox">
+
+                        <div class="zoom_01">{{ Html::image('uploads/'.$osodh->image, null, ['class' => 'center-block', 'width' => 160, 'height' => 160]) }}</div>
+                        <h4 class="cause-title fix"><label>{{ $osodh->name }}</label></h4>
+
+                        <ul style="display: flex; justify-content: space-between; padding: 5px; margin-bottom: -15px; margin-top: -15px;">
+                            <li style="list-style: none;" class="cause-title fix">{{ $osodh->quantity }}</li>
+                            <li style="list-style: none;" class="cause-title fix">{{ $osodh->price }}</li>
+                        </ul>
+
+                        <div class="btn-holder text-center">
+
+                            <button class="btn btn-primary" data-toggle="modal" data-target="#donateModal" id="gobadi-poshor-osodh" value="{{ $osodh->id }}"><strong>বিস্তারিত</strong></button>
+
+                        </div>
+
+                    </div> <!-- /.cause -->
+
+                </div>
+            @endforeach
+
+        </div>
+        
+    </div>
+
+</div> <!-- /.our-causes -->
+
+<div class="section-home our-causes fadeIn">
+
+    <div class="container">
+
+
+        <h2 class="title-style-1" style="margin-top: -30px;">কীটনাশক <span class="title-under"></span></h2>
         {{ Html::link('kitnashok', 'আরও কীটনাশক দেখুন', ['class' => 'btn btn-primary pull-right', 'style' => 'margin-top: -50px; font-weight: bold;']) }}
         <div class="row">
             @foreach($kitnashoks as $key=>$kitnashok)
@@ -224,8 +552,6 @@
         
     </div>
 
-
-
 </div> <!-- /.our-causes -->
 
 <div class="section-home our-causes fadeIn">
@@ -233,7 +559,7 @@
     <div class="container">
 
 
-        <h2 class="title-style-1"  style="margin-top: -40px;">যন্ত্রপাতি  <span class="title-under"></span></h2>
+        <h2 class="title-style-1"  style="margin-top: -30px;">যন্ত্রপাতি  <span class="title-under"></span></h2>
         {{ Html::link('kitnashok', 'আরও যন্ত্রপাতি দেখুন', ['class' => 'btn btn-primary pull-right', 'style' => 'margin-top: -50px; font-weight: bold;']) }}
         <div class="row">
             @foreach($jontropatis as $key=>$jontropati)
@@ -267,7 +593,7 @@
     <div class="container">
 
 
-        <h2 class="title-style-1" style="margin-top: -40px;">উপকরণ <span class="title-under"></span></h2>
+        <h2 class="title-style-1" style="margin-top: -30px;">উপকরণ <span class="title-under"></span></h2>
         {{ Html::link('kitnashok', 'আরও উপকরণ দেখুন', ['class' => 'btn btn-primary pull-right', 'style' => 'margin-top: -50px; font-weight: bold;']) }}
         <div class="row">
             @foreach($opokorons as $key=>$opokoron)
@@ -301,7 +627,251 @@
     <div class="container">
 
 
-        <h2 class="title-style-1" style="margin-top: -40px;">পুস্তিকা <span class="title-under"></span></h2>
+        <h2 class="title-style-1" style="margin-top: -30px;">নার্সারী <span class="title-under"></span></h2>
+        {{ Html::link('narsari', 'আরও নার্সারী দেখুন', ['class' => 'btn btn-primary pull-right', 'style' => 'margin-top: -50px; font-weight: bold;']) }}
+        <div class="row">
+            @foreach($fuls as $key=>$narsari)
+                <div class="col-md-2 col-sm-6">
+
+                    <div class="cause fbbox">
+
+                        <div class="zoom_01">{{ Html::image('uploads/'.$narsari->image, null, ['class' => 'center-block', 'width' => 160, 'height' => 160]) }}</div>
+                        <h4 class="cause-title fix"><label>{{ $narsari->name }}</label></h4>
+
+                        <ul style="display: flex; justify-content: space-between; padding: 5px; margin-bottom: -15px; margin-top: -15px;">
+                            <li style="list-style: none;" class="cause-title fix">{{ $narsari->quantity }}</li>
+                            <li style="list-style: none;" class="cause-title fix">{{ $narsari->price }}</li>
+                        </ul>
+
+                        <div class="btn-holder text-center">
+
+                            <button class="btn btn-primary" data-toggle="modal" data-target="#donateModal" id="ful" value="{{ $narsari->id }}"><strong>বিস্তারিত</strong></button>
+
+                        </div>
+
+                    </div> <!-- /.cause -->
+
+                </div>
+            @endforeach
+
+            @foreach($fals as $key=>$narsari)
+                <div class="col-md-2 col-sm-6">
+
+                    <div class="cause fbbox">
+
+                        <div class="zoom_01">{{ Html::image('uploads/'.$narsari->image, null, ['class' => 'center-block', 'width' => 160, 'height' => 160]) }}</div>
+                        <h4 class="cause-title fix"><label>{{ $narsari->name }}</label></h4>
+
+                        <ul style="display: flex; justify-content: space-between; padding: 5px; margin-bottom: -15px; margin-top: -15px;">
+                            <li style="list-style: none;" class="cause-title fix">{{ $narsari->quantity }}</li>
+                            <li style="list-style: none;" class="cause-title fix">{{ $narsari->price }}</li>
+                        </ul>
+
+                        <div class="btn-holder text-center">
+
+                            <button class="btn btn-primary" data-toggle="modal" data-target="#donateModal" id="fal" value="{{ $narsari->id }}"><strong>বিস্তারিত</strong></button>
+
+                        </div>
+
+                    </div> <!-- /.cause -->
+
+                </div>
+            @endforeach
+
+            @foreach($osodhis as $key=>$narsari)
+                <div class="col-md-2 col-sm-6">
+
+                    <div class="cause fbbox">
+
+                        <div class="zoom_01">{{ Html::image('uploads/'.$narsari->image, null, ['class' => 'center-block', 'width' => 160, 'height' => 160]) }}</div>
+                        <h4 class="cause-title fix"><label>{{ $narsari->name }}</label></h4>
+
+                        <ul style="display: flex; justify-content: space-between; padding: 5px; margin-bottom: -15px; margin-top: -15px;">
+                            <li style="list-style: none;" class="cause-title fix">{{ $narsari->quantity }}</li>
+                            <li style="list-style: none;" class="cause-title fix">{{ $narsari->price }}</li>
+                        </ul>
+
+                        <div class="btn-holder text-center">
+
+                            <button class="btn btn-primary" data-toggle="modal" data-target="#donateModal" id="osodhi" value="{{ $narsari->id }}"><strong>বিস্তারিত</strong></button>
+
+                        </div>
+
+                    </div> <!-- /.cause -->
+
+                </div>
+            @endforeach
+
+            @foreach($bonojs as $key=>$narsari)
+                <div class="col-md-2 col-sm-6">
+
+                    <div class="cause fbbox">
+
+                        <div class="zoom_01">{{ Html::image('uploads/'.$narsari->image, null, ['class' => 'center-block', 'width' => 160, 'height' => 160]) }}</div>
+                        <h4 class="cause-title fix"><label>{{ $narsari->name }}</label></h4>
+
+                        <ul style="display: flex; justify-content: space-between; padding: 5px; margin-bottom: -15px; margin-top: -15px;">
+                            <li style="list-style: none;" class="cause-title fix">{{ $narsari->quantity }}</li>
+                            <li style="list-style: none;" class="cause-title fix">{{ $narsari->price }}</li>
+                        </ul>
+
+                        <div class="btn-holder text-center">
+
+                            <button class="btn btn-primary" data-toggle="modal" data-target="#donateModal" id="bonoj" value="{{ $narsari->id }}"><strong>বিস্তারিত</strong></button>
+
+                        </div>
+
+                    </div> <!-- /.cause -->
+
+                </div>
+            @endforeach
+
+            @foreach($kaktas as $key=>$narsari)
+                <div class="col-md-2 col-sm-6">
+
+                    <div class="cause fbbox">
+
+                        <div class="zoom_01">{{ Html::image('uploads/'.$narsari->image, null, ['class' => 'center-block', 'width' => 160, 'height' => 160]) }}</div>
+                        <h4 class="cause-title fix"><label>{{ $narsari->name }}</label></h4>
+
+                        <ul style="display: flex; justify-content: space-between; padding: 5px; margin-bottom: -15px; margin-top: -15px;">
+                            <li style="list-style: none;" class="cause-title fix">{{ $narsari->quantity }}</li>
+                            <li style="list-style: none;" class="cause-title fix">{{ $narsari->price }}</li>
+                        </ul>
+
+                        <div class="btn-holder text-center">
+
+                            <button class="btn btn-primary" data-toggle="modal" data-target="#donateModal" id="kaktas" value="{{ $narsari->id }}"><strong>বিস্তারিত</strong></button>
+
+                        </div>
+
+                    </div> <!-- /.cause -->
+
+                </div>
+            @endforeach
+
+        </div>
+        
+    </div>
+
+</div> <!-- /.our-causes -->
+
+<div class="section-home our-causes fadeIn">
+
+    <div class="container">
+
+
+        <h2 class="title-style-1" style="margin-top: -30px;">অর্গানিক ফুড<span class="title-under"></span></h2>
+        {{ Html::link('organic-food', 'আরও অর্গানিক ফুড দেখুন', ['class' => 'btn btn-primary pull-right', 'style' => 'margin-top: -50px; font-weight: bold;']) }}
+        <div class="row">
+            @foreach($organicVegetables as $key=>$food)
+                <div class="col-md-2 col-sm-6">
+
+                    <div class="cause fbbox">
+
+                        <div class="zoom_01">{{ Html::image('uploads/'.$food->image, null, ['class' => 'center-block', 'width' => 160, 'height' => 160]) }}</div>
+                        <h4 class="cause-title fix"><label>{{ $food->name }}</label></h4>
+
+                        <ul style="display: flex; justify-content: space-between; padding: 5px; margin-bottom: -15px; margin-top: -15px;">
+                            <li style="list-style: none;" class="cause-title fix">{{ $food->quantity }}</li>
+                            <li style="list-style: none;" class="cause-title fix">{{ $food->price }}</li>
+                        </ul>
+
+                        <div class="btn-holder text-center">
+
+                            <button class="btn btn-primary" data-toggle="modal" data-target="#donateModal" id="vegetables" value="{{ $food->id }}"><strong>বিস্তারিত</strong></button>
+
+                        </div>
+
+                    </div> <!-- /.cause -->
+
+                </div>
+            @endforeach
+
+            @foreach($organicFruits as $key=>$food)
+                <div class="col-md-2 col-sm-6">
+
+                    <div class="cause fbbox">
+
+                        <div class="zoom_01">{{ Html::image('uploads/'.$food->image, null, ['class' => 'center-block', 'width' => 160, 'height' => 160]) }}</div>
+                        <h4 class="cause-title fix"><label>{{ $food->name }}</label></h4>
+
+                        <ul style="display: flex; justify-content: space-between; padding: 5px; margin-bottom: -15px; margin-top: -15px;">
+                            <li style="list-style: none;" class="cause-title fix">{{ $food->quantity }}</li>
+                            <li style="list-style: none;" class="cause-title fix">{{ $food->price }}</li>
+                        </ul>
+
+                        <div class="btn-holder text-center">
+
+                            <button class="btn btn-primary" data-toggle="modal" data-target="#donateModal" id="fruits" value="{{ $food->id }}"><strong>বিস্তারিত</strong></button>
+
+                        </div>
+
+                    </div> <!-- /.cause -->
+
+                </div>
+            @endforeach
+
+            @foreach($traps as $key=>$food)
+                <div class="col-md-2 col-sm-6">
+
+                    <div class="cause fbbox">
+
+                        <div class="zoom_01">{{ Html::image('uploads/'.$food->image, null, ['class' => 'center-block', 'width' => 160, 'height' => 160]) }}</div>
+                        <h4 class="cause-title fix"><label>{{ $food->name }}</label></h4>
+
+                        <ul style="display: flex; justify-content: space-between; padding: 5px; margin-bottom: -15px; margin-top: -15px;">
+                            <li style="list-style: none;" class="cause-title fix">{{ $food->quantity }}</li>
+                            <li style="list-style: none;" class="cause-title fix">{{ $food->price }}</li>
+                        </ul>
+
+                        <div class="btn-holder text-center">
+
+                            <button class="btn btn-primary" data-toggle="modal" data-target="#donateModal" id="traps" value="{{ $food->id }}"><strong>বিস্তারিত</strong></button>
+
+                        </div>
+
+                    </div> <!-- /.cause -->
+
+                </div>
+            @endforeach
+
+            @foreach($organicFarmings as $key=>$food)
+                <div class="col-md-2 col-sm-6">
+
+                    <div class="cause fbbox">
+
+                        <div class="zoom_01">{{ Html::image('uploads/'.$food->image, null, ['class' => 'center-block', 'width' => 160, 'height' => 160]) }}</div>
+                        <h4 class="cause-title fix"><label>{{ $food->name }}</label></h4>
+
+                        <ul style="display: flex; justify-content: space-between; padding: 5px; margin-bottom: -15px; margin-top: -15px;">
+                            <li style="list-style: none;" class="cause-title fix">{{ $food->quantity }}</li>
+                            <li style="list-style: none;" class="cause-title fix">{{ $food->price }}</li>
+                        </ul>
+
+                        <div class="btn-holder text-center">
+
+                            <button class="btn btn-primary" data-toggle="modal" data-target="#donateModal" id="farming" value="{{ $food->id }}"><strong>বিস্তারিত</strong></button>
+
+                        </div>
+
+                    </div> <!-- /.cause -->
+
+                </div>
+            @endforeach
+
+        </div>
+        
+    </div>
+
+</div> <!-- /.our-causes -->
+
+<div class="section-home our-causes fadeIn">
+
+    <div class="container">
+
+
+        <h2 class="title-style-1" style="margin-top: -30px;">পুস্তিকা <span class="title-under"></span></h2>
         {{ Html::link('kitnashok', 'আরও পুস্তিকা দেখুন', ['class' => 'btn btn-primary pull-right', 'style' => 'margin-top: -50px; font-weight: bold;']) }}
         <div class="row">
             @foreach($postikas as $key=>$postika)
@@ -335,7 +905,7 @@
 
 
 
-
+@include('layouts.partial.marquee')
 
 
 @include('layouts.partial.footer')

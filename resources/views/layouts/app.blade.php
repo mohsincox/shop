@@ -55,12 +55,30 @@
                             </a>
 
                             <ul class="dropdown-menu" role="menu">
+                                
+                                <li><a href="{{ url('/shak-sobji-bij-auth') }}">শাকসবজি বীজ</a></li>
+                                <li><a href="{{ url('/mosla-bij-auth') }}">মসলা বীজ</a></li>
+                                <li><a href="{{ url('/ful-bij-auth') }}">ফুল বীজ</a></li>
+                                <li><a href="{{ url('/falojo-bij-auth') }}">ফলজ বীজ</a></li>
+                                <li><a href="{{ url('/tonto-bij-auth') }}">তন্তু বীজ</a></li>
+                                <li><a href="{{ url('/toil-bij-auth') }}">তৈল বীজ</a></li>
+                                <li><a href="{{ url('/dana-bij-auth') }}">দানা বীজ</a></li>
                                 <li><a href="{{ url('/sasso-bij-auth') }}">শস্য বীজ</a></li>
-                                <li><a href="{{ url('#') }}">শাকসবজি বীজ</a></li>
-                                <li><a href="{{ url('#') }}">ফুল বীজ</a></li>
-                                <li><a href="{{ url('#') }}">ফলজ বীজ</a></li>
-                                <li><a href="{{ url('#') }}">ঔষধি বীজ</a></li>
-                                <li><a href="{{ url('#') }}">বনজ বীজ</a></li>
+                                <li><a href="{{ url('/osodhi-bij-auth') }}">ঔষধি বীজ</a></li>
+                                <li><a href="{{ url('/bonojo-bij-auth') }}">বনজ বীজ</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                                খাবার/খাদ্য <span class="caret"></span>
+                            </a>
+
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="{{ url('/gobadi-poshor-khaddo-auth') }}">গবাদি পশুর খাদ্য</a></li>
+                                <li><a href="{{ url('/has-morgir-khaddo-auth') }}">হাঁস-মুরগীর খাদ্য</a></li>
+                                <li><a href="{{ url('/macher-khaddo-auth') }}">মাছের খাদ্য</a></li>
+                                <li><a href="{{ url('/posho-pakhir-khaddo-auth') }}">পশু-পাখির খাদ্য</a></li>
+                                <li><a href="{{ url('/krishi-khaddo-auth') }}">কৃষি খাদ্য</a></li>
                             </ul>
                         </li>
                         <li class="dropdown">
@@ -69,39 +87,40 @@
                             </a>
 
                             <ul class="dropdown-menu" role="menu">
-                                <li><a href="{{ url('#') }}">গবাদি পশুর ঔষধ</a></li>
-                                <li><a href="{{ url('#') }}">হাঁস-মুরগীর ঔষধ</a></li>
-                                <li><a href="{{ url('#') }}">মৎস ঔষধ</a></li>
+                                <li><a href="{{ url('/gobadi-poshor-osodh-auth') }}">গবাদি পশুর ঔষধ</a></li>
+                                <li><a href="{{ url('/has-morgir-osodh-auth') }}">হাঁস-মুরগীর ঔষধ</a></li>
+                                <li><a href="{{ url('/motso-osodh-auth') }}">মৎস ঔষধ</a></li>
+                                <li><a href="{{ url('/posho-pakhir-osodh-auth') }}">পশু-পাখির ঔষধ</a></li>
                             </ul>
                         </li>
-                        <li><a href="{{ url('#') }}">কিটনাশক</a></li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                                খাবার/খাদ্য <span class="caret"></span>
-                            </a>
-
-                            <ul class="dropdown-menu" role="menu">
-                                <li><a href="{{ url('#') }}">গবাদি পশুর খাদ্য</a></li>
-                                <li><a href="{{ url('#') }}">হাঁস-মুরগীর খাদ্য</a></li>
-                                <li><a href="{{ url('#') }}">কৃষি খাদ্য</a></li>
-                                <li><a href="{{ url('#') }}">মৎস খাদ্য</a></li>
-                            </ul>
-                        </li>
+                        <li><a href="{{ url('/kitnashok-auth') }}">কিটনাশক</a></li>
+                        <li><a href="{{ url('/jontropati-auth') }}">যন্ত্রপাতি</a></li>
+                        <li><a href="{{ url('/opokoron-auth') }}">উপকরণ</a></li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
                                 নার্সারী <span class="caret"></span>
                             </a>
 
                             <ul class="dropdown-menu" role="menu">
-                                <li><a href="{{ url('#') }}">ফুল</a></li>
-                                <li><a href="{{ url('#') }}">ফল</a></li>
-                                <li><a href="{{ url('#') }}">ঔষধি</a></li>
-                                <li><a href="{{ url('#') }}">বনজ</a></li>
-                                <li><a href="{{ url('#') }}">ক্যাকটাস</a></li>
+                                <li><a href="{{ url('/ful-auth') }}">ফুল</a></li>
+                                <li><a href="{{ url('/fal-auth') }}">ফল</a></li>
+                                <li><a href="{{ url('/osodhi-auth') }}">ঔষধি</a></li>
+                                <li><a href="{{ url('/bonoj-auth') }}">বনজ</a></li>
+                                <li><a href="{{ url('/kaktas-auth') }}">ক্যাকটাস</a></li>
                             </ul>
                         </li>
-                        <li><a href="{{ url('#') }}">যন্ত্রপাতি</a></li>
-                        <li><a href="{{ url('#') }}">উপকরণ</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                                অর্গানিক ফুড <span class="caret"></span>
+                            </a>
+
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="{{ url('/organic-vegetables-auth') }}">Organic Vegetables</a></li>
+                                <li><a href="{{ url('/organic-fruits-auth') }}">Organic Fruits</a></li>
+                                <li><a href="{{ url('/bio-pesticides-and-traps-auth') }}">Bio-Pesticides & Traps</a></li>
+                                <li><a href="{{ url('/organic-farming-auth') }}">Organic Farming</a></li>
+                            </ul>
+                        </li>
                     @endif
                 </ul>
 

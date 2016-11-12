@@ -16,19 +16,19 @@
 //});
 
 Route::get('/', 'WelcomeController@index');
-Route::post('store-customer', 'WelcomeController@storeCustomer');
-Route::get('show-customer', 'WelcomeController@showCustomer');
-Route::get('show-to-model-sasso-bij', 'WelcomeController@showToModelSassoBij');
-Route::get('show-to-model-shak-sobji-bij', 'WelcomeController@showToModelShakSobjiBij');
-Route::get('show-to-model-ful-bij', 'WelcomeController@showToModelFulBij');
-Route::get('show-to-model-falojo-bij', 'WelcomeController@showToModelFalojoBij');
-Route::get('show-to-model-osodhi-bij', 'WelcomeController@showToModelOsodhiBij');
-Route::get('show-to-model-bonojo-bij', 'WelcomeController@showToModelBonojoBij');
-Route::get('show-to-model-kitnashok', 'WelcomeController@showToModelKitnashok');
-Route::get('show-to-model-jontropati', 'WelcomeController@showToModelJontropati');
-Route::get('show-to-model-opokoron', 'WelcomeController@showToModelOpokoron');
-Route::get('show-to-model-postika', 'WelcomeController@showToModelPostika');
-Route::get('test', 'WelcomeController@test');
+Route::post('/store-customer', 'WelcomeController@storeCustomer');
+Route::get('/show-customer', 'WelcomeController@showCustomer');
+Route::get('/show-to-model-sasso-bij', 'WelcomeController@showToModelSassoBij');
+Route::get('/show-to-model-shak-sobji-bij', 'WelcomeController@showToModelShakSobjiBij');
+Route::get('/show-to-model-ful-bij', 'WelcomeController@showToModelFulBij');
+Route::get('/show-to-model-falojo-bij', 'WelcomeController@showToModelFalojoBij');
+Route::get('/show-to-model-osodhi-bij', 'WelcomeController@showToModelOsodhiBij');
+Route::get('/show-to-model-bonojo-bij', 'WelcomeController@showToModelBonojoBij');
+Route::get('/show-to-model-kitnashok', 'WelcomeController@showToModelKitnashok');
+Route::get('/show-to-model-jontropati', 'WelcomeController@showToModelJontropati');
+Route::get('/show-to-model-opokoron', 'WelcomeController@showToModelOpokoron');
+Route::get('/show-to-model-postika', 'WelcomeController@showToModelPostika');
+Route::get('/test', 'WelcomeController@test');
 
 Route::auth();
 
@@ -56,13 +56,27 @@ Route::resource('/gobadi-poshor-osodh-auth', 'Osodh\GobadiPoshorOsodhController'
 Route::resource('/has-morgir-osodh-auth', 'Osodh\HasMorgirOsodhController');
 Route::resource('/posho-pakhir-osodh-auth', 'Osodh\PoshoPakhirOsodhController');
 
+Route::resource('/ful-auth', 'Narsari\FulController');
+Route::resource('/fal-auth', 'Narsari\FalController');
+Route::resource('/osodhi-auth', 'Narsari\OsodhiController');
+Route::resource('/bonoj-auth', 'Narsari\BonojController');
+Route::resource('/kaktas-auth', 'Narsari\KaktasController');
+
+Route::resource('/organic-vegetables-auth', 'OrganicFood\OrganicVegetablesController');
+Route::resource('/organic-fruits-auth', 'OrganicFood\OrganicFruitsController');
+Route::resource('/organic-farming-auth', 'OrganicFood\OrganicFarmingController');
+Route::resource('/bio-pesticides-and-traps-auth', 'OrganicFood\BioPesticidesAndTrapsController');
+
+Route::resource('/slider-one-auth', 'Slider\SliderOneController');
+Route::resource('/slider-two-auth', 'Slider\SliderTwoController');
+Route::resource('/slider-three-auth', 'Slider\SliderThreeController');
+
 Route::resource('/kitnashok-auth', 'KitnashokController');
 Route::resource('/jontropati-auth', 'JontropatiController');
 Route::resource('/opokoron-auth', 'OpokoronController');
 Route::resource('/postika-auth', 'PostikaController');
 
 
-
-Route::get('sasso-bij', 'WithoutAuth\AllItemsController@sassoBij');
-Route::get('shak-sobji-bij', 'WithoutAuth\AllItemsController@shakSobjiBij');
-Route::get('kitnashok', 'WithoutAuth\AllItemsController@kitnashok');
+Route::get('/sasso-bij', 'WithoutAuth\AllItemsController@sassoBij');
+Route::get('/shak-sobji-bij', 'WithoutAuth\AllItemsController@shakSobjiBij');
+Route::get('/kitnashok', 'WithoutAuth\AllItemsController@kitnashok');
