@@ -41,7 +41,11 @@ class SliderOneController extends Controller
         if (Input::file('image')->isValid()) {
             $destinationPath = 'uploads';
             $extension = Input::file('image')->getClientOriginalExtension();
+<<<<<<< HEAD
             $fileName = rand(11111,99999).'.'.$extension;
+=======
+            $fileName = date('Y-m-d-H:i:s.u').'.'.$extension;
+>>>>>>> 4ad126d736af6dd763239fd791ccdd1833a9172c
             Input::file('image')->move($destinationPath, $fileName);
         }
 
@@ -68,7 +72,11 @@ class SliderOneController extends Controller
         if (Input::file('image')->isValid()) {
             $destinationPath = 'uploads';
             $extension = Input::file('image')->getClientOriginalExtension();
+<<<<<<< HEAD
             $fileName = rand(11111,99999).'.'.$extension;
+=======
+            $fileName = date('Y-m-d H:i:s.u').'.'.$extension;
+>>>>>>> 4ad126d736af6dd763239fd791ccdd1833a9172c
             Input::file('image')->move($destinationPath, $fileName);
         }
 
