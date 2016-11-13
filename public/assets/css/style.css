@@ -11,7 +11,8 @@
 ========================================================================== */
 body {
   font-family: "Open sans", sans-serif;
-  color: #115c9b;
+  /*color: #115c9b;*/
+  color: #008000;
 }
 
 h1,
@@ -57,7 +58,8 @@ a:hover, a:focus, a:active {
 .navbar-main {
   margin-bottom: 0;
   color: #fff;
-  background: #1f76bd;
+  background: #008000;
+  /*background: #1f76bd;*/
 }
 .navbar-main .navbar-brand {
   border-bottom: none !important;
@@ -73,7 +75,8 @@ a:hover, a:focus, a:active {
 .navbar-main .submenu {
   position: absolute;
   list-style: none;
-  background: #1f76bd;
+  background: #008000;
+  /*background: #1f76bd;*/
   padding: 0;
   width: 170px;
   left: -35px;
@@ -493,7 +496,8 @@ form .alert {
 	Module
 ========================================================================== */
 .btn-primary {
-  background: #115c9b;
+  /*background: #115c9b;*/
+  background: #008000;
   border: none;
   border-radius: 0;
   padding: 10px 25px;
@@ -538,7 +542,8 @@ form .alert {
 .title-style-1 {
   text-align: center;
   text-transform: uppercase;
-  font-size: 26px;
+  font-size: 35px;
+  /*font-size: 26px;*/
   /*margin-bottom: 50px;*/
 }
 

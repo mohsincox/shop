@@ -53,7 +53,8 @@
     <div class="container">
 
         @include('layouts.partial.search_mobile')
-        <h1 class="title-style-1"><b></b> <span style="color: #000000" >বীজ (SEEDS)</span> </b><span class="title-under"></span></h1>
+
+        <h2 class="title-style-1"></b>বীজ (SEEDS)<span class="title-under"></span></h2>
         {{ Html::link('kitnashok', 'আরও বীজ দেখুন', ['class' => 'btn btn-primary pull-right', 'style' => 'margin-top: -50px; font-weight: bold;']) }}
         <div class="row">
 
