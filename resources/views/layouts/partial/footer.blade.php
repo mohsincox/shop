@@ -9,6 +9,40 @@
         <div class="container">
 
             <div class="row">
+
+                <div class="col-md-3">
+
+                    <div class="footer-col">
+
+                        <h3 class="footer-title">
+                            ঠিকানা/যোগাযোগ   <span class="title-under"></span></h3>
+
+                        <div class="footer-content">
+                            <ul class="tweets list-unstyled">
+                                <li class="tweet">
+
+                                    <a><h4>বাংলাদেশ (এই শব্দ সম্পর্কে শুনুন (সাহায্য·তথ্য))</h4></a> 
+
+                                </li>
+
+                                <li class="tweet">
+
+                                    <a><h4>বাংলাদেশ (এই শব্দ সম্পর্কে শুনুন (সাহায্য·তথ্য))</h4></a> 
+
+                                </li>
+                                <li class="tweet">
+
+                                    <a><h4>বাংলাদেশ (এই শব্দ সম্পর্কে শুনুন (সাহায্য·তথ্য))</h4></a> 
+
+                                </li>
+
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>
+
                 <div class="col-md-3">
 
                     <div class="footer-col">
@@ -35,51 +69,29 @@
 
                     <div class="footer-col">
 
-                        <h3 class="footer-title">পরামর্শ/কৃষি টিপস <span class="title-under"></span></h3>
+                        <h3 class="footer-title">নোটিশ বোর্ড <span class="title-under"></span></h3>
 
                         <div class="footer-content">
+
                             <ul class="tweets list-unstyled">
                                 <li class="tweet">
 
-                                    <a><h4>বাংলাদেশ (এই শব্দ সম্পর্কে শুনুন (সাহায্য·তথ্য))</h4></a> 
+                                    <a><h4>বাংলাদেশ (এই শব্দ সম্পর্কে শুনুন (সাহায্য·তথ্য))</h4></a>
 
                                 </li>
 
                                 <li class="tweet">
 
-                                    <a><h4>বাংলাদেশ (এই শব্দ সম্পর্কে শুনুন (সাহায্য·তথ্য))</h4></a> 
+                                    <a><h4>বাংলাদেশ (এই শব্দ সম্পর্কে শুনুন (সাহায্য·তথ্য))</h4></a>
 
                                 </li>
                                 <li class="tweet">
 
-                                    <a><h4>বাংলাদেশ (এই শব্দ সম্পর্কে শুনুন (সাহায্য·তথ্য))</h4></a> 
+                                    <a><h4>বাংলাদেশ (এই শব্দ সম্পর্কে শুনুন (সাহায্য·তথ্য))</h4></a>
 
                                 </li>
 
                             </ul>
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-                <div class="col-md-3">
-
-                    <div class="footer-col">
-
-                        <h3 class="footer-title">প্রেস<span class="title-under"></span></h3>
-
-                        <div class="footer-content">
-
-                            <p>
-                                বাংলাদেশ (এই শব্দ সম্পর্কে শুনুন (সাহায্য·তথ্য)) দক্ষিণ এশিয়ার একটি জনবহুল রাষ্ট্র। বাংলাদেশের সাংবিধানিক নাম গণপ্রজাতন্ত্রী বাংলাদেশ।
-                            </p>
-
-                            <p>
-                                ভূ-রাজনৈতিকভাবে বাংলাদেশের পশ্চিম, উত্তর ও পূর্ব সীমান্তে ভারত, দক্ষিণ-পূর্ব সীমান্তে মায়ানমার ও দক্ষিণ উপকূলের দিকে বঙ্গোপসাগর অবস্থিত। বাংলাদেশের ভূখণ্ড ভৌগোলিকভাবে একটি উর্বর ব-দ্বীপের অংশ বিশেষ।
-                            </p>
-
                         </div>
 
                     </div>
@@ -106,34 +118,16 @@
 
                     <div class="footer-col">
 
-                        <h3 class="footer-title">নোটিশ বোর্ড <span class="title-under"></span></h3>
+                        <h3 class="footer-title">প্রেস<span class="title-under"></span></h3>
 
                         <div class="footer-content">
-                            <!-- <div class="footer-social">
+                            <div class="footer-social">
+                                <a class="social-icon facebook" href="https://www.facebook.com/%E0%A6%95%E0%A7%83%E0%A6%B7%E0%A6%BF-%E0%A6%B9%E0%A6%BE%E0%A6%9F-krishihat-1537374749856138/" target="_blank"></a>
                                 <a class="social-icon twitter" href="#" target="_blank"></a>
                                 <a class="social-icon dribbble" href="#" target="_blank"></a>
-                                <a class="social-icon facebook" href="#" target="_blank"></a>
                                 <a class="social-icon google-plus" href="#" target="_blank"></a>
-                            </div> -->
-                            <ul class="tweets list-unstyled">
-                                <li class="tweet">
+                            </div>
 
-                                    <a><h4>বাংলাদেশ (এই শব্দ সম্পর্কে শুনুন (সাহায্য·তথ্য))</h4></a> 
-
-                                </li>
-
-                                <li class="tweet">
-
-                                    <a><h4>বাংলাদেশ (এই শব্দ সম্পর্কে শুনুন (সাহায্য·তথ্য))</h4></a> 
-
-                                </li>
-                                <li class="tweet">
-
-                                    <a><h4>বাংলাদেশ (এই শব্দ সম্পর্কে শুনুন (সাহায্য·তথ্য))</h4></a> 
-
-                                </li>
-
-                            </ul>
                         </div>
 
                     </div>

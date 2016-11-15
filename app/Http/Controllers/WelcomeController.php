@@ -82,8 +82,8 @@ class WelcomeController extends Controller
         $kaktas = Kaktas::take(3)->get();
 
         $kitnashoks = Kitnashok::take(6)->get();
-        $jontropatis = Jontropati::take(6)->get();
-        $opokorons = Opokoron::take(6)->get();
+        $jontropatis = Jontropati::take(12)->get();
+        $opokorons = Opokoron::take(12)->get();
         $postikas = Postika::take(6)->get();
 
         $organicVegetables = OrganicVegetables::take(4)->get();

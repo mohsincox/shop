@@ -332,7 +332,8 @@ a:hover, a:focus, a:active {
 }
 
 .main-footer {
-  background: #1f76bd;
+  background: #008000;
+  /*background: #1f76bd;*/
   color: #fff;
 }
 .main-footer .footer-main {

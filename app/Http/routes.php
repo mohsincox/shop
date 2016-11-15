@@ -76,6 +76,8 @@ Route::resource('/jontropati-auth', 'JontropatiController');
 Route::resource('/opokoron-auth', 'OpokoronController');
 Route::resource('/postika-auth', 'PostikaController');
 
+Route::resource('/thikana-auth', 'Footer\ThikanaController');
+
 
 Route::get('/sasso-bij', 'WithoutAuth\AllItemsController@sassoBij');
 Route::get('/shak-sobji-bij', 'WithoutAuth\AllItemsController@shakSobjiBij');
