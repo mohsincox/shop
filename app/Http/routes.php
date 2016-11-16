@@ -71,12 +71,16 @@ Route::resource('/slider-one-auth', 'Slider\SliderOneController');
 Route::resource('/slider-two-auth', 'Slider\SliderTwoController');
 Route::resource('/slider-three-auth', 'Slider\SliderThreeController');
 
+Route::resource('/mobile-auth', 'MobileController');
+
 Route::resource('/kitnashok-auth', 'KitnashokController');
 Route::resource('/jontropati-auth', 'JontropatiController');
 Route::resource('/opokoron-auth', 'OpokoronController');
 Route::resource('/postika-auth', 'PostikaController');
+Route::resource('/marquee-auth', 'MarqueeController');
 
 Route::resource('/thikana-auth', 'Footer\ThikanaController');
+Route::resource('/notice-auth', 'Footer\NoticeController');
 
 
 Route::get('/sasso-bij', 'WithoutAuth\AllItemsController@sassoBij');

@@ -18,25 +18,16 @@
                             ঠিকানা/যোগাযোগ   <span class="title-under"></span></h3>
 
                         <div class="footer-content">
-                            <ul class="tweets list-unstyled">
-                                <li class="tweet">
-
-                                    <a><h4>বাংলাদেশ (এই শব্দ সম্পর্কে শুনুন (সাহায্য·তথ্য))</h4></a> 
-
-                                </li>
-
-                                <li class="tweet">
-
-                                    <a><h4>বাংলাদেশ (এই শব্দ সম্পর্কে শুনুন (সাহায্য·তথ্য))</h4></a> 
-
-                                </li>
-                                <li class="tweet">
-
-                                    <a><h4>বাংলাদেশ (এই শব্দ সম্পর্কে শুনুন (সাহায্য·তথ্য))</h4></a> 
-
-                                </li>
-
-                            </ul>
+                            @foreach($thikanas as $address)
+                                <ul class="tweets list-unstyled">
+                                    <li class="tweet">
+                                        <a><h4>{{ $address->office }}</h4></a>
+                                    </li>
+                                    <li class="tweet">
+                                        <a><h4>{{ $address->account_no }}</h4></a>
+                                    </li>
+                                </ul>
+                            @endforeach
                         </div>
 
                     </div>
@@ -80,11 +71,6 @@
 
                                 </li>
 
-                                <li class="tweet">
-
-                                    <a><h4>বাংলাদেশ (এই শব্দ সম্পর্কে শুনুন (সাহায্য·তথ্য))</h4></a>
-
-                                </li>
                                 <li class="tweet">
 
                                     <a><h4>বাংলাদেশ (এই শব্দ সম্পর্কে শুনুন (সাহায্য·তথ্য))</h4></a>

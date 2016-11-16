@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Models\Customer;
 use App\Models\Kitnashok;
 use App\Models\Jontropati;
+use App\Models\Marquee;
+use App\Models\Mobile;
 use App\Models\Opokoron;
 use App\Models\Postika;
 
@@ -13,6 +15,7 @@ use App\Models\ShakSobjiBij;
 use App\Models\MoslaBij;
 use App\Models\FulBij;
 use App\Models\FalojoBij;
+use App\Models\Thikana;
 use App\Models\TontoBij;
 use App\Models\ToilBij;
 use App\Models\DanaBij;
@@ -86,6 +89,9 @@ class WelcomeController extends Controller
         $opokorons = Opokoron::take(12)->get();
         $postikas = Postika::take(6)->get();
 
+        $marquees = Marquee::take(15)->get();
+        $mobiles = Mobile::take(3)->get();
+
         $organicVegetables = OrganicVegetables::take(4)->get();
         $organicFruits = OrganicFruits::take(4)->get();
         $traps = BioPesticidesAndTraps::take(2)->get();
@@ -95,7 +101,9 @@ class WelcomeController extends Controller
         $sliderTwo = SliderTwo::first();
         $sliderThree = SliderThree::first();
 
-        return view('welcome', compact('sassoBijs', 'shakSobjiBijs', 'fulBijs', 'falojoBijs', 'osodhiBijs', 'bonojoBijs', 'moslaBijs', 'tontoBijs', 'toilBijs', 'danaBijs', 'kitnashoks', 'jontropatis', 'opokorons', 'postikas', 'gobadiPoshorKhaddos', 'hasMorgirKhaddos', 'macherKhaddos', 'poshoPakhirKhaddos', 'krishiKhaddos', 'gobadiPoshorOsodhs', 'hasMorgirOsodhs', 'motsoOsodhs', 'poshoPakhirOsodhs', 'fuls', 'fals', 'osodhis', 'bonojs', 'kaktas', 'organicVegetables', 'organicFruits', 'traps', 'organicFarmings', 'sliderOne', 'sliderTwo', 'sliderThree'));
+        $thikanas = Thikana::take(1)->get();
+
+        return view('welcome', compact('sassoBijs', 'shakSobjiBijs', 'fulBijs', 'falojoBijs', 'osodhiBijs', 'bonojoBijs', 'moslaBijs', 'tontoBijs', 'toilBijs', 'danaBijs', 'kitnashoks', 'jontropatis', 'opokorons', 'postikas', 'gobadiPoshorKhaddos', 'hasMorgirKhaddos', 'macherKhaddos', 'poshoPakhirKhaddos', 'krishiKhaddos', 'gobadiPoshorOsodhs', 'hasMorgirOsodhs', 'motsoOsodhs', 'poshoPakhirOsodhs', 'fuls', 'fals', 'osodhis', 'bonojs', 'kaktas', 'organicVegetables', 'organicFruits', 'traps', 'organicFarmings', 'sliderOne', 'sliderTwo', 'sliderThree', 'marquees', 'mobiles', 'thikanas'));
     }
 
     public function showToModelSassoBij(Request $request)

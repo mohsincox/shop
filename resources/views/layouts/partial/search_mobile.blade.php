@@ -2,7 +2,17 @@
 
     <div class="col-md-12">
         <div style="margin-top: -40px;" class="col-md-8">
-            <h2 style="color: red;"><strong>মুঠোফোন : ০১৭৫৮২১৪৯৬৬, 01758214966, 01712123456</strong></h2>
+			<?php
+				$output = '';
+				foreach($mobiles as $mobile){
+					$input = $mobile->number.', ';
+					$output = $output.$input;
+				}
+				$numbers = substr($output, 0, -2);
+			?>
+
+            	<h2 style="color: red;"><strong>মুঠোফোন : {{ $numbers }} </strong></h2>
+
         </div>
         <!-- <div class="col-md-4"> -->
 	        <div style="margin-top: -20px;" class="input-group col-md-4">
