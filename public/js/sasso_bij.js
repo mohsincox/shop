@@ -171,3 +171,267 @@ $(function() {
 
     });
 });
+
+$(function() {
+    $(document).on('click', '#mosla-bij', function(){
+        var id = $(this).val();
+        var u = $('#url').html();
+        var url  = u+"/show-to-model-mosla-bij?id="+ id;
+        $.get(url, function (data) {
+            $('#hamba').html(data);
+        });
+
+    });
+});
+
+$(function() {
+    $(document).on('click', '#tonto-bij', function(){
+        var id = $(this).val();
+        var u = $('#url').html();
+        var url  = u+"/show-to-model-tonto-bij?id="+ id;
+        $.get(url, function (data) {
+            $('#hamba').html(data);
+        });
+
+    });
+});
+
+$(function() {
+    $(document).on('click', '#toil-bij', function(){
+        var id = $(this).val();
+        var u = $('#url').html();
+        var url  = u+"/show-to-model-toil-bij?id="+ id;
+        $.get(url, function (data) {
+            $('#hamba').html(data);
+        });
+
+    });
+});
+
+$(function() {
+    $(document).on('click', '#dana-bij', function(){
+        var id = $(this).val();
+        var u = $('#url').html();
+        var url  = u+"/show-to-model-dana-bij?id="+ id;
+        $.get(url, function (data) {
+            $('#hamba').html(data);
+        });
+
+    });
+});
+
+$(function() {
+    $(document).on('click', '#gobadi-poshor-khaddo', function(){
+        var id = $(this).val();
+        var u = $('#url').html();
+        var url  = u+"/show-to-model-gobadi-poshor-khaddo?id="+ id;
+        $.get(url, function (data) {
+            $('#hamba').html(data);
+        });
+
+    });
+});
+
+$(function() {
+    $(document).on('click', '#has-morgir-khaddo', function(){
+        var id = $(this).val();
+        var u = $('#url').html();
+        var url  = u+"/show-to-model-has-morgir-khaddo?id="+ id;
+        $.get(url, function (data) {
+            $('#hamba').html(data);
+        });
+
+    });
+});
+
+$(function() {
+    $(document).on('click', '#macher-khaddo', function(){
+        var id = $(this).val();
+        var u = $('#url').html();
+        var url  = u+"/show-to-model-macher-khaddo?id="+ id;
+        $.get(url, function (data) {
+            $('#hamba').html(data);
+        });
+
+    });
+});
+
+$(function() {
+    $(document).on('click', '#posho-pakhir-khaddo', function(){
+        var id = $(this).val();
+        var u = $('#url').html();
+        var url  = u+"/show-to-model-posho-pakhir-khaddo?id="+ id;
+        $.get(url, function (data) {
+            $('#hamba').html(data);
+        });
+
+    });
+});
+
+$(function() {
+    $(document).on('click', '#krishi-khaddo', function(){
+        var id = $(this).val();
+        var u = $('#url').html();
+        var url  = u+"/show-to-model-krishi-khaddo?id="+ id;
+        $.get(url, function (data) {
+            $('#hamba').html(data);
+        });
+
+    });
+});
+
+$(function() {
+    $(document).on('click', '#gobadi-poshor-osodh', function(){
+        var id = $(this).val();
+        var u = $('#url').html();
+        var url  = u+"/show-to-model-gobadi-poshor-osodh?id="+ id;
+        $.get(url, function (data) {
+            $('#hamba').html(data);
+        });
+
+    });
+});
+
+$(function() {
+    $(document).on('click', '#has-morgir-osodh', function(){
+        var id = $(this).val();
+        var u = $('#url').html();
+        var url  = u+"/show-to-model-has-morgir-osodh?id="+ id;
+        $.get(url, function (data) {
+            $('#hamba').html(data);
+        });
+
+    });
+});
+
+$(function() {
+    $(document).on('click', '#motso-osodh', function(){
+        var id = $(this).val();
+        var u = $('#url').html();
+        var url  = u+"/show-to-model-motso-osodh?id="+ id;
+        $.get(url, function (data) {
+            $('#hamba').html(data);
+        });
+
+    });
+});
+
+$(function() {
+    $(document).on('click', '#posho-pakhir-osodh', function(){
+        var id = $(this).val();
+        var u = $('#url').html();
+        var url  = u+"/show-to-model-posho-pakhir-osodh?id="+ id;
+        $.get(url, function (data) {
+            $('#hamba').html(data);
+        });
+
+    });
+});
+
+$(function() {
+    $(document).on('click', '#ful', function(){
+        var id = $(this).val();
+        var u = $('#url').html();
+        var url  = u+"/show-to-model-ful?id="+ id;
+        $.get(url, function (data) {
+            $('#hamba').html(data);
+        });
+
+    });
+});
+
+$(function() {
+    $(document).on('click', '#fal', function(){
+        var id = $(this).val();
+        var u = $('#url').html();
+        var url  = u+"/show-to-model-fal?id="+ id;
+        $.get(url, function (data) {
+            $('#hamba').html(data);
+        });
+
+    });
+});
+
+$(function() {
+    $(document).on('click', '#osodhi', function(){
+        var id = $(this).val();
+        var u = $('#url').html();
+        var url  = u+"/show-to-model-osodhi?id="+ id;
+        $.get(url, function (data) {
+            $('#hamba').html(data);
+        });
+
+    });
+});
+
+$(function() {
+    $(document).on('click', '#bonoj', function(){
+        var id = $(this).val();
+        var u = $('#url').html();
+        var url  = u+"/show-to-model-bonoj?id="+ id;
+        $.get(url, function (data) {
+            $('#hamba').html(data);
+        });
+
+    });
+});
+
+$(function() {
+    $(document).on('click', '#kaktas', function(){
+        var id = $(this).val();
+        var u = $('#url').html();
+        var url  = u+"/show-to-model-kaktas?id="+ id;
+        $.get(url, function (data) {
+            $('#hamba').html(data);
+        });
+
+    });
+});
+
+$(function() {
+    $(document).on('click', '#vegetables', function(){
+        var id = $(this).val();
+        var u = $('#url').html();
+        var url  = u+"/show-to-model-vegetables?id="+ id;
+        $.get(url, function (data) {
+            $('#hamba').html(data);
+        });
+
+    });
+});
+
+$(function() {
+    $(document).on('click', '#fruits', function(){
+        var id = $(this).val();
+        var u = $('#url').html();
+        var url  = u+"/show-to-model-fruits?id="+ id;
+        $.get(url, function (data) {
+            $('#hamba').html(data);
+        });
+
+    });
+});
+
+$(function() {
+    $(document).on('click', '#traps', function(){
+        var id = $(this).val();
+        var u = $('#url').html();
+        var url  = u+"/show-to-model-traps?id="+ id;
+        $.get(url, function (data) {
+            $('#hamba').html(data);
+        });
+
+    });
+});
+
+$(function() {
+    $(document).on('click', '#farming', function(){
+        var id = $(this).val();
+        var u = $('#url').html();
+        var url  = u+"/show-to-model-farming?id="+ id;
+        $.get(url, function (data) {
+            $('#hamba').html(data);
+        });
+
+    });
+});

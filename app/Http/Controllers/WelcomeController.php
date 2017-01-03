@@ -141,11 +141,165 @@ class WelcomeController extends Controller
         return view('show_to_model', compact('osodhiBij'));
     }
 
-     public function showToModelBonojoBij(Request $request)
+    public function showToModelBonojoBij(Request $request)
     {
         $bonojoBij = BonojoBij::find($request->id);
 
         return view('show_to_model', compact('bonojoBij'));
+    }
+
+    public function showToModelMoslaBij(Request $request)
+    {
+        $moslaBij = MoslaBij::find($request->id);
+
+        return view('show_to_model', compact('moslaBij'));
+    }
+
+    public function showToModelTontoBij(Request $request)
+    {
+        $tontoBij = TontoBij::find($request->id);
+
+        return view('show_to_model', compact('tontoBij'));
+    }
+
+    public function showToModelToilBij(Request $request)
+    {
+        $toilBij = ToilBij::find($request->id);
+
+        return view('show_to_model', compact('toilBij'));
+    }
+
+    public function showToModelDanaBij(Request $request)
+    {
+        $danaBij = DanaBij::find($request->id);
+
+        return view('show_to_model', compact('danaBij'));
+    }
+
+    public function showToModelGobadiPoshorKhaddo(Request $request)
+    {
+        $gobadiPoshorKhaddo = GobadiPoshorKhaddo::find($request->id);
+
+        return view('show_to_model', compact('gobadiPoshorKhaddo'));
+    }
+
+    public function showToModelHasMorgirKhaddo(Request $request)
+    {
+        $hasMorgirKhaddo = HasMorgirKhaddo::find($request->id);
+
+        return view('show_to_model', compact('hasMorgirKhaddo'));
+    }
+
+    public function showToModelMacherKhaddo(Request $request)
+    {
+        $macherKhaddo = MacherKhaddo::find($request->id);
+
+        return view('show_to_model', compact('macherKhaddo'));
+    }
+
+    public function showToModelPoshoPakhirKhaddo(Request $request)
+    {
+        $poshoPakhirKhaddo = PoshoPakhirKhaddo::find($request->id);
+
+        return view('show_to_model', compact('poshoPakhirKhaddo'));
+    }
+
+    public function showToModelKrishiKhaddo(Request $request)
+    {
+        $krishiKhaddo = KrishiKhaddo::find($request->id);
+
+        return view('show_to_model', compact('krishiKhaddo'));
+    }
+
+    public function showToModelGobadiPoshorOsodh(Request $request)
+    {
+        $gobadiPoshorOsodh = GobadiPoshorOsodh::find($request->id);
+
+        return view('show_to_model', compact('gobadiPoshorOsodh'));
+    }
+
+    public function showToModelHasMorgirOsodh(Request $request)
+    {
+        $hasMorgirOsodh = HasMorgirOsodh::find($request->id);
+
+        return view('show_to_model', compact('hasMorgirOsodh'));
+    }
+
+    public function showToModelMotsoOsodh(Request $request)
+    {
+        $motsoOsodh = MotsoOsodh::find($request->id);
+
+        return view('show_to_model', compact('motsoOsodh'));
+    }
+
+    public function showToModelPoshoPakhirOsodh(Request $request)
+    {
+        $poshoPakhirOsodh = PoshoPakhirOsodh::find($request->id);
+
+        return view('show_to_model', compact('poshoPakhirOsodh'));
+    }
+
+    public function showToModelFul(Request $request)
+    {
+        $ful = Ful::find($request->id);
+
+        return view('show_to_model', compact('ful'));
+    }
+
+    public function showToModelFal(Request $request)
+    {
+        $fal = Fal::find($request->id);
+
+        return view('show_to_model', compact('fal'));
+    }
+
+    public function showToModelOsodhi(Request $request)
+    {
+        $osodhi = Osodhi::find($request->id);
+
+        return view('show_to_model', compact('osodhi'));
+    }
+
+    public function showToModelBonoj(Request $request)
+    {
+        $bonoj = Bonoj::find($request->id);
+
+        return view('show_to_model', compact('bonoj'));
+    }
+
+    public function showToModelKaktas(Request $request)
+    {
+        $kaktas = Kaktas::find($request->id);
+
+        return view('show_to_model', compact('kaktas'));
+    }
+
+    public function showToModelVegetables(Request $request)
+    {
+        $vegetables = OrganicVegetables::find($request->id);
+
+        return view('show_to_model', compact('vegetables'));
+    }
+
+    public function showToModelFruits(Request $request)
+    {
+        $fruits = OrganicFruits::find($request->id);
+
+        return view('show_to_model', compact('fruits'));
+    }
+
+    public function showToModelTraps(Request $request)
+    {
+        $traps = BioPesticidesAndTraps::find($request->id);
+
+        return view('show_to_model', compact('traps'));
+    }
+
+    public function showToModelFarming(Request $request)
+    {
+        $farming = OrganicFarming::find($request->id);
+
+        return view('show_to_model', compact('farming'));
     }
 
     public function showToModelKitnashok(Request $request)

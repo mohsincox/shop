@@ -19,7 +19,7 @@ class KitnashokController extends Controller
     public function index()
     {
         //return 'test';
-        $kitnashoks = Kitnashok::paginate(2);
+        $kitnashoks = Kitnashok::paginate(10);
 
         return view('kitnashok.index', compact('kitnashoks'));
     }

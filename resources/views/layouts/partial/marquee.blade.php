@@ -1,4 +1,4 @@
-<h2 class="title-style-1" style="margin-top: -30px;">শিগ্রই আসিতেছে <span class="title-under"></span></h2>
+<h2 class="title-style-1" style="margin-top: -30px;">শিগ্রই আসিতেছে (Coming Soon)<span class="title-under"></span></h2>
 <div>
 	<marquee behavior="scroll" direction="left" scrollamount="10">
 		@foreach($marquees as $marquee)

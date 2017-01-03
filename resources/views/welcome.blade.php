@@ -94,7 +94,7 @@
 
                         <div class="btn-holder text-center">
 
-                            <button class="btn btn-primary" data-toggle="modal" data-target="#donateModal" id="mosla1" value="{{ $bij->id }}"><strong>বিস্তারিত</strong></button>
+                            <button class="btn btn-primary" data-toggle="modal" data-target="#donateModal" id="mosla-bij" value="{{ $bij->id }}"><strong>বিস্তারিত</strong></button>
 
                         </div>
 
@@ -157,7 +157,7 @@
 
                         <div class="btn-holder text-center">
 
-                            <button class="btn btn-primary" data-toggle="modal" data-target="#donateModal" id="tonto1" value="{{ $bij->id }}"><strong>বিস্তারিত</strong></button>
+                            <button class="btn btn-primary" data-toggle="modal" data-target="#donateModal" id="tonto-bij" value="{{ $bij->id }}"><strong>বিস্তারিত</strong></button>
 
                         </div>
 
@@ -178,7 +178,7 @@
 
                         <div class="btn-holder text-center">
 
-                            <button class="btn btn-primary" data-toggle="modal" data-target="#donateModal" id="toil1" value="{{ $bij->id }}"><strong>বিস্তারিত</strong></button>
+                            <button class="btn btn-primary" data-toggle="modal" data-target="#donateModal" id="toil-bij" value="{{ $bij->id }}"><strong>বিস্তারিত</strong></button>
 
                         </div>
 
@@ -199,7 +199,7 @@
 
                         <div class="btn-holder text-center">
 
-                            <button class="btn btn-primary" data-toggle="modal" data-target="#donateModal" id="dana1" value="{{ $bij->id }}"><strong>বিস্তারিত</strong></button>
+                            <button class="btn btn-primary" data-toggle="modal" data-target="#donateModal" id="dana-bij" value="{{ $bij->id }}"><strong>বিস্তারিত</strong></button>
 
                         </div>
 
@@ -278,7 +278,7 @@
     <div class="container">
 
 
-        <h2 class="title-style-1" style="margin-top: -30px;">খাদ্য <span class="title-under"></span></h2>
+        <h2 class="title-style-1" style="margin-top: -30px;">খাদ্য (Foods)<span class="title-under"></span></h2>
         {{ Html::link('khaddo', 'আরও খাদ্য দেখুন', ['class' => 'btn btn-primary pull-right', 'style' => 'margin-top: -50px; font-weight: bold;']) }}
         <div class="row">
             @foreach($gobadiPoshorKhaddos as $key=>$khaddo)
@@ -412,7 +412,7 @@
     <div class="container">
 
 
-        <h2 class="title-style-1" style="margin-top: -30px;">ঔষধ <span class="title-under"></span></h2>
+        <h2 class="title-style-1" style="margin-top: -30px;">ঔষধ (Medicines)<span class="title-under"></span></h2>
         {{ Html::link('osodh', 'আরও ঔষধ দেখুন', ['class' => 'btn btn-primary pull-right', 'style' => 'margin-top: -50px; font-weight: bold;']) }}
         <div class="row">
             @foreach($gobadiPoshorOsodhs as $key=>$osodh)
@@ -454,7 +454,7 @@
 
                         <div class="btn-holder text-center">
 
-                            <button class="btn btn-primary" data-toggle="modal" data-target="#donateModal" id="gobadi-poshor-osodh" value="{{ $osodh->id }}"><strong>বিস্তারিত</strong></button>
+                            <button class="btn btn-primary" data-toggle="modal" data-target="#donateModal" id="has-morgir-osodh" value="{{ $osodh->id }}"><strong>বিস্তারিত</strong></button>
 
                         </div>
 
@@ -478,7 +478,7 @@
 
                         <div class="btn-holder text-center">
 
-                            <button class="btn btn-primary" data-toggle="modal" data-target="#donateModal" id="gobadi-poshor-osodh" value="{{ $osodh->id }}"><strong>বিস্তারিত</strong></button>
+                            <button class="btn btn-primary" data-toggle="modal" data-target="#donateModal" id="motso-osodh" value="{{ $osodh->id }}"><strong>বিস্তারিত</strong></button>
 
                         </div>
 
@@ -502,7 +502,7 @@
 
                         <div class="btn-holder text-center">
 
-                            <button class="btn btn-primary" data-toggle="modal" data-target="#donateModal" id="gobadi-poshor-osodh" value="{{ $osodh->id }}"><strong>বিস্তারিত</strong></button>
+                            <button class="btn btn-primary" data-toggle="modal" data-target="#donateModal" id="posho-pakhir-osodh" value="{{ $osodh->id }}"><strong>বিস্তারিত</strong></button>
 
                         </div>
 
@@ -522,7 +522,7 @@
     <div class="container">
 
 
-        <h2 class="title-style-1" style="margin-top: -30px;">কীটনাশক <span class="title-under"></span></h2>
+        <h2 class="title-style-1" style="margin-top: -30px;">কীটনাশক (Insecticides)<span class="title-under"></span></h2>
         {{ Html::link('kitnashok', 'আরও কীটনাশক দেখুন', ['class' => 'btn btn-primary pull-right', 'style' => 'margin-top: -50px; font-weight: bold;']) }}
         <div class="row">
             @foreach($kitnashoks as $key=>$kitnashok)
@@ -560,7 +560,7 @@
     <div class="container">
 
 
-        <h2 class="title-style-1"  style="margin-top: -30px;">যন্ত্রপাতি  <span class="title-under"></span></h2>
+        <h2 class="title-style-1"  style="margin-top: -30px;">যন্ত্রপাতি  (Instruments)<span class="title-under"></span></h2>
         {{ Html::link('kitnashok', 'আরও যন্ত্রপাতি দেখুন', ['class' => 'btn btn-primary pull-right', 'style' => 'margin-top: -50px; font-weight: bold;']) }}
         <div class="row">
             @foreach($jontropatis as $key=>$jontropati)
@@ -594,7 +594,7 @@
     <div class="container">
 
 
-        <h2 class="title-style-1" style="margin-top: -30px;">উপকরণ <span class="title-under"></span></h2>
+        <h2 class="title-style-1" style="margin-top: -30px;">উপকরণ (Materials)<span class="title-under"></span></h2>
         {{ Html::link('kitnashok', 'আরও উপকরণ দেখুন', ['class' => 'btn btn-primary pull-right', 'style' => 'margin-top: -50px; font-weight: bold;']) }}
         <div class="row">
             @foreach($opokorons as $key=>$opokoron)
@@ -628,7 +628,7 @@
     <div class="container">
 
 
-        <h2 class="title-style-1" style="margin-top: -30px;">নার্সারী <span class="title-under"></span></h2>
+        <h2 class="title-style-1" style="margin-top: -30px;">নার্সারী (Nurseries)<span class="title-under"></span></h2>
         {{ Html::link('narsari', 'আরও নার্সারী দেখুন', ['class' => 'btn btn-primary pull-right', 'style' => 'margin-top: -50px; font-weight: bold;']) }}
         <div class="row">
             @foreach($fuls as $key=>$narsari)
@@ -762,7 +762,7 @@
     <div class="container">
 
 
-        <h2 class="title-style-1" style="margin-top: -30px;">অর্গানিক ফুড<span class="title-under"></span></h2>
+        <h2 class="title-style-1" style="margin-top: -30px;">অর্গানিক ফুড (Organic Foods)<span class="title-under"></span></h2>
         {{ Html::link('organic-food', 'আরও অর্গানিক ফুড দেখুন', ['class' => 'btn btn-primary pull-right', 'style' => 'margin-top: -50px; font-weight: bold;']) }}
         <div class="row">
             @foreach($organicVegetables as $key=>$food)
@@ -867,39 +867,39 @@
 
 </div> <!-- /.our-causes -->
 
-<div class="section-home our-causes fadeIn">
+{{--<div class="section-home our-causes fadeIn">--}}
 
-    <div class="container">
+    {{--<div class="container">--}}
 
 
-        <h2 class="title-style-1" style="margin-top: -30px;">পুস্তিকা <span class="title-under"></span></h2>
-        {{ Html::link('kitnashok', 'আরও পুস্তিকা দেখুন', ['class' => 'btn btn-primary pull-right', 'style' => 'margin-top: -50px; font-weight: bold;']) }}
-        <div class="row">
-            @foreach($postikas as $key=>$postika)
-                <div class="col-md-2 col-sm-6">
+        {{--<h2 class="title-style-1" style="margin-top: -30px;">পুস্তিকা <span class="title-under"></span></h2>--}}
+        {{--{{ Html::link('kitnashok', 'আরও পুস্তিকা দেখুন', ['class' => 'btn btn-primary pull-right', 'style' => 'margin-top: -50px; font-weight: bold;']) }}--}}
+        {{--<div class="row">--}}
+            {{--@foreach($postikas as $key=>$postika)--}}
+                {{--<div class="col-md-2 col-sm-6">--}}
 
-                    <div class="cause fbbox">
+                    {{--<div class="cause fbbox">--}}
 
-                        <div class="zoom_01">{{ Html::image('uploads/'.$postika->image, null, ['class' => 'center-block', 'width' => 160, 'height' => 160]) }}</div>
-                        <h4 class="cause-title fix"><label>{{ $postika->name }}</label></h4>
-                        <ul style="display: flex; justify-content: space-between; padding: 5px; margin-bottom: -15px; margin-top: -15px;">
-                            <li style="list-style: none;" class="cause-title fix">{{ $postika->quantity }}</li>
-                            <li style="list-style: none;" class="cause-title fix">{{ $postika->price }}</li>
-                        </ul>
-                        <div class="btn-holder text-center">
+                        {{--<div class="zoom_01">{{ Html::image('uploads/'.$postika->image, null, ['class' => 'center-block', 'width' => 160, 'height' => 160]) }}</div>--}}
+                        {{--<h4 class="cause-title fix"><label>{{ $postika->name }}</label></h4>--}}
+                        {{--<ul style="display: flex; justify-content: space-between; padding: 5px; margin-bottom: -15px; margin-top: -15px;">--}}
+                            {{--<li style="list-style: none;" class="cause-title fix">{{ $postika->quantity }}</li>--}}
+                            {{--<li style="list-style: none;" class="cause-title fix">{{ $postika->price }}</li>--}}
+                        {{--</ul>--}}
+                        {{--<div class="btn-holder text-center">--}}
 
-                            <button class="btn btn-primary" data-toggle="modal" data-target="#donateModal" id="vvv" value="{{ $postika->id }}"><strong>বিস্তারিত</strong></button>
+                            {{--<button class="btn btn-primary" data-toggle="modal" data-target="#donateModal" id="vvv" value="{{ $postika->id }}"><strong>বিস্তারিত</strong></button>--}}
 
-                        </div>
+                        {{--</div>--}}
 
-                    </div> <!-- /.cause -->
+                    {{--</div> <!-- /.cause -->--}}
 
-                </div>
-            @endforeach
+                {{--</div>--}}
+            {{--@endforeach--}}
 
-        </div>
-    </div>
-</div> <!-- /.our-causes -->
+        {{--</div>--}}
+    {{--</div>--}}
+{{--</div> <!-- /.our-causes -->--}}
 
 
 

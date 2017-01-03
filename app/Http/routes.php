@@ -24,6 +24,33 @@ Route::get('/show-to-model-ful-bij', 'WelcomeController@showToModelFulBij');
 Route::get('/show-to-model-falojo-bij', 'WelcomeController@showToModelFalojoBij');
 Route::get('/show-to-model-osodhi-bij', 'WelcomeController@showToModelOsodhiBij');
 Route::get('/show-to-model-bonojo-bij', 'WelcomeController@showToModelBonojoBij');
+Route::get('/show-to-model-mosla-bij', 'WelcomeController@showToModelMoslaBij');
+Route::get('/show-to-model-tonto-bij', 'WelcomeController@showToModelTontoBij');
+Route::get('/show-to-model-toil-bij', 'WelcomeController@showToModelToilBij');
+Route::get('/show-to-model-dana-bij', 'WelcomeController@showToModelDanaBij');
+
+Route::get('/show-to-model-gobadi-poshor-khaddo', 'WelcomeController@showToModelGobadiPoshorKhaddo');
+Route::get('/show-to-model-has-morgir-khaddo', 'WelcomeController@showToModelHasMorgirKhaddo');
+Route::get('/show-to-model-macher-khaddo', 'WelcomeController@showToModelMacherKhaddo');
+Route::get('/show-to-model-posho-pakhir-khaddo', 'WelcomeController@showToModelPoshoPakhirKhaddo');
+Route::get('/show-to-model-krishi-khaddo', 'WelcomeController@showToModelKrishiKhaddo');
+
+Route::get('/show-to-model-gobadi-poshor-osodh', 'WelcomeController@showToModelGobadiPoshorOsodh');
+Route::get('/show-to-model-has-morgir-osodh', 'WelcomeController@showToModelHasMorgirOsodh');
+Route::get('/show-to-model-motso-osodh', 'WelcomeController@showToModelMotsoOsodh');
+Route::get('/show-to-model-posho-pakhir-osodh', 'WelcomeController@showToModelPoshoPakhirOsodh');
+
+Route::get('/show-to-model-ful', 'WelcomeController@showToModelFul');
+Route::get('/show-to-model-fal', 'WelcomeController@showToModelFal');
+Route::get('/show-to-model-osodhi', 'WelcomeController@showToModelOsodhi');
+Route::get('/show-to-model-bonoj', 'WelcomeController@showToModelBonoj');
+Route::get('/show-to-model-kaktas', 'WelcomeController@showToModelKaktas');
+
+Route::get('/show-to-model-vegetables', 'WelcomeController@showToModelVegetables');
+Route::get('/show-to-model-fruits', 'WelcomeController@showToModelFruits');
+Route::get('/show-to-model-traps', 'WelcomeController@showToModelTraps');
+Route::get('/show-to-model-farming', 'WelcomeController@showToModelFarming');
+
 Route::get('/show-to-model-kitnashok', 'WelcomeController@showToModelKitnashok');
 Route::get('/show-to-model-jontropati', 'WelcomeController@showToModelJontropati');
 Route::get('/show-to-model-opokoron', 'WelcomeController@showToModelOpokoron');
