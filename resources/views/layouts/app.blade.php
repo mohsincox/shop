@@ -121,6 +121,29 @@
                                 <li><a href="{{ url('/organic-farming-auth') }}">Organic Farming</a></li>
                             </ul>
                         </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                                Slider<span class="caret"></span>
+                            </a>
+
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="{{ url('/slider-one-auth') }}">Slider One</a></li>
+                                <li><a href="{{ url('/slider-two-auth') }}">Slider Two</a></li>
+                                <li><a href="{{ url('/slider-three-auth') }}">Slider Three</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                                Others<span class="caret"></span>
+                            </a>
+
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="{{ url('/show-customer') }}">Customer</a></li>
+                                <li><a href="{{ url('/mobile-auth') }}">Mobile</a></li>
+                                <li><a href="{{ url('/thikana-auth') }}">Address</a></li>
+                                <li><a href="{{ url('/notice-auth') }}">Notice</a></li>
+                            </ul>
+                        </li>
                     @endif
                 </ul>
 
