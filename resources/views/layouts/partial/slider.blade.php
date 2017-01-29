@@ -1,4 +1,4 @@
-<div id="homeCarousel" class="carousel slide carousel-home" data-ride="carousel">
+<div id="homeCarousel" class="carousel slide carousel-home" data-ride="carousel" style="margin-top: 102px;">
 
     <!-- Indicators -->
     <ol class="carousel-indicators">

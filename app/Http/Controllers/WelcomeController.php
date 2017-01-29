@@ -7,6 +7,7 @@ use App\Models\Kitnashok;
 use App\Models\Jontropati;
 use App\Models\Marquee;
 use App\Models\Mobile;
+use App\Models\Notice;
 use App\Models\Opokoron;
 use App\Models\Postika;
 
@@ -102,8 +103,9 @@ class WelcomeController extends Controller
         $sliderThree = SliderThree::first();
 
         $thikanas = Thikana::take(1)->get();
+        $notices = Notice::take(1)->get();
 
-        return view('welcome', compact('sassoBijs', 'shakSobjiBijs', 'fulBijs', 'falojoBijs', 'osodhiBijs', 'bonojoBijs', 'moslaBijs', 'tontoBijs', 'toilBijs', 'danaBijs', 'kitnashoks', 'jontropatis', 'opokorons', 'postikas', 'gobadiPoshorKhaddos', 'hasMorgirKhaddos', 'macherKhaddos', 'poshoPakhirKhaddos', 'krishiKhaddos', 'gobadiPoshorOsodhs', 'hasMorgirOsodhs', 'motsoOsodhs', 'poshoPakhirOsodhs', 'fuls', 'fals', 'osodhis', 'bonojs', 'kaktas', 'organicVegetables', 'organicFruits', 'traps', 'organicFarmings', 'sliderOne', 'sliderTwo', 'sliderThree', 'marquees', 'mobiles', 'thikanas'));
+        return view('welcome', compact('sassoBijs', 'shakSobjiBijs', 'fulBijs', 'falojoBijs', 'osodhiBijs', 'bonojoBijs', 'moslaBijs', 'tontoBijs', 'toilBijs', 'danaBijs', 'kitnashoks', 'jontropatis', 'opokorons', 'postikas', 'gobadiPoshorKhaddos', 'hasMorgirKhaddos', 'macherKhaddos', 'poshoPakhirKhaddos', 'krishiKhaddos', 'gobadiPoshorOsodhs', 'hasMorgirOsodhs', 'motsoOsodhs', 'poshoPakhirOsodhs', 'fuls', 'fals', 'osodhis', 'bonojs', 'kaktas', 'organicVegetables', 'organicFruits', 'traps', 'organicFarmings', 'sliderOne', 'sliderTwo', 'sliderThree', 'marquees', 'mobiles', 'thikanas', 'notices'));
     }
 
     public function showToModelSassoBij(Request $request)

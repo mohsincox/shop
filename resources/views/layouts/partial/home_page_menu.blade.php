@@ -1,9 +1,6 @@
-<header class="main-header">
-
+<header class="main-header" style="position: fixed; z-index: 1; top: 0; right: 0; bottom: 0; left: 0;">
 
     <nav class="navbar navbar-static-top">
-
-
 
         <div class="navbar-main" style="padding: 20px;">
 
@@ -78,22 +75,40 @@
                                 <li class="submenu-item">{!! Html::link('#', 'ফল') !!}</li>
                                 <li class="submenu-item">{!! Html::link('#', 'ঔষধি') !!}</li>
                                 <li class="submenu-item">{!! Html::link('#', 'বনজ') !!}</li>
-                                <li class="submenu-item">{!! Html::link('#', 'ক্যাকটাস') !!}</li>
+                                <li class="submenu-item">{!! Html::link('#', 'ক্যাকটাস-বনসাই ') !!}</li>
                             </ul>
 
                         </li>
-                        <li class="has-child">{!! Html::link('#', 'অর্গানিক ফুড', ['style' => 'font-weight: bold;']) !!}
+                        <li class="has-child">{!! Html::link('#', 'অর্গানিক', ['style' => 'font-weight: bold;']) !!}
 
                             <ul class="submenu" >
-                                <li class="submenu-item">{!! Html::link('#', 'Organic Vegetables') !!}</li>
-                                <li class="submenu-item">{!! Html::link('#', 'Organic Fruits') !!}</li>
-                                <li class="submenu-item">{!! Html::link('#', 'Bio-Pesticides & Traps') !!}</li>
-                                <li class="submenu-item">{!! Html::link('#', 'Organic Farming') !!}</li>
+                                <li class="submenu-item">{!! Html::link('#', 'অরগানিক ফল-শাক-সবজি') !!}</li>
+                                <li class="submenu-item">{!! Html::link('#', 'অরগানিক ফার্ম') !!}</li>
+                                <li class="submenu-item">{!! Html::link('#', 'অরগানিক খাদ্য') !!}</li>
+                                <li class="submenu-item">{!! Html::link('#', 'অরগানিক শুটকি') !!}</li>
+                                <li class="submenu-item">{!! Html::link('#', 'মধু/মাশরুম/মশলাপাতি') !!}</li>
+                                <li class="submenu-item">{!! Html::link('#', 'ভেষজ পণ্য') !!}</li>
+                                <li class="submenu-item">{!! Html::link('#', 'Bio Fertilizers') !!}</li>
+                                <li class="submenu-item">{!! Html::link('#', 'অন্যান্য') !!}</li>
                             </ul>
 
                         </li>
                         <!-- <li>{!! Html::link('#', 'পুস্তিকা', ['style' => 'font-weight: bold;']) !!}</li> -->
-                        <li>{!! Html::link('#', 'ঠিকানা/যোগাযোগ', ['style' => 'font-weight: bold;']) !!}</li>
+                        <li class="has-child">{!! Html::link('#', 'প্রয়োজন', ['style' => 'font-weight: bold;']) !!}
+
+                            <ul class="submenu">
+                                <li class="submenu-item">{!! Html::link('#', 'ফার্নিচার') !!}</li>
+                                <li class="submenu-item">{!! Html::link('#', 'ফ্যাশন') !!}</li>
+                                <li class="submenu-item">{!! Html::link('#', 'ক্রোকারিজ') !!}</li>
+                                <li class="submenu-item">{!! Html::link('#', 'ইলেক্ট্রনিক্স') !!}</li>
+                                <li class="submenu-item">{!! Html::link('#', 'হস্ত শিল্প') !!}</li>
+                                <li class="submenu-item">{!! Html::link('#', 'স্বাস্থ্য প্রডাক্ট') !!}</li>
+                                <li class="submenu-item">{!! Html::link('#', 'কসমেটিকস') !!}</li>
+                                <li class="submenu-item">{!! Html::link('#', 'টেলিকম') !!}</li>
+                                <li class="submenu-item">{!! Html::link('#', 'অন্যান্য') !!}</li>
+                            </ul>
+
+                        </li>
 
 
                     </ul>
