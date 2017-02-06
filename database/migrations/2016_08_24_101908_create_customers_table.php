@@ -18,6 +18,9 @@ class CreateCustomersTable extends Migration
             $table->string('product_name');
             $table->string('quantity');
             $table->string('mobile');
+            $table->string('pay_info');
+            $table->string('order_date');
+            $table->string('delivery_date');
             $table->string('address');
             $table->timestamps();
         });

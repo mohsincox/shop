@@ -61,6 +61,36 @@
                                 </div>
                             </div>
 
+                            <div class="form-group" {{ $errors->has('pay_info') ? 'has error' : '' }}>
+                                {!! Form::label('pay_info', 'মূল্য পরিশোধের তথ্য:', ['class' => 'col-sm-3 control-label']) !!}
+                                <div class="col-sm-9">
+                                    {!! Form::text('pay_info', null,['class' => 'form-control', 'placeholder' => 'বিকাশ নাম্বার বা ব্যাংক একাউন্ট নাম্বার বা অন্নান্য', 'autocomplete' => 'off', 'required']) !!}
+                                    <span class="help-block text-danger">
+                                            {{ $errors->first('pay_info') }}
+                                        </span>
+                                </div>
+                            </div>
+
+                            <div class="form-group" {{ $errors->has('order_date') ? 'has error' : '' }}>
+                                {!! Form::label('order_date', 'অর্ডারের তারিখ:', ['class' => 'col-sm-3 control-label']) !!}
+                                <div class="col-sm-9">
+                                    {!! Form::text('order_date', null,['class' => 'form-control', 'placeholder' => 'অর্ডারের তারিখ', 'autocomplete' => 'off']) !!}
+                                    <span class="help-block text-danger">
+                                            {{ $errors->first('order_date') }}
+                                        </span>
+                                </div>
+                            </div>
+
+                            <div class="form-group" {{ $errors->has('delivery_date') ? 'has error' : '' }}>
+                                {!! Form::label('delivery_date', 'ডেলিভারির  তারিখ :', ['class' => 'col-sm-3 control-label']) !!}
+                                <div class="col-sm-9">
+                                    {!! Form::text('delivery_date', null,['class' => 'form-control', 'placeholder' => 'ডেলিভারির  তারিখ ', 'autocomplete' => 'off']) !!}
+                                    <span class="help-block text-danger">
+                                            {{ $errors->first('delivery_date') }}
+                                        </span>
+                                </div>
+                            </div>
+
                             <div class="form-group" {{ $errors->has('address') ? 'has error' : '' }}>
                                 {!! Form::label('address', 'ঠিকানা:', ['class' => 'col-sm-3 control-label']) !!}
                                 <div class="col-sm-9">

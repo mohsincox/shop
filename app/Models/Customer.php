@@ -13,6 +13,9 @@ class Customer extends Model
         'product_name',
         'quantity',
         'mobile',
+        'pay_info',
+        'order_date',
+        'delivery_date',
         'address'
     ];
 }
