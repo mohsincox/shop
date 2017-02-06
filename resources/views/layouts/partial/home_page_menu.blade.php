@@ -1,4 +1,4 @@
-<header class="main-header" style="position: fixed; z-index: 1; top: 0; right: 0; bottom: 0; left: 0;">
+<header class="main-header" style="position: fixed; z-index: 1; top: 0; width: 100%">
 
     <nav class="navbar navbar-static-top">
 

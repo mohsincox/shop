@@ -124,6 +124,8 @@ $(function() {
     });
 });
 
+
+
 $(function() {
     $(document).on('click', '#ful', function(){
         var id = $(this).val();
@@ -135,6 +137,13 @@ $(function() {
 
     });
 });
+
+$(document).ready(function() {  
+  var modals = ['#ful', '#anotherModal'];
+  if (window.location.hash && ~modals.indexOf(window.location.hash)) {
+     $(window.location.hash).modal();
+  }
+})
 
 $(function() {
     $(document).on('click', '#falojo', function(){

@@ -22,14 +22,31 @@
     </div>
 </div>
 
+<style type="text/css">
+                    /* social icons */
+	.social-icon {
+	    display: inline-block;
+	    width: 48px;
+	    height: 48px;
+	    margin: 5px;
+	    background: center center no-repeat;
+	}
+
+	.social-icon.facebook { background-image: url(assets/images/social-icons/facebook.png); }
+	.social-icon.twitter { background-image: url(assets/images/social-icons/twitter.png); }
+	.social-icon.dribbble { background-image: url(assets/images/social-icons/youtube.png); }
+	.social-icon.google-plus { background-image: url(assets/images/social-icons/google-plus.png); }
+</style>
+
 <div class="row">
 	<div class="col-md-8" style="margin-bottom: -60px;">
 		<div class="col-md-6">
 			<div class="footer-social">
+				<a class="social-icon facebook" href="https://www.facebook.com/%E0%A6%95%E0%A7%83%E0%A6%B7%E0%A6%BF-%E0%A6%B9%E0%A6%BE%E0%A6%9F-krishihat-1537374749856138/" target="_blank"></a>
+	  
 	            <a class="social-icon twitter" href="#" target="_blank"></a>
-	            <a class="social-icon dribbble" href="#" target="_blank"></a>
-	            <a class="social-icon facebook" href="https://www.facebook.com/%E0%A6%95%E0%A7%83%E0%A6%B7%E0%A6%BF-%E0%A6%B9%E0%A6%BE%E0%A6%9F-krishihat-1537374749856138/" target="_blank"></a>
 	            <a class="social-icon google-plus" href="#" target="_blank"></a>
+	            <a class="social-icon dribbble" href="#" target="_blank"></a>
 	         </div>
 		</div>
 		<!-- <div class="col-md-6">

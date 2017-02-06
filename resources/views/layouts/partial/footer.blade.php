@@ -70,21 +70,6 @@
 
                 </div>
 
-                <style type="text/css">
-                    /* social icons */
-.social-icon {
-    display: inline-block;
-    width: 48px;
-    height: 48px;
-    margin: 5px;
-    background: center center no-repeat;
-}
-
-.social-icon.facebook { background-image: url(assets/images/social-icons/facebook.png); }
-.social-icon.twitter { background-image: url(assets/images/social-icons/twitter.png); }
-.social-icon.dribbble { background-image: url(assets/images/social-icons/youtube.png); }
-.social-icon.google-plus { background-image: url(assets/images/social-icons/google-plus.png); }
-                </style>
                 
                 <div class="col-md-3">
 
@@ -120,7 +105,7 @@
     <div class="footer-bottom">
 
         <div class="container text-right">
-            Mohsin @ copyrights 2016 - by Mohsin Iqbal
+            © 2017 - by Mohsin Iqbal (Mobile: 01758214966)
         </div>
     </div>
 
