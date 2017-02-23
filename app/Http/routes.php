@@ -99,6 +99,7 @@ Route::resource('/slider-two-auth', 'Slider\SliderTwoController');
 Route::resource('/slider-three-auth', 'Slider\SliderThreeController');
 
 Route::resource('/mobile-auth', 'MobileController');
+Route::resource('/mobile-banking-auth', 'MobileBankingController');
 
 Route::resource('/kitnashok-auth', 'KitnashokController');
 Route::resource('/jontropati-auth', 'JontropatiController');

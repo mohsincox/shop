@@ -10,6 +10,8 @@ class Notice extends Model
 
     protected $fillable = [
         'title',
+        'mobile',
+        'address',
         'description'
     ];
 }

@@ -7,6 +7,7 @@ use App\Models\Kitnashok;
 use App\Models\Jontropati;
 use App\Models\Marquee;
 use App\Models\Mobile;
+use App\Models\MobileBanking;
 use App\Models\Notice;
 use App\Models\Opokoron;
 use App\Models\Postika;
@@ -91,7 +92,8 @@ class WelcomeController extends Controller
         $postikas = Postika::take(6)->get();
 
         $marquees = Marquee::take(15)->get();
-        $mobiles = Mobile::take(3)->get();
+        $mobiles = Mobile::take(2)->get();
+        $mobileBankings = MobileBanking::take(2)->get();
 
         $organicVegetables = OrganicVegetables::take(4)->get();
         $organicFruits = OrganicFruits::take(4)->get();
@@ -103,9 +105,9 @@ class WelcomeController extends Controller
         $sliderThree = SliderThree::first();
 
         $thikanas = Thikana::take(1)->get();
-        $notices = Notice::take(1)->get();
+        $notices = Notice::get();
 
-        return view('welcome', compact('sassoBijs', 'shakSobjiBijs', 'fulBijs', 'falojoBijs', 'osodhiBijs', 'bonojoBijs', 'moslaBijs', 'tontoBijs', 'toilBijs', 'danaBijs', 'kitnashoks', 'jontropatis', 'opokorons', 'postikas', 'gobadiPoshorKhaddos', 'hasMorgirKhaddos', 'macherKhaddos', 'poshoPakhirKhaddos', 'krishiKhaddos', 'gobadiPoshorOsodhs', 'hasMorgirOsodhs', 'motsoOsodhs', 'poshoPakhirOsodhs', 'fuls', 'fals', 'osodhis', 'bonojs', 'kaktas', 'organicVegetables', 'organicFruits', 'traps', 'organicFarmings', 'sliderOne', 'sliderTwo', 'sliderThree', 'marquees', 'mobiles', 'thikanas', 'notices'));
+        return view('welcome', compact('sassoBijs', 'shakSobjiBijs', 'fulBijs', 'falojoBijs', 'osodhiBijs', 'bonojoBijs', 'moslaBijs', 'tontoBijs', 'toilBijs', 'danaBijs', 'kitnashoks', 'jontropatis', 'opokorons', 'postikas', 'gobadiPoshorKhaddos', 'hasMorgirKhaddos', 'macherKhaddos', 'poshoPakhirKhaddos', 'krishiKhaddos', 'gobadiPoshorOsodhs', 'hasMorgirOsodhs', 'motsoOsodhs', 'poshoPakhirOsodhs', 'fuls', 'fals', 'osodhis', 'bonojs', 'kaktas', 'organicVegetables', 'organicFruits', 'traps', 'organicFarmings', 'sliderOne', 'sliderTwo', 'sliderThree', 'marquees', 'mobiles', 'mobileBankings', 'thikanas', 'notices'));
     }
 
     public function showToModelSassoBij(Request $request)

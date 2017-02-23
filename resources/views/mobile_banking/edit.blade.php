@@ -2,10 +2,10 @@
 
 @section('content')
     <div class="container">
-        <h2>আপনার মতামত Edit</h2>
+        <h2>Mobile Banking Edit</h2>
         <hr>
         <div class="col-sm-7">
-            @include('footer.notice._form')
+            @include('mobile_banking._form')
         </div>
     </div>
 @endsection

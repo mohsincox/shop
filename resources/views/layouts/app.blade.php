@@ -140,8 +140,9 @@
                             <ul class="dropdown-menu" role="menu">
                                 <li><a href="{{ url('/show-customer') }}">Customer</a></li>
                                 <li><a href="{{ url('/mobile-auth') }}">Mobile</a></li>
+                                <li><a href="{{ url('/mobile-banking-auth') }}">Mobile Banking</a></li>
                                 <li><a href="{{ url('/thikana-auth') }}">Address</a></li>
-                                <li><a href="{{ url('/notice-auth') }}">Notice</a></li>
+                                <li><a href="{{ url('/notice-auth') }}">Comment</a></li>
                                 <li><a href="{{ url('/marquee-auth') }}">Coming Soon</a></li>
                             </ul>
                         </li>

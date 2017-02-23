@@ -12,7 +12,7 @@ class NoticeController extends Controller
 {
     public function __construct()
     {
-        $this->middleware('auth');
+        //$this->middleware('auth');
     }
 
     public function index()
@@ -29,11 +29,12 @@ class NoticeController extends Controller
 
     public function store(Request $request)
     {
+        //return $request->all();
         $notice = Notice::create($request->all());
 
-        flash()->message($notice->title . ' Successfully Created');
+        //flash()->message($notice->title . ' Successfully Created');
 
-        return redirect('notice-auth');
+        return redirect('/');
     }
 
     public function edit($id)

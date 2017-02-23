@@ -10,7 +10,7 @@
 
             <div class="row">
 
-                <div class="col-md-3">
+                <div class="col-md-4">
 
                     <div class="footer-col">
 
@@ -31,7 +31,7 @@
 
                 </div>
 
-                <div class="col-md-3">
+                <!-- <div class="col-md-3">
 
                     <div class="footer-col">
 
@@ -68,10 +68,10 @@
 
                     </div>
 
-                </div>
+                </div> -->
 
                 
-                <div class="col-md-3">
+                <div class="col-md-4">
 
                     <div class="footer-col">
 
@@ -90,6 +90,68 @@
                     </div>
 
                 </div>
+
+
+                <div class="col-md-4">
+
+                        <div class="footer-col">
+
+                            <h3 class="footer-title">আপনার মতামত <span class="title-under"></span></h3>
+
+                            <div class="footer-content">
+
+                                <div class="footer-form">
+                                    
+                                    <div class="footer-form" >
+                                    
+                                    <form action="notice-auth" method="post">
+
+                                        <input type="hidden" name="_token" value="<?php echo csrf_token(); ?>">
+
+                                        <div class="form-group">
+                                            <input type="text" style="background: #008000;" name="title" class="form-control" placeholder="নাম " autocomplete="off" required>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <input type="text" style="background: #008000;" name="mobile" class="form-control" placeholder="মোবাইল / ইমেইল " autocomplete="off" required>
+                                        </div>
+
+                                         <div class="form-group">
+                                            <input type="text" style="background: #008000;" name="address" class="form-control" placeholder="ঠিকানা " autocomplete="off" required>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <textarea style="background: #008000;" name="description" class="form-control" placeholder="মন্তব্য " autocomplete="off" required></textarea>
+                                        </div>
+
+                                        <div class="form-group alerts">
+                        
+                                            <div class="alert alert-success" role="alert">
+                                              
+                                            </div>
+
+                                            <div class="alert alert-danger" role="alert">
+                                              
+                                            </div>
+                                            
+                                        </div>
+
+                                         <div class="form-group">
+                                            <button type="submit" style="background: #008000;" onMouseOver="this.style.background='#fff'" onMouseOut="this.style.background='#008000'" class="btn btn-submit pull-right">পাঠিয়ে দিন</button>
+                                        </div>
+                                        
+                                    </form>
+
+                                </div>
+
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                    </div>
+
+
                 <div class="clearfix"></div>
 
 
