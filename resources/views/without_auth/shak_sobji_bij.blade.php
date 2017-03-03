@@ -48,24 +48,14 @@
 
 <script>
     $(function() {
-        $(document).on('click', '#btn', function() {
-            //$('#hamba').text($(this).val());
-            var sasshoBijId = $(this).val();
-            var value = 'id='+sasshoBijId;
+        $(document).on('click', '#btnShakSobjiBij', function(){
+            var id = $(this).val();
             var u = $('#url').html();
-            //alert(value);
-            //console.log(u);
-            $url = u+"/show-to-model";
-            console.log($url);
-            $.ajax({
-                type:"GET",
-                url:$url,
-                data:value
-            }).success(function(data) {
+            var url  = u+"/show-to-model-shak-sobji-bij?id="+ id;
+            $.get(url, function (data) {
                 $('#hamba').html(data);
-            })
-                    .error(function (data) {
-                    });
+            }); 
+
         });
     });
 </script>
@@ -74,29 +64,32 @@
     ================================================== -->
 {{--@include('layouts.partial.slider')--}}
 <!-- /.carousel -->
-<div>
-    <input type="text" id="search-criteria"/>
-</div>
+
 <div class="section-home our-causes fadeIn">
 
     <div class="container">
 
-
-        <h2 class="title-style-1">শস্য বীজ <span class="title-under"></span></h2>
+        <div style="margin-top: 75px;" class="input-group col-md-3 pull-right">
+            <input id="search-criteria" type="text" class="search-query form-control" placeholder="Search" />
+        </div>
+        <h2 class="title-style-1" style="margin-top: 110px;">শাকসবজি বীজ <span class="title-under"></span></h2>
 
         <div class="row">
-            @foreach($shakSobjiBijs as $key=>$bij)
+            @foreach($shakSobjiBijs as $key=>$shakSobjiBij)
                 <div class="col-md-2 col-sm-6">
 
                     <div class="cause fbbox">
+                        <div class="zoom_01">{{ Html::image('uploads/'.$shakSobjiBij->image, null, ['class' => 'center-block', 'width' => 160, 'height' => 160]) }}</div>
+                        <h4 class="cause-title fix"><label>{{ $shakSobjiBij->name }}</label></h4>
+                        <ul style="display: flex; justify-content: space-between; padding: 5px; margin-bottom: -15px; margin-top: -15px;">
+                            <li style="list-style: none;" class="cause-title fix">{{ $shakSobjiBij->quantity }}</li>
+                            <li style="list-style: none;" class="cause-title fix">{{ $shakSobjiBij->price }}</li>
+                        </ul>
 
-                        {{--<div class="zoom_01"><center>{{ Html::image('uploads/'.$bij->image, null, ['width' => 100, 'height' => 100]) }}</center></div>--}}
-                        <div class="zoom_01">{{ Html::image('uploads/'.$bij->image, null, ['class' => 'center-block', 'width' => 160, 'height' => 160]) }}</div>
-                        <h4 class="cause-title fix"><label>{{ $bij->name }}</label></h4>
 
                         <div class="btn-holder text-center">
 
-                            <button class="btn btn-primary" data-toggle="modal" data-target="#donateModal" id="btn" value="{{ $bij->id }}"><strong>বিস্তারিত</strong></button>
+                            <button class="btn btn-primary" data-toggle="modal" data-target="#donateModal" id="btnShakSobjiBij" value="{{ $shakSobjiBij->id }}"><strong>বিস্তারিত</strong></button>
 
                         </div>
 

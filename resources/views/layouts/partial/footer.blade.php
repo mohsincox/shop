@@ -31,44 +31,7 @@
 
                 </div>
 
-                <!-- <div class="col-md-3">
-
-                    <div class="footer-col">
-
-                        <h3 class="footer-title">আমাদের সম্পর্কে<span class="title-under"></span></h3>
-
-                        <div class="footer-content">
-
-                            <p>
-                                বাংলাদেশ (এই শব্দ সম্পর্কে শুনুন (সাহায্য·তথ্য)) দক্ষিণ এশিয়ার একটি জনবহুল রাষ্ট্র। বাংলাদেশের সাংবিধানিক নাম গণপ্রজাতন্ত্রী বাংলাদেশ।
-                            </p>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <div class="col-md-3">
-
-                    <div class="footer-col">
-
-                        <h3 class="footer-title">নোটিশ বোর্ড <span class="title-under"></span></h3>
-
-                        <div class="footer-content">
-
-                            @foreach($notices as $notice)
-                                <ul class="tweets list-unstyled">
-                                    <li class="tweet">
-                                        <a><h4>{{ $notice->title }}</h4></a>
-                                    </li>
-                                </ul>
-                            @endforeach
-                        </div>
-
-                    </div>
-
-                </div> -->
+                
 
                 
                 <div class="col-md-4">
