@@ -127,7 +127,7 @@ $(function() {
 
 
 $(function() {
-    $(document).on('click', '#ful', function(){
+    $(document).on('click', '#ful-bij', function(){
         var id = $(this).val();
         var u = $('#url').html();
         var url  = u+"/show-to-model-ful-bij?id="+ id;
@@ -146,7 +146,7 @@ $(document).ready(function() {
 })
 
 $(function() {
-    $(document).on('click', '#falojo', function(){
+    $(document).on('click', '#falojo-bij', function(){
         var id = $(this).val();
         var u = $('#url').html();
         var url  = u+"/show-to-model-falojo-bij?id="+ id;
@@ -158,7 +158,7 @@ $(function() {
 });
 
 $(function() {
-    $(document).on('click', '#bonojo', function(){
+    $(document).on('click', '#bonojo-bij', function(){
         var id = $(this).val();
         var u = $('#url').html();
         var url  = u+"/show-to-model-bonojo-bij?id="+ id;
@@ -170,7 +170,7 @@ $(function() {
 });
 
 $(function() {
-    $(document).on('click', '#osodhi', function(){
+    $(document).on('click', '#osodhi-bij', function(){
         var id = $(this).val();
         var u = $('#url').html();
         var url  = u+"/show-to-model-osodhi-bij?id="+ id;

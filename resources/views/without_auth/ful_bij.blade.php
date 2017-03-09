@@ -48,25 +48,14 @@
 
 <script>
     $(function() {
-        $(document).on('click', '#btnSassoBij', function() {
-            //$('#hamba').text($(this).val());
-            var sasshoBijId = $(this).val();
-            var value = 'id='+sasshoBijId;
-            console.log(value);
+        $(document).on('click', '#ful-bij', function(){
+            var id = $(this).val();
             var u = $('#url').html();
-            //alert(value);
-            //console.log(u);
-            $url = u+"/show-to-model-sasso-bij";
-            console.log($url);
-            $.ajax({
-                type:"GET",
-                url:$url,
-                data:value
-            }).success(function(data) {
+            var url  = u+"/show-to-model-ful-bij?id="+ id;
+            $.get(url, function (data) {
                 $('#hamba').html(data);
-            })
-                .error(function (data) {
-                });
+            }); 
+
         });
     });
 </script>
@@ -83,10 +72,10 @@
         <div style="margin-top: 75px;" class="input-group col-md-3 pull-right">
             <input id="search-criteria" type="text" class="search-query form-control" placeholder="Search" />
         </div>
-        <h2 class="title-style-1" style="margin-top: 110px;">শস্য বীজ <span class="title-under"></span></h2>
+        <h2 class="title-style-1" style="margin-top: 110px;">ফুল বীজ <span class="title-under"></span></h2>
 
         <div class="row">
-            @foreach($sassoBijs as $key=>$fulBij)
+            @foreach($fulBijs as $key=>$fulBij)
                 <div class="col-md-2 col-sm-6">
 
                     <div class="cause fbbox">
@@ -100,7 +89,7 @@
 
                         <div class="btn-holder text-center">
 
-                            <button class="btn btn-primary" data-toggle="modal" data-target="#donateModal" id="btnSassoBij" value="{{ $fulBij->id }}"><strong>বিস্তারিত</strong></button>
+                            <button class="btn btn-primary" data-toggle="modal" data-target="#donateModal" id="ful-bij" value="{{ $fulBij->id }}"><strong>বিস্তারিত</strong></button>
 
                         </div>
 

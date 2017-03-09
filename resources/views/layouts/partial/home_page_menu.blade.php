@@ -29,15 +29,15 @@
 
                             <ul class="submenu">
                                 <li class="submenu-item">{!! Html::link('shak-sobji-bij', 'শাকসবজি বীজ') !!}</li>
-                                <li class="submenu-item">{!! Html::link('#', 'মসলা বীজ') !!}</li>
-                                <li class="submenu-item">{!! Html::link('#', 'ফুল বীজ') !!}</li>
-                                <li class="submenu-item">{!! Html::link('#', 'ফলজ বীজ') !!}</li>
-                                <li class="submenu-item">{!! Html::link('#', 'তন্তু বীজ') !!}</li>
-                                <li class="submenu-item">{!! Html::link('#', 'তৈল বীজ') !!}</li>
-                                <li class="submenu-item">{!! Html::link('#', 'দানা বীজ') !!}</li>
+                                <li class="submenu-item">{!! Html::link('mosla-bij', 'মসলা বীজ') !!}</li>
+                                <li class="submenu-item">{!! Html::link('ful-bij', 'ফুল বীজ') !!}</li>
+                                <li class="submenu-item">{!! Html::link('falojo-bij', 'ফলজ বীজ') !!}</li>
+                                <li class="submenu-item">{!! Html::link('tonto-bij', 'তন্তু বীজ') !!}</li>
+                                <li class="submenu-item">{!! Html::link('toil-bij', 'তৈল বীজ') !!}</li>
+                                <li class="submenu-item">{!! Html::link('dana-bij', 'দানা বীজ') !!}</li>
                                 <li class="submenu-item">{!! Html::link('sasso-bij', 'শস্য বীজ') !!}</li>
-                                <li class="submenu-item">{!! Html::link('#', 'ঔষধি বীজ') !!}</li>
-                                <li class="submenu-item">{!! Html::link('#', 'বনজ বীজ') !!}</li>
+                                <li class="submenu-item">{!! Html::link('osodhi-bij', 'ঔষধি বীজ') !!}</li>
+                                <li class="submenu-item">{!! Html::link('bonojo-bij', 'বনজ বীজ') !!}</li>
                             </ul>
 
                         </li>

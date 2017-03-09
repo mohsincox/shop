@@ -115,7 +115,7 @@
 
                         <div class="btn-holder text-center">
 
-                            <button class="btn btn-primary" data-toggle="modal" data-target="#donateModal" id="ful" value="{{ $fulBij->id }}"><strong>বিস্তারিত</strong></button>
+                            <button class="btn btn-primary" data-toggle="modal" data-target="#donateModal" id="ful-bij" value="{{ $fulBij->id }}"><strong>বিস্তারিত</strong></button>
 
                         </div>
 
@@ -136,7 +136,7 @@
 
                         <div class="btn-holder text-center">
 
-                            <button class="btn btn-primary" data-toggle="modal" data-target="#donateModal" id="falojo" value="{{ $falojoBij->id }}"><strong>বিস্তারিত</strong></button>
+                            <button class="btn btn-primary" data-toggle="modal" data-target="#donateModal" id="falojo-bij" value="{{ $falojoBij->id }}"><strong>বিস্তারিত</strong></button>
 
                         </div>
 
@@ -241,7 +241,7 @@
 
                         <div class="btn-holder text-center">
 
-                            <button class="btn btn-primary" data-toggle="modal" data-target="#donateModal" id="osodhi" value="{{ $osodhiBij->id }}"><strong>বিস্তারিত</strong></button>
+                            <button class="btn btn-primary" data-toggle="modal" data-target="#donateModal" id="osodhi-bij" value="{{ $osodhiBij->id }}"><strong>বিস্তারিত</strong></button>
 
                         </div>
 
@@ -262,7 +262,7 @@
 
                         <div class="btn-holder text-center">
 
-                            <button class="btn btn-primary" data-toggle="modal" data-target="#donateModal" id="bonojo" value="{{ $bonojoBij->id }}"><strong>বিস্তারিত</strong></button>
+                            <button class="btn btn-primary" data-toggle="modal" data-target="#donateModal" id="bonojo-bij" value="{{ $bonojoBij->id }}"><strong>বিস্তারিত</strong></button>
 
                         </div>
                     </div> <!-- /.cause --> 

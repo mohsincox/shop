@@ -110,7 +110,15 @@ Route::resource('/marquee-auth', 'MarqueeController');
 Route::resource('/thikana-auth', 'Footer\ThikanaController');
 Route::resource('/notice-auth', 'Footer\NoticeController');
 
-
-Route::get('/sasso-bij', 'WithoutAuth\AllItemsController@sassoBij');
 Route::get('/shak-sobji-bij', 'WithoutAuth\AllItemsController@shakSobjiBij');
+Route::get('/mosla-bij', 'WithoutAuth\AllItemsController@moslaBij');
+Route::get('/ful-bij', 'WithoutAuth\AllItemsController@fulBij');
+Route::get('/falojo-bij', 'WithoutAuth\AllItemsController@falojoBij');
+Route::get('/tonto-bij', 'WithoutAuth\AllItemsController@tontoBij');
+Route::get('/toil-bij', 'WithoutAuth\AllItemsController@toilBij');
+Route::get('/dana-bij', 'WithoutAuth\AllItemsController@danaBij');
+Route::get('/sasso-bij', 'WithoutAuth\AllItemsController@sassoBij');
+Route::get('/osodhi-bij', 'WithoutAuth\AllItemsController@osodhiBij');
+Route::get('/bonojo-bij', 'WithoutAuth\AllItemsController@bonojoBij');
+
 Route::get('/kitnashok', 'WithoutAuth\AllItemsController@kitnashok');
