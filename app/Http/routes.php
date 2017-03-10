@@ -121,4 +121,10 @@ Route::get('/sasso-bij', 'WithoutAuth\AllItemsController@sassoBij');
 Route::get('/osodhi-bij', 'WithoutAuth\AllItemsController@osodhiBij');
 Route::get('/bonojo-bij', 'WithoutAuth\AllItemsController@bonojoBij');
 
+Route::get('/gobadi-poshor-khaddo', 'WithoutAuth\AllItemsController@gobadiPoshorKhaddo');
+Route::get('/has-morgir-khaddo', 'WithoutAuth\AllItemsController@hasMorgirKhaddo');
+Route::get('/macher-khaddo', 'WithoutAuth\AllItemsController@macherKhaddo');
+Route::get('/posho-pakhir-khaddo', 'WithoutAuth\AllItemsController@poshoPakhirKhaddo');
+Route::get('/krishi-khaddo', 'WithoutAuth\AllItemsController@krishiKhaddo');
+
 Route::get('/kitnashok', 'WithoutAuth\AllItemsController@kitnashok');

@@ -15,6 +15,12 @@ use App\Models\SassoBij;
 use App\Models\OsodhiBij;
 use App\Models\BonojoBij;
 
+use App\Models\GobadiPoshorKhaddo;
+use App\Models\HasMorgirKhaddo;
+use App\Models\MacherKhaddo;
+use App\Models\PoshoPakhirKhaddo;
+use App\Models\KrishiKhaddo;
+
 use App\Models\Thikana;
 use Illuminate\Http\Request;
 
@@ -109,5 +115,45 @@ class AllItemsController extends Controller
         $thikanas = Thikana::take(1)->get();
 
         return view('without_auth.kitnashok', compact('kitnashoks', 'thikanas'));
+    }
+
+    public function gobadiPoshorKhaddo()
+    {
+        $gobadiPoshorKhaddos = GobadiPoshorKhaddo::get();
+        $thikanas = Thikana::take(1)->get();
+
+        return view('without_auth.khaddo.gobadi_poshor_khaddo', compact('gobadiPoshorKhaddos', 'thikanas'));
+    }
+
+    public function hasMorgirKhaddo()
+    {
+        $hasMorgirKhaddos = HasMorgirKhaddo::get();
+        $thikanas = Thikana::take(1)->get();
+
+        return view('without_auth.khaddo.has_morgir_khaddo', compact('hasMorgirKhaddos', 'thikanas'));
+    }
+
+    public function macherKhaddo()
+    {
+        $macherKhaddos = MacherKhaddo::get();
+        $thikanas = Thikana::take(1)->get();
+
+        return view('without_auth.khaddo.macher_khaddo', compact('macherKhaddos', 'thikanas'));
+    }
+
+    public function poshoPakhirKhaddo()
+    {
+        $poshoPakhirKhaddos = PoshoPakhirKhaddo::get();
+        $thikanas = Thikana::take(1)->get();
+
+        return view('without_auth.khaddo.posho_pakhir_khaddo', compact('poshoPakhirKhaddos', 'thikanas'));
+    }
+
+    public function krishiKhaddo()
+    {
+        $krishiKhaddos = KrishiKhaddo::get();
+        $thikanas = Thikana::take(1)->get();
+
+        return view('without_auth.khaddo.krishi_khaddo', compact('krishiKhaddos', 'thikanas'));
     }
 }

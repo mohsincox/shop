@@ -44,11 +44,11 @@
                         <li class="has-child">{!! Html::link('#', 'খাদ্য', ['style' => 'font-weight: bold;']) !!}
 
                             <ul class="submenu">
-                                <li class="submenu-item">{!! Html::link('#', 'গবাদি পশুর খাদ্য') !!}</li>
-                                <li class="submenu-item">{!! Html::link('#', 'হাঁস-মুরগীর খাদ্য') !!}</li>
-                                 <li class="submenu-item">{!! Html::link('#', 'মাছের খাদ্য') !!}</li>
-                                  <li class="submenu-item">{!! Html::link('#', 'পশু-পাখির খাদ্য') !!}</li>
-                                <li class="submenu-item">{!! Html::link('#', 'কৃষি খাদ্য') !!}</li>
+                                <li class="submenu-item">{!! Html::link('gobadi-poshor-khaddo', 'গবাদি পশুর খাদ্য') !!}</li>
+                                <li class="submenu-item">{!! Html::link('has-morgir-khaddo', 'হাঁস-মুরগীর খাদ্য') !!}</li>
+                                 <li class="submenu-item">{!! Html::link('macher-khaddo', 'মাছের খাদ্য') !!}</li>
+                                  <li class="submenu-item">{!! Html::link('posho-pakhir-khaddo', 'পশু-পাখির খাদ্য') !!}</li>
+                                <li class="submenu-item">{!! Html::link('krishi-khaddo', 'কৃষি খাদ্য') !!}</li>
                                
                             </ul>
 
