@@ -46,6 +46,17 @@ use App\Models\OrganicFruits;
 use App\Models\OrganicFarming;
 use App\Models\BioPesticidesAndTraps;
 
+use App\Models\Cosmetics;
+use App\Models\Crockeries;
+use App\Models\Electronics;
+use App\Models\Fashion;
+use App\Models\Furniture;
+use App\Models\HostoShilpo;
+use App\Models\LabEquipment;
+use App\Models\ProyojonOnnanno;
+use App\Models\SasthoProduct;
+use App\Models\Telecom;
+
 use App\Models\SliderOne;
 use App\Models\SliderTwo;
 use App\Models\SliderThree;
@@ -100,6 +111,17 @@ class WelcomeController extends Controller
         $traps = BioPesticidesAndTraps::take(2)->get();
         $organicFarmings = OrganicFarming::take(2)->get();
 
+        $furnitures = Furniture::take(2)->get();
+        $fashions = Fashion::take(2)->get();
+        $crockeries = Crockeries::take(2)->get();
+        $electonics = Electronics::take(2)->get();
+        $hostoShilpos = HostoShilpo::take(2)->get();
+        $sasthoProducts = SasthoProduct::take(1)->get();
+        $cosmetics = Cosmetics::take(2)->get();
+        $telecoms = Telecom::take(1)->get();
+        $labEquipments = LabEquipment::take(3)->get();
+        $proyojonOnnannos = ProyojonOnnanno::take(1)->get();
+
         $sliderOne = SliderOne::first();
         $sliderTwo = SliderTwo::first();
         $sliderThree = SliderThree::first();
@@ -107,7 +129,7 @@ class WelcomeController extends Controller
         $thikanas = Thikana::take(1)->get();
         $notices = Notice::get();
 
-        return view('welcome', compact('sassoBijs', 'shakSobjiBijs', 'fulBijs', 'falojoBijs', 'osodhiBijs', 'bonojoBijs', 'moslaBijs', 'tontoBijs', 'toilBijs', 'danaBijs', 'kitnashoks', 'jontropatis', 'opokorons', 'postikas', 'gobadiPoshorKhaddos', 'hasMorgirKhaddos', 'macherKhaddos', 'poshoPakhirKhaddos', 'krishiKhaddos', 'gobadiPoshorOsodhs', 'hasMorgirOsodhs', 'motsoOsodhs', 'poshoPakhirOsodhs', 'fuls', 'fals', 'osodhis', 'bonojs', 'kaktas', 'organicVegetables', 'organicFruits', 'traps', 'organicFarmings', 'sliderOne', 'sliderTwo', 'sliderThree', 'marquees', 'mobiles', 'mobileBankings', 'thikanas', 'notices'));
+        return view('welcome', compact('sassoBijs', 'shakSobjiBijs', 'fulBijs', 'falojoBijs', 'osodhiBijs', 'bonojoBijs', 'moslaBijs', 'tontoBijs', 'toilBijs', 'danaBijs', 'kitnashoks', 'jontropatis', 'opokorons', 'postikas', 'gobadiPoshorKhaddos', 'hasMorgirKhaddos', 'macherKhaddos', 'poshoPakhirKhaddos', 'krishiKhaddos', 'gobadiPoshorOsodhs', 'hasMorgirOsodhs', 'motsoOsodhs', 'poshoPakhirOsodhs', 'fuls', 'fals', 'osodhis', 'bonojs', 'kaktas', 'organicVegetables', 'organicFruits', 'traps', 'organicFarmings', 'sliderOne', 'sliderTwo', 'sliderThree', 'marquees', 'mobiles', 'mobileBankings', 'thikanas', 'notices', 'furnitures', 'fashions', 'crockeries', 'electonics', 'hostoShilpos', 'sasthoProducts', 'cosmetics', 'telecoms', 'labEquipments', 'proyojonOnnannos'));
     }
 
     public function showToModelSassoBij(Request $request)
@@ -325,6 +347,76 @@ class WelcomeController extends Controller
         $opokoron = Opokoron::find($request->id);
 
         return view('show_to_model', compact('opokoron'));
+    }
+
+    public function showToModelFurniture(Request $request)
+    {
+        $furniture = Furniture::find($request->id);
+
+        return view('show_to_model', compact('furniture'));
+    }
+
+    public function showToModelFashion(Request $request)
+    {
+        $fashion = Fashion::find($request->id);
+
+        return view('show_to_model', compact('fashion'));
+    }
+
+    public function showToModelCrockeries(Request $request)
+    {
+        $crockeries = Crockeries::find($request->id);
+
+        return view('show_to_model', compact('crockeries'));
+    }
+
+    public function showToModelElectronics(Request $request)
+    {
+        $electronics = Electronics::find($request->id);
+
+        return view('show_to_model', compact('electronics'));
+    }
+
+    public function showToModelHostoShilpo(Request $request)
+    {
+        $hostoShilpo = HostoShilpo::find($request->id);
+
+        return view('show_to_model', compact('hostoShilpo'));
+    }
+
+    public function showToModelSasthoProduct(Request $request)
+    {
+        $sasthoProduct = SasthoProduct::find($request->id);
+
+        return view('show_to_model', compact('sasthoProduct'));
+    }
+
+    public function showToModelCosmetics(Request $request)
+    {
+        $cosmetics = Cosmetics::find($request->id);
+
+        return view('show_to_model', compact('cosmetics'));
+    }
+
+    public function showToModelTelecom(Request $request)
+    {
+        $telecom = Telecom::find($request->id);
+
+        return view('show_to_model', compact('telecom'));
+    }
+
+    public function showToModelLabEquipment(Request $request)
+    {
+        $labEquipment = LabEquipment::find($request->id);
+
+        return view('show_to_model', compact('labEquipment'));
+    }
+
+    public function showToModelProyojonOnnanno(Request $request)
+    {
+        $proyojonOnnanno = ProyojonOnnanno::find($request->id);
+
+        return view('show_to_model', compact('proyojonOnnanno'));
     }
 
     public function showToModelPostika(Request $request)

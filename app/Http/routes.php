@@ -51,6 +51,17 @@ Route::get('/show-to-model-fruits', 'WelcomeController@showToModelFruits');
 Route::get('/show-to-model-traps', 'WelcomeController@showToModelTraps');
 Route::get('/show-to-model-farming', 'WelcomeController@showToModelFarming');
 
+Route::get('/show-to-model-furniture', 'WelcomeController@showToModelFurniture');
+Route::get('/show-to-model-fashion', 'WelcomeController@showToModelFashion');
+Route::get('/show-to-model-crockeris', 'WelcomeController@showToModelCrockeris');
+Route::get('/show-to-model-electronics', 'WelcomeController@showToModelElectronics');
+Route::get('/show-to-model-hosto-shilpo', 'WelcomeController@showToModelHostoShilpo');
+Route::get('/show-to-model-sastho-product', 'WelcomeController@showToModelSasthoProduct');
+Route::get('/show-to-model-cosmetics', 'WelcomeController@showToModelCosmetics');
+Route::get('/show-to-model-telecom', 'WelcomeController@showToModelTelecom');
+Route::get('/show-to-model-lab-equipment', 'WelcomeController@showToModelLabEquipment');
+Route::get('/show-to-model-proyojon-onnanno', 'WelcomeController@showToModelProyojonOnnanno');
+
 Route::get('/show-to-model-kitnashok', 'WelcomeController@showToModelKitnashok');
 Route::get('/show-to-model-jontropati', 'WelcomeController@showToModelJontropati');
 Route::get('/show-to-model-opokoron', 'WelcomeController@showToModelOpokoron');
@@ -93,6 +104,17 @@ Route::resource('/organic-vegetables-auth', 'OrganicFood\OrganicVegetablesContro
 Route::resource('/organic-fruits-auth', 'OrganicFood\OrganicFruitsController');
 Route::resource('/organic-farming-auth', 'OrganicFood\OrganicFarmingController');
 Route::resource('/bio-pesticides-and-traps-auth', 'OrganicFood\BioPesticidesAndTrapsController');
+
+Route::resource('/furniture-auth', 'Proyojon\FurnitureController');
+Route::resource('/fashion-auth', 'Proyojon\FashionController');
+Route::resource('/crockeries-auth', 'Proyojon\CrockeriesController');
+Route::resource('/electronics-auth', 'Proyojon\ElectronicsController');
+Route::resource('/hosto-shilpo-auth', 'Proyojon\HostoShilpoController');
+Route::resource('/sastho-product-auth', 'Proyojon\SasthoProductController');
+Route::resource('/cosmetics-auth', 'Proyojon\CosmeticsController');
+Route::resource('/telecom-auth', 'Proyojon\TelecomController');
+Route::resource('/lab-equipment-auth', 'Proyojon\LabEquipmentController');
+Route::resource('/proyojon-onnanno-auth', 'Proyojon\ProyojonOnnannoController');
 
 Route::resource('/slider-one-auth', 'Slider\SliderOneController');
 Route::resource('/slider-two-auth', 'Slider\SliderTwoController');

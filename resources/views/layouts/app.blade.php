@@ -51,7 +51,7 @@
                     @if (Auth::user())
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                                বীজ <span class="caret"></span>
+                                বীজ<span class="caret"></span>
                             </a>
 
                             <ul class="dropdown-menu" role="menu">
@@ -70,7 +70,7 @@
                         </li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                                খাবার/খাদ্য <span class="caret"></span>
+                                খাবার/খাদ্য<span class="caret"></span>
                             </a>
 
                             <ul class="dropdown-menu" role="menu">
@@ -83,7 +83,7 @@
                         </li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                                ঔষধ <span class="caret"></span>
+                                ঔষধ<span class="caret"></span>
                             </a>
 
                             <ul class="dropdown-menu" role="menu">
@@ -98,7 +98,7 @@
                         <li><a href="{{ url('/opokoron-auth') }}">উপকরণ</a></li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                                নার্সারী <span class="caret"></span>
+                                নার্সারী<span class="caret"></span>
                             </a>
 
                             <ul class="dropdown-menu" role="menu">
@@ -111,7 +111,7 @@
                         </li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                                অর্গানিক ফুড <span class="caret"></span>
+                                অর্গানিক<span class="caret"></span>
                             </a>
 
                             <ul class="dropdown-menu" role="menu">
@@ -119,6 +119,24 @@
                                 <li><a href="{{ url('/organic-fruits-auth') }}">Organic Fruits</a></li>
                                 <li><a href="{{ url('/bio-pesticides-and-traps-auth') }}">Bio-Pesticides & Traps</a></li>
                                 <li><a href="{{ url('/organic-farming-auth') }}">Organic Farming</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                                প্রয়োজন<span class="caret"></span>
+                            </a>
+
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="{{ url('/furniture-auth') }}">ফার্নিচার</a></li>
+                                <li><a href="{{ url('/fashion-auth') }}">ফ্যাশন</a></li>
+                                <li><a href="{{ url('/crockeries-auth') }}">ক্রোকারিজ</a></li>
+                                <li><a href="{{ url('/electronics-auth') }}">ইলেক্ট্রনিক্স</a></li>
+                                <li><a href="{{ url('/hosto-shilpo-auth') }}">হস্ত শিল্প</a></li>
+                                <li><a href="{{ url('/sastho-product-auth') }}">স্বাস্থ্য প্রডাক্ট</a></li>
+                                <li><a href="{{ url('/cosmetics-auth') }}">কসমেটিকস</a></li>
+                                <li><a href="{{ url('/telecom-auth') }}">টেলিকম</a></li>
+                                <li><a href="{{ url('/lab-equipment-auth') }}">ল্যাব ইকুইপমেন্ট</a></li>
+                                <li><a href="{{ url('/proyojon-onnanno-auth') }}">অন্যান্য</a></li>
                             </ul>
                         </li>
                         <li class="dropdown">

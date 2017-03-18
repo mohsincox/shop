@@ -97,7 +97,7 @@
                         <li class="has-child">{!! Html::link('#', 'প্রয়োজন', ['style' => 'font-weight: bold;']) !!}
 
                             <ul class="submenu">
-                                <li class="submenu-item">{!! Html::link('#', 'ফার্নিচার') !!}</li>
+                                <li class="submenu-item">{!! Html::link('#', 'কাঠুরে') !!}</li>
                                 <li class="submenu-item">{!! Html::link('#', 'ফ্যাশন') !!}</li>
                                 <li class="submenu-item">{!! Html::link('#', 'ক্রোকারিজ') !!}</li>
                                 <li class="submenu-item">{!! Html::link('#', 'ইলেক্ট্রনিক্স') !!}</li>
@@ -105,6 +105,7 @@
                                 <li class="submenu-item">{!! Html::link('#', 'স্বাস্থ্য প্রডাক্ট') !!}</li>
                                 <li class="submenu-item">{!! Html::link('#', 'কসমেটিকস') !!}</li>
                                 <li class="submenu-item">{!! Html::link('#', 'টেলিকম') !!}</li>
+                                <li class="submenu-item">{!! Html::link('#', 'ল্যাব ইকুইপমেন্ট') !!}</li>
                                 <li class="submenu-item">{!! Html::link('#', 'অন্যান্য') !!}</li>
                             </ul>
 

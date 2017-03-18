@@ -444,3 +444,123 @@ $(function() {
 
     });
 });
+
+$(function() {
+    $(document).on('click', '#furniture', function(){
+        var id = $(this).val();
+        var u = $('#url').html();
+        var url  = u+"/show-to-model-furniture?id="+ id;
+        $.get(url, function (data) {
+            $('#hamba').html(data);
+        });
+
+    });
+});
+
+$(function() {
+    $(document).on('click', '#fashion', function(){
+        var id = $(this).val();
+        var u = $('#url').html();
+        var url  = u+"/show-to-model-fashion?id="+ id;
+        $.get(url, function (data) {
+            $('#hamba').html(data);
+        });
+
+    });
+});
+
+$(function() {
+    $(document).on('click', '#crockeries', function(){
+        var id = $(this).val();
+        var u = $('#url').html();
+        var url  = u+"/show-to-model-crockeries?id="+ id;
+        $.get(url, function (data) {
+            $('#hamba').html(data);
+        });
+
+    });
+});
+
+$(function() {
+    $(document).on('click', '#electronics', function(){
+        var id = $(this).val();
+        var u = $('#url').html();
+        var url  = u+"/show-to-model-electronics?id="+ id;
+        $.get(url, function (data) {
+            $('#hamba').html(data);
+        });
+
+    });
+});
+
+$(function() {
+    $(document).on('click', '#hosto-shilpo', function(){
+        var id = $(this).val();
+        var u = $('#url').html();
+        var url  = u+"/show-to-model-hosto-shilpo?id="+ id;
+        $.get(url, function (data) {
+            $('#hamba').html(data);
+        });
+
+    });
+});
+
+$(function() {
+    $(document).on('click', '#sastho-product', function(){
+        var id = $(this).val();
+        var u = $('#url').html();
+        var url  = u+"/show-to-model-sastho-product?id="+ id;
+        $.get(url, function (data) {
+            $('#hamba').html(data);
+        });
+
+    });
+});
+
+$(function() {
+    $(document).on('click', '#cosmetics', function(){
+        var id = $(this).val();
+        var u = $('#url').html();
+        var url  = u+"/show-to-model-cosmetics?id="+ id;
+        $.get(url, function (data) {
+            $('#hamba').html(data);
+        });
+
+    });
+});
+
+$(function() {
+    $(document).on('click', '#telecom', function(){
+        var id = $(this).val();
+        var u = $('#url').html();
+        var url  = u+"/show-to-model-telecom?id="+ id;
+        $.get(url, function (data) {
+            $('#hamba').html(data);
+        });
+
+    });
+});
+
+$(function() {
+    $(document).on('click', '#lab-equipment', function(){
+        var id = $(this).val();
+        var u = $('#url').html();
+        var url  = u+"/show-to-model-lab-equipment?id="+ id;
+        $.get(url, function (data) {
+            $('#hamba').html(data);
+        });
+
+    });
+});
+
+$(function() {
+    $(document).on('click', '#proyojon-onnanno', function(){
+        var id = $(this).val();
+        var u = $('#url').html();
+        var url  = u+"/show-to-model-proyojon-onnanno?id="+ id;
+        $.get(url, function (data) {
+            $('#hamba').html(data);
+        });
+
+    });
+});

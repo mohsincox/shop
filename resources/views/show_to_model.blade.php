@@ -160,6 +160,46 @@
             background: url('{{ $base.$opokoron->image }}') no-repeat;
         @endif
 
+        @if(isset($furniture))
+            background: url('{{ $base.$furniture->image }}') no-repeat;
+        @endif
+
+        @if(isset($fashion))
+            background: url('{{ $base.$fashion->image }}') no-repeat;
+        @endif
+
+        @if(isset($crockeries))
+            background: url('{{ $base.$crockeries->image }}') no-repeat;
+        @endif
+
+        @if(isset($electronics))
+            background: url('{{ $base.$electronics->image }}') no-repeat;
+        @endif
+
+        @if(isset($hostoShilpo))
+            background: url('{{ $base.$hostoShilpo->image }}') no-repeat;
+        @endif
+
+        @if(isset($sasthoProduct))
+            background: url('{{ $base.$sasthoProduct->image }}') no-repeat;
+        @endif
+
+        @if(isset($cosmetics))
+            background: url('{{ $base.$cosmetics->image }}') no-repeat;
+        @endif
+
+        @if(isset($telecom))
+            background: url('{{ $base.$telecom->image }}') no-repeat;
+        @endif
+
+        @if(isset($labEquipment))
+            background: url('{{ $base.$labEquipment->image }}') no-repeat;
+        @endif
+
+        @if(isset($proyojonOnnanno))
+            background: url('{{ $base.$proyojonOnnanno->image }}') no-repeat;
+        @endif
+
         @if(isset($postika))
             background: url('{{ $base.$postika->image }}') no-repeat;
         @endif
@@ -757,6 +797,196 @@
                 <p>{!!  '<strong>পণ্যের কোড: </strong>'. $opokoron->code  !!}</p>
                 <p>{!!  '<strong>পণ্যের মূল্য: </strong>'. $opokoron->price  !!}</p>
                 <p>{!!  '<strong>পণ্যের বিবরণ: </strong>'. $opokoron->description  !!}</p>
+            </div>
+        </div>
+    </div>
+@endif
+
+@if(isset($furniture))
+    <div style="text-align: left">
+        <div class="col-sm-12">
+            <div class="col-sm-6">
+                <div class="magnify">
+                    <div class="large"></div>
+                    {{ Html::image('uploads/'.$furniture->image, null, ['class' => 'small', 'width' => 160, 'height' => 160]) }}
+                </div>
+            </div>
+            <div class="col-sm-6" style="margin-top: 40px;">
+                <p>{!!  '<strong>পণ্যের নাম: </strong>'. $furniture->name  !!}</p>
+                <p>{!!  '<strong>পণ্যের কোড: </strong>'. $furniture->code  !!}</p>
+                <p>{!!  '<strong>পণ্যের মূল্য: </strong>'. $furniture->price  !!}</p>
+                <p>{!!  '<strong>পণ্যের বিবরণ: </strong>'. $furniture->description  !!}</p>
+            </div>
+        </div>
+    </div>
+@endif
+
+@if(isset($fashion))
+    <div style="text-align: left">
+        <div class="col-sm-12">
+            <div class="col-sm-6">
+                <div class="magnify">
+                    <div class="large"></div>
+                    {{ Html::image('uploads/'.$fashion->image, null, ['class' => 'small', 'width' => 160, 'height' => 160]) }}
+                </div>
+            </div>
+            <div class="col-sm-6" style="margin-top: 40px;">
+                <p>{!!  '<strong>পণ্যের নাম: </strong>'. $fashion->name  !!}</p>
+                <p>{!!  '<strong>পণ্যের কোড: </strong>'. $fashion->code  !!}</p>
+                <p>{!!  '<strong>পণ্যের মূল্য: </strong>'. $fashion->price  !!}</p>
+                <p>{!!  '<strong>পণ্যের বিবরণ: </strong>'. $fashion->description  !!}</p>
+            </div>
+        </div>
+    </div>
+@endif
+
+@if(isset($crockeries))
+    <div style="text-align: left">
+        <div class="col-sm-12">
+            <div class="col-sm-6">
+                <div class="magnify">
+                    <div class="large"></div>
+                    {{ Html::image('uploads/'.$crockeries->image, null, ['class' => 'small', 'width' => 160, 'height' => 160]) }}
+                </div>
+            </div>
+            <div class="col-sm-6" style="margin-top: 40px;">
+                <p>{!!  '<strong>পণ্যের নাম: </strong>'. $crockeries->name  !!}</p>
+                <p>{!!  '<strong>পণ্যের কোড: </strong>'. $crockeries->code  !!}</p>
+                <p>{!!  '<strong>পণ্যের মূল্য: </strong>'. $crockeries->price  !!}</p>
+                <p>{!!  '<strong>পণ্যের বিবরণ: </strong>'. $crockeries->description  !!}</p>
+            </div>
+        </div>
+    </div>
+@endif
+
+@if(isset($electronics))
+    <div style="text-align: left">
+        <div class="col-sm-12">
+            <div class="col-sm-6">
+                <div class="magnify">
+                    <div class="large"></div>
+                    {{ Html::image('uploads/'.$electronics->image, null, ['class' => 'small', 'width' => 160, 'height' => 160]) }}
+                </div>
+            </div>
+            <div class="col-sm-6" style="margin-top: 40px;">
+                <p>{!!  '<strong>পণ্যের নাম: </strong>'. $electronics->name  !!}</p>
+                <p>{!!  '<strong>পণ্যের কোড: </strong>'. $electronics->code  !!}</p>
+                <p>{!!  '<strong>পণ্যের মূল্য: </strong>'. $electronics->price  !!}</p>
+                <p>{!!  '<strong>পণ্যের বিবরণ: </strong>'. $electronics->description  !!}</p>
+            </div>
+        </div>
+    </div>
+@endif
+
+@if(isset($hostoShilpo))
+    <div style="text-align: left">
+        <div class="col-sm-12">
+            <div class="col-sm-6">
+                <div class="magnify">
+                    <div class="large"></div>
+                    {{ Html::image('uploads/'.$hostoShilpo->image, null, ['class' => 'small', 'width' => 160, 'height' => 160]) }}
+                </div>
+            </div>
+            <div class="col-sm-6" style="margin-top: 40px;">
+                <p>{!!  '<strong>পণ্যের নাম: </strong>'. $hostoShilpo->name  !!}</p>
+                <p>{!!  '<strong>পণ্যের কোড: </strong>'. $hostoShilpo->code  !!}</p>
+                <p>{!!  '<strong>পণ্যের মূল্য: </strong>'. $hostoShilpo->price  !!}</p>
+                <p>{!!  '<strong>পণ্যের বিবরণ: </strong>'. $hostoShilpo->description  !!}</p>
+            </div>
+        </div>
+    </div>
+@endif
+
+@if(isset($sasthoProduct))
+    <div style="text-align: left">
+        <div class="col-sm-12">
+            <div class="col-sm-6">
+                <div class="magnify">
+                    <div class="large"></div>
+                    {{ Html::image('uploads/'.$sasthoProduct->image, null, ['class' => 'small', 'width' => 160, 'height' => 160]) }}
+                </div>
+            </div>
+            <div class="col-sm-6" style="margin-top: 40px;">
+                <p>{!!  '<strong>পণ্যের নাম: </strong>'. $sasthoProduct->name  !!}</p>
+                <p>{!!  '<strong>পণ্যের কোড: </strong>'. $sasthoProduct->code  !!}</p>
+                <p>{!!  '<strong>পণ্যের মূল্য: </strong>'. $sasthoProduct->price  !!}</p>
+                <p>{!!  '<strong>পণ্যের বিবরণ: </strong>'. $sasthoProduct->description  !!}</p>
+            </div>
+        </div>
+    </div>
+@endif
+
+@if(isset($cosmetics))
+    <div style="text-align: left">
+        <div class="col-sm-12">
+            <div class="col-sm-6">
+                <div class="magnify">
+                    <div class="large"></div>
+                    {{ Html::image('uploads/'.$cosmetics->image, null, ['class' => 'small', 'width' => 160, 'height' => 160]) }}
+                </div>
+            </div>
+            <div class="col-sm-6" style="margin-top: 40px;">
+                <p>{!!  '<strong>পণ্যের নাম: </strong>'. $cosmetics->name  !!}</p>
+                <p>{!!  '<strong>পণ্যের কোড: </strong>'. $cosmetics->code  !!}</p>
+                <p>{!!  '<strong>পণ্যের মূল্য: </strong>'. $cosmetics->price  !!}</p>
+                <p>{!!  '<strong>পণ্যের বিবরণ: </strong>'. $cosmetics->description  !!}</p>
+            </div>
+        </div>
+    </div>
+@endif
+
+@if(isset($telecom))
+    <div style="text-align: left">
+        <div class="col-sm-12">
+            <div class="col-sm-6">
+                <div class="magnify">
+                    <div class="large"></div>
+                    {{ Html::image('uploads/'.$telecom->image, null, ['class' => 'small', 'width' => 160, 'height' => 160]) }}
+                </div>
+            </div>
+            <div class="col-sm-6" style="margin-top: 40px;">
+                <p>{!!  '<strong>পণ্যের নাম: </strong>'. $telecom->name  !!}</p>
+                <p>{!!  '<strong>পণ্যের কোড: </strong>'. $telecom->code  !!}</p>
+                <p>{!!  '<strong>পণ্যের মূল্য: </strong>'. $telecom->price  !!}</p>
+                <p>{!!  '<strong>পণ্যের বিবরণ: </strong>'. $telecom->description  !!}</p>
+            </div>
+        </div>
+    </div>
+@endif
+
+@if(isset($labEquipment))
+    <div style="text-align: left">
+        <div class="col-sm-12">
+            <div class="col-sm-6">
+                <div class="magnify">
+                    <div class="large"></div>
+                    {{ Html::image('uploads/'.$labEquipment->image, null, ['class' => 'small', 'width' => 160, 'height' => 160]) }}
+                </div>
+            </div>
+            <div class="col-sm-6" style="margin-top: 40px;">
+                <p>{!!  '<strong>পণ্যের নাম: </strong>'. $labEquipment->name  !!}</p>
+                <p>{!!  '<strong>পণ্যের কোড: </strong>'. $labEquipment->code  !!}</p>
+                <p>{!!  '<strong>পণ্যের মূল্য: </strong>'. $labEquipment->price  !!}</p>
+                <p>{!!  '<strong>পণ্যের বিবরণ: </strong>'. $labEquipment->description  !!}</p>
+            </div>
+        </div>
+    </div>
+@endif
+
+@if(isset($proyojonOnnanno))
+    <div style="text-align: left">
+        <div class="col-sm-12">
+            <div class="col-sm-6">
+                <div class="magnify">
+                    <div class="large"></div>
+                    {{ Html::image('uploads/'.$proyojonOnnanno->image, null, ['class' => 'small', 'width' => 160, 'height' => 160]) }}
+                </div>
+            </div>
+            <div class="col-sm-6" style="margin-top: 40px;">
+                <p>{!!  '<strong>পণ্যের নাম: </strong>'. $proyojonOnnanno->name  !!}</p>
+                <p>{!!  '<strong>পণ্যের কোড: </strong>'. $proyojonOnnanno->code  !!}</p>
+                <p>{!!  '<strong>পণ্যের মূল্য: </strong>'. $proyojonOnnanno->price  !!}</p>
+                <p>{!!  '<strong>পণ্যের বিবরণ: </strong>'. $proyojonOnnanno->description  !!}</p>
             </div>
         </div>
     </div>
