@@ -53,7 +53,7 @@ Route::get('/show-to-model-farming', 'WelcomeController@showToModelFarming');
 
 Route::get('/show-to-model-furniture', 'WelcomeController@showToModelFurniture');
 Route::get('/show-to-model-fashion', 'WelcomeController@showToModelFashion');
-Route::get('/show-to-model-crockeris', 'WelcomeController@showToModelCrockeris');
+Route::get('/show-to-model-crockeries', 'WelcomeController@showToModelCrockeries');
 Route::get('/show-to-model-electronics', 'WelcomeController@showToModelElectronics');
 Route::get('/show-to-model-hosto-shilpo', 'WelcomeController@showToModelHostoShilpo');
 Route::get('/show-to-model-sastho-product', 'WelcomeController@showToModelSasthoProduct');
