@@ -21,6 +21,17 @@ use App\Models\MacherKhaddo;
 use App\Models\PoshoPakhirKhaddo;
 use App\Models\KrishiKhaddo;
 
+use App\Models\Cosmetics;
+use App\Models\Crockeries;
+use App\Models\Electronics;
+use App\Models\Fashion;
+use App\Models\Furniture;
+use App\Models\HostoShilpo;
+use App\Models\LabEquipment;
+use App\Models\ProyojonOnnanno;
+use App\Models\SasthoProduct;
+use App\Models\Telecom;
+
 use App\Models\Thikana;
 use Illuminate\Http\Request;
 
@@ -155,5 +166,85 @@ class AllItemsController extends Controller
         $thikanas = Thikana::take(1)->get();
 
         return view('without_auth.khaddo.krishi_khaddo', compact('krishiKhaddos', 'thikanas'));
+    }
+
+    public function furniture()
+    {
+        $furnitures = Furniture::get();
+        $thikanas = Thikana::take(1)->get();
+
+        return view('without_auth.proyojon.furniture', compact('furnitures', 'thikanas'));
+    }
+
+    public function fashion()
+    {
+        $fashions = Fashion::get();
+        $thikanas = Thikana::take(1)->get();
+
+        return view('without_auth.proyojon.fashion', compact('fashions', 'thikanas'));
+    }
+
+    public function crockeries()
+    {
+        $crockeries = Crockeries::get();
+        $thikanas = Thikana::take(1)->get();
+
+        return view('without_auth.proyojon.crockeries', compact('crockeries', 'thikanas'));
+    }
+
+    public function electronics()
+    {
+        $electronics = Electronics::get();
+        $thikanas = Thikana::take(1)->get();
+
+        return view('without_auth.proyojon.electronics', compact('electronics', 'thikanas'));
+    }
+
+    public function hostoShilpo()
+    {
+        $hostoShilpos = HostoShilpo::get();
+        $thikanas = Thikana::take(1)->get();
+
+        return view('without_auth.proyojon.hosto_shilpo', compact('hostoShilpos', 'thikanas'));
+    }
+
+    public function sasthoProduct()
+    {
+        $sasthoProducts = SasthoProduct::get();
+        $thikanas = Thikana::take(1)->get();
+
+        return view('without_auth.proyojon.sastho_product', compact('sasthoProducts', 'thikanas'));
+    }
+
+    public function cosmetics()
+    {
+        $cosmetics = Cosmetics::get();
+        $thikanas = Thikana::take(1)->get();
+
+        return view('without_auth.proyojon.cosmetics', compact('cosmetics', 'thikanas'));
+    }
+
+    public function telecom()
+    {
+        $telecoms = Telecom::get();
+        $thikanas = Thikana::take(1)->get();
+
+        return view('without_auth.proyojon.telecom', compact('telecoms', 'thikanas'));
+    }
+
+    public function labEquipment()
+    {
+        $labEquipments = LabEquipment::get();
+        $thikanas = Thikana::take(1)->get();
+
+        return view('without_auth.proyojon.lab_equipment', compact('labEquipments', 'thikanas'));
+    }
+
+    public function proyojonOnnanno()
+    {
+        $proyojonOnnannos = ProyojonOnnanno::get();
+        $thikanas = Thikana::take(1)->get();
+
+        return view('without_auth.proyojon.proyojon_onnanno', compact('proyojonOnnannos', 'thikanas'));
     }
 }

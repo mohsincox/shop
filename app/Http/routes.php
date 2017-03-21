@@ -116,6 +116,17 @@ Route::resource('/telecom-auth', 'Proyojon\TelecomController');
 Route::resource('/lab-equipment-auth', 'Proyojon\LabEquipmentController');
 Route::resource('/proyojon-onnanno-auth', 'Proyojon\ProyojonOnnannoController');
 
+Route::get('/furniture', 'WithoutAuth\AllItemsController@furniture');
+Route::get('/fashion', 'WithoutAuth\AllItemsController@fashion');
+Route::get('/crockeries', 'WithoutAuth\AllItemsController@crockeries');
+Route::get('/electronics', 'WithoutAuth\AllItemsController@electronics');
+Route::get('/hosto-shilpo', 'WithoutAuth\AllItemsController@hostoShilpo');
+Route::get('/sastho-product', 'WithoutAuth\AllItemsController@sasthoProduct');
+Route::get('/cosmetics', 'WithoutAuth\AllItemsController@cosmetics');
+Route::get('/telecom', 'WithoutAuth\AllItemsController@telecom');
+Route::get('/lab-equipment', 'WithoutAuth\AllItemsController@labEquipment');
+Route::get('/proyojon-onnanno', 'WithoutAuth\AllItemsController@proyojonOnnanno');
+
 Route::resource('/slider-one-auth', 'Slider\SliderOneController');
 Route::resource('/slider-two-auth', 'Slider\SliderTwoController');
 Route::resource('/slider-three-auth', 'Slider\SliderThreeController');
