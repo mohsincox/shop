@@ -72,7 +72,7 @@
         <div style="margin-top: 75px;" class="input-group col-md-3 pull-right">
             <input id="search-criteria" type="text" class="search-query form-control" placeholder="Search" />
         </div>
-        <h2 class="title-style-1" style="margin-top: 110px;">টেলিকম<span class="title-under"></span></h2>
+        <h2 class="title-style-1" style="margin-top: 110px;">আইটি<span class="title-under"></span></h2>
 
         <div class="row">
             @foreach($telecoms as $key=>$proyojon)

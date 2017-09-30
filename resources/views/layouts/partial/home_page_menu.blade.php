@@ -102,9 +102,9 @@
                                 <li class="submenu-item">{!! Html::link('crockeries', 'ক্রোকারিজ') !!}</li>
                                 <li class="submenu-item">{!! Html::link('electronics', 'ইলেক্ট্রনিক্স') !!}</li>
                                 <li class="submenu-item">{!! Html::link('hosto-shilpo', 'হস্ত শিল্প') !!}</li>
-                                <li class="submenu-item">{!! Html::link('sastho-product', 'স্বাস্থ্য প্রডাক্ট') !!}</li>
+                                <li class="submenu-item">{!! Html::link('sastho-product', 'মেডিকেল ইকুপমেন্ট') !!}</li>
                                 <li class="submenu-item">{!! Html::link('cosmetics', 'কসমেটিকস') !!}</li>
-                                <li class="submenu-item">{!! Html::link('telecom', 'টেলিকম') !!}</li>
+                                <li class="submenu-item">{!! Html::link('telecom', 'আইটি') !!}</li>
                                 <li class="submenu-item">{!! Html::link('lab-equipment', 'ল্যাব ইকুইপমেন্ট') !!}</li>
                                 <li class="submenu-item">{!! Html::link('proyojon-onnanno', 'অন্যান্য') !!}</li>
                             </ul>

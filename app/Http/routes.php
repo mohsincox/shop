@@ -16,6 +16,7 @@
 //});
 
 Route::get('/', 'WelcomeController@index');
+Route::get('/sajjad', 'SajjadController@sajjad');
 Route::post('/store-customer', 'WelcomeController@storeCustomer');
 Route::get('/show-customer', 'WelcomeController@showCustomer');
 Route::get('/show-to-model-sasso-bij', 'WelcomeController@showToModelSassoBij');

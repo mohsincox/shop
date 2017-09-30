@@ -11,7 +11,7 @@
 				$numbers = substr($output, 0, -2);
 			?>
 
-            	<h2 style="color: red;"><strong>তত্থ, মতামত ও পরামর্শ :<br> {{ $numbers }} </strong></h2>
+            	<h2 style="color: red;"><strong>তথ্য, মতামত এবং পরামর্শ :<br> {{ $numbers }} </strong></h2>
 
         </div>
         <div style="margin-top: -40px;" class="col-md-4">
